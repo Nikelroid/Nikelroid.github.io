@@ -51,11 +51,12 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: NO. 20, Bagh-e-Kaj alley, Mohsen Mohammadi alley, Tarasht Neighbourhood
+  - line: Sheikh Fazlohllah highway, Tehran, 1459745953 (IR)
+  - line: Phone number: +989164718990
 
 # Credits content
-credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+Assets: 'Im cute!'
 
 # Build settings
 markdown: kramdown
