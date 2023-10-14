@@ -36,7 +36,7 @@ footer:
   copyright: Dr. Henry Jekyll
   location: Location
   social: Around the Web
-  credits: Assets
+  credits: Contact
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
@@ -48,15 +48,16 @@ social:
     url: http://github.com/Nikelroid
   - title: instagram
     url: https://www.instagram.com/nima_kld/
+  - title: linkedin
+    url: www.linkedin.com/in/nima-kelidari-7674aa218
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: NO. 20, Bagh-e-Kaj alley, Mohsen Mohammadi alley, Tarasht Neighbourhood
-  - line: Sheikh Fazlohllah highway, Tehran, 1459745953 (IR)
-  #- line: Phone number: +989164718990
+  - line: NO. 20, Bagh-e-Kaj alley, Mohsen Mohammadi alley, Tarasht Neighbourhood, Sheikh Fazlohllah highway, Tehran, 1459745953 (IR)
 
 # Credits content
-credits: 'Im cute!'
+credits: Phone number: +989164718990 <\br> Email: Nikelroid@gmail.com
+
 
 # Build settings
 markdown: kramdown
