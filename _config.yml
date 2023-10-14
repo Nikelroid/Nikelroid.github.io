@@ -56,7 +56,7 @@ address:
   - line: Phone number: +989164718990
 
 # Credits content
-Assets: 'Im cute!'
+credits: 'Im cute!'
 
 # Build settings
 markdown: kramdown
