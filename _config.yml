@@ -56,7 +56,9 @@ address:
   - line: NO. 20, Bagh-e-Kaj alley, Mohsen Mohammadi alley, Tarasht Neighbourhood, Sheikh Fazlohllah highway, Tehran, 1459745953 (IR)
 
 # Credits content
-credits: 'Phone number: +989164718990 \nEmail: Nikelroid@gmail.com'
+credits: |+
+  Phone number: +989164718990
+  Email: Nikelroid@gmail.com
 
 # Build settings
 markdown: kramdown
