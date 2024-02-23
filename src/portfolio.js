@@ -22,7 +22,7 @@ const splashScreen = true // recommended: for best behavior after refresh
 const greeting = {
     intro: "Hello 👋, my name is",
     name: "Nima Kelidari",
-    message: "I am a Computer Science graduate from Sharif University of Technology.  I have a strong interest in Data Science and its applications, particularly in image processing and computer vision.",
+    message: "I am a Computer Science graduate from Sharif University of Technology and a developer.  I have a strong interest in Data Science and its applications, particularly in image processing and computer vision.",
     basedLocation: "Bellevue, WA",
     resumeLink: "https://docs.google.com/document/d/1Sa_sK3RMusoezzgzxu8LkV16i2Jra2qd/edit?usp=sharing&ouid=113657039181859132688&rtpof=true&sd=true", // recommended: google drive file share link (change to "anyone on the internet can view")
     logo: {
