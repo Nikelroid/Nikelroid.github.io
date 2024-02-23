@@ -22,8 +22,8 @@ const splashScreen = true // recommended: for best behavior after refresh
 const greeting = {
     intro: "Hello 👋, my name is",
     name: "Nima Kelidari",
-    message: "I'm a computer science student and an aspiring software engineer. Currently working as a web developer at my university building tools to aid students, educators, and staff.",
-    basedLocation: "Raleigh, NC",
+    message: "I am Nima Kelidari, a Computer Science graduate from Sharif University of Technology.  I have a strong interest in Data Science and its applications, particularly in image processing and computer vision.",
+    basedLocation: "Bellevue, WA",
     resumeLink: "https://docs.google.com/document/d/1Sa_sK3RMusoezzgzxu8LkV16i2Jra2qd/edit?usp=sharing&ouid=113657039181859132688&rtpof=true&sd=true", // recommended: google drive file share link (change to "anyone on the internet can view")
     logo: {
         link: "images/initials.png", // use relative path from  parent directory -> ex: images/image.ext
@@ -43,7 +43,7 @@ const socialMediaLinks = {
 // --- 😎 About Section ---
 const about = {
     autobiography: [
-        "My name is Maxim Shelepov and I'm a computer science student at North Carolina State University. I have a passion for coding in languages such as Python, Java, PHP, & Swift. Work in web development and have experience with Django and Laravel frameworks.",
+        "I am Nima Kelidari, a Computer Science graduate from Sharif University of Technology. I have a strong interest in Data Science and its applications, particularly in image processing and computer vision. I am proficient in Python and Java programming languages and have developed various applications using them.",
         "Responsible, organized, problem solver, and independent thinker. Work well in a team and a quick learner. Programming for 3+ years and have 4 years of experience in advanced mathematics such as calculus, statistics, and discrete mathematics. Currently working as a web development intern for my university."
     ], // Separated items are paragraphs
     techStack: [
