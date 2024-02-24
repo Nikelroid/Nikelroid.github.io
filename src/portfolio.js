@@ -27,7 +27,7 @@ const greeting = {
     resumeLink: "https://docs.google.com/document/d/1Sa_sK3RMusoezzgzxu8LkV16i2Jra2qd/edit?usp=sharing&ouid=113657039181859132688&rtpof=true&sd=true", // recommended: google drive file share link (change to "anyone on the internet can view")
     logo: {
         link: "images/initials.png", // use relative path from  parent directory -> ex: images/image.ext
-        custom: true // takes precedence over image logo and allows for custom HTML logo (./components/Navbar.vue)
+        custom: false // takes precedence over image logo and allows for custom HTML logo (./components/Navbar.vue)
     },
     portraitLink: 'images/portrait.jpg'
 }
