@@ -9,16 +9,19 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import {
     faGithub,
     faLinkedin,
-    faMedium,
-    faStackOverflow,
-    faXTwitter
+    faTelegram,
+    faXTwitter,
+    faFacebook
 } from '@fortawesome/free-brands-svg-icons'
-
+// import {
+//     faEnvelope
+// } from '@fortawesome/free-regular-svg-icons'
 /* add icons to the library */
 library.add(
+    // faEnvelope,
     faGithub,
     faLinkedin,
-    faMedium,
-    faStackOverflow,
-    faXTwitter
+    faTelegram,
+    faXTwitter,
+    faFacebook
 )

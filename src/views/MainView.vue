@@ -18,9 +18,9 @@
 								<font-awesome-icon icon="fa-brands fa-linkedin" class="h-8 w-8 md:h-12 md:w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300"></font-awesome-icon>
 							</a>
 						</li>
-						<li v-show="mediumLink" :class="['transition-all motion-reduce:transition-none duration-500 delay-[150ms]', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
-							<a :href="mediumLink" target="_blank">
-								<font-awesome-icon icon="fa-brands fa-medium" class="h-8 w-8 md:h-12 md:w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300"></font-awesome-icon>
+						<li v-show="telegramLink" :class="['transition-all motion-reduce:transition-none duration-500 delay-[150ms]', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
+							<a :href="telegramLink" target="_blank">
+								<font-awesome-icon icon="fa-brands fa-telegram" class="h-8 w-8 md:h-12 md:w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300"></font-awesome-icon>
 							</a>
 						</li>
 						<li v-show="stackoverflowLink" :class="['transition-all motion-reduce:transition-none duration-500 delay-[200ms]', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
@@ -31,6 +31,11 @@
 						<li v-show="xTwitterLink" :class="['transition-all motion-reduce:transition-none duration-500 delay-[200ms]', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
 							<a :href="xTwitterLink" target="_blank">
 								<font-awesome-icon icon="fa-brands fa-x-twitter" class="h-8 w-8 md:h-12 md:w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300"></font-awesome-icon>
+							</a>
+						</li>
+						<li v-show="faceBookLink" :class="['transition-all motion-reduce:transition-none duration-500 delay-[200ms]', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
+							<a :href="faceBookLink" target="_blank">
+								<font-awesome-icon icon="fa-brands fa-facebook" class="h-8 w-8 md:h-12 md:w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300"></font-awesome-icon>
 							</a>
 						</li>
 					</ul>
@@ -92,11 +97,12 @@ onMounted(() => {
 })
 
 // Social Media Links
+const emailLink = portfolio.socialMediaLinks.email
 const githubLink = portfolio.socialMediaLinks.github
 const linkedinLink = portfolio.socialMediaLinks.linkedin
-const mediumLink = portfolio.socialMediaLinks.medium
-const stackoverflowLink = portfolio.socialMediaLinks.stackoverflow
+const telegramLink = portfolio.socialMediaLinks.telegram
 const xTwitterLink = portfolio.socialMediaLinks.xtwitter;
+const faceBookLink = portfolio.socialMediaLinks.facebook
 
 const splashScreen = () => {
 	if (portfolio.splashScreen) {
