@@ -33,33 +33,34 @@ const greeting = {
 }
 
 const socialMediaLinks = {
-    github: "https://github.com/feifyKike",
-    linkedin: "https://www.linkedin.com/in/maxim-shelepov1",
-    medium: "https://medium.com/@mimaishel",
-    stackoverflow: "",
-    xtwitter: "https://twitter.com/mimaishel"
+    email: "mailto:Nikelroid@gmail.com",
+    github: "https://github.com/Nikelroid",
+    linkedin: "https://www.linkedin.com/in/nima-kelidari-7674aa218/",
+    telegram: "https://T.me/Adivide2",
+    xtwitter: "https://twitter.com/Adivide2",
+    facebook: "https://www.facebook.com/profile.php?id=61552144558918&mibextid=ZbWKwL", 
 } // to add any additional social media links check out the README.md or src/icons.js file
 
 // --- 😎 About Section ---
 const about = {
     autobiography: [
-        "I am Nima Kelidari, a Computer Science graduate from Sharif University of Technology. I have a strong interest in Data Science and its applications, particularly in image processing and computer vision. I am proficient in Python and Java programming languages and have developed various applications using them.",
-        "Responsible, organized, problem solver, and independent thinker. Work well in a team and a quick learner. Programming for 3+ years and have 4 years of experience in advanced mathematics such as calculus, statistics, and discrete mathematics. Currently working as a web development intern for my university."
+        "Hello! My name is Nima Kelidari, a graduate with a B.Sc. in Computer Science from Sharif University of Technology. I am a Python and Java developer, specializing in Image Processing, Computer Vision, and the applications of Deep Learning. I have a keen interest in leveraging technology to solve real-world problems. Outside of the digital realm, I find joy in activities such as swimming, biking, and exploring the wonders of nature.",
+        "If you're curious to learn more about my journey, projects, and coding prowess, I invite you to explore my CV, projects, and GitHub page."
     ], // Separated items are paragraphs
     techStack: [
-        "PHP",
         "Python",
-        "JavaScript",
-        "Vue.js",
+        "Java",
         "MySQL",
-        "Swift"
+        "MongoDB",
+        "Pytorch",
+        "open-cv"
     ],
-    photo1Link: "images/portrait1.jpeg",
-    photo2Link: "images/portrait2.jpeg",
-    photo3Link: "images/portrait3.jpeg"
+    photo1Link: "images/portrait1.jpg",
+    photo2Link: "images/portrait2.jpg",
+    photo3Link: "images/portrait3.jpg"
 }
 
-// --- 🛡️ Experience Section ---
+// --- Educaion Section ---
 const experiences = [
     {
         position: "Web Dev Intern",
@@ -203,7 +204,7 @@ const works = [
     }
 ]
 
-const archiveLink = "https://github.com/feifyKike?tab=repositories"
+const archiveLink = "https://github.com/Nikelroid?tab=repositories"
 
 // --- 📭 Contact Section ---
 // 2 Options available - Choose 1
@@ -211,14 +212,14 @@ const contact = {
     externalLink: {
         shortTitle: "Get in Touch",
         note: [
-            "Currently seeking web and software development positions/internships in the RTP area for summer 2024.",
+            "Currently seeking software development positions/internships in Seattle,WA.",
             "Also looking to build a team for projects & startup ideas or just make professional connections."
         ], // paragraph breaks will be entered after each item,
         link: {
-            email: "", // email takes precedance
-            other: "https://forms.gle/W3MswTKsPWMxEbn58"
+            email: "Nikelroid@gmail.com", // email takes precedance
+            other: ""
         },
-        responseTimeMessage: "...and I'll resopnd within the next 24hrs"
+        responseTimeMessage: "...and I'll resopnd as soon as possible"
     },
     formEmbedLink: "" // inclusion of this link will take precedance
 }

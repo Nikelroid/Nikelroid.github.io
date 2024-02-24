@@ -67,10 +67,10 @@
                         <router-link class="block py-5  hover:text-link-color" to="/#about-section">😎 About</router-link>
                     </li>
                     <li>
-                        <router-link class="block py-5  hover:text-link-color" to="/#experience-section">🛡️ Experience</router-link>
+                        <router-link class="block py-5  hover:text-link-color" to="/#experience-section">🎓 Education</router-link>
                     </li>
                     <li>
-                        <router-link class="block py-5  hover:text-link-color" to="/#work-section">💻 Work</router-link>
+                        <router-link class="block py-5  hover:text-link-color" to="/#work-section">💻 Projects</router-link>
                     </li>
                     <li>
                         <router-link class="block py-5  hover:text-link-color" to="/#contact-section">📭 Contact</router-link>
