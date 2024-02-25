@@ -1,5 +1,5 @@
 /* replace with your own fonts if need be */
-@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono&family=Source+Code+Pro');
 
 @tailwind base;
 @tailwind components;
@@ -16,7 +16,7 @@
 
 /* Custom HTML & CSS Logo */
 #custom-logo {
-    font-family: 'Reenie Beanie', cursive;
+    font-family: 'Kode Mono',bold;
 }
 
 /* Mobile Behavior */
