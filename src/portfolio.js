@@ -63,28 +63,6 @@ const about = {
 // --- Educaion Section ---
 const experiences = [
     {
-        position: "Diploma of mathematics",
-        company: {
-            name: " Shahid Beheshti HighSchool",
-            location: "Yasuj, Iran"
-        },
-        duration: "Sep 2016 - Jun 2019",
-        bulletPoints: [
-            "Excelled in high school courses such as Algebra, Calculus, Geometry, Discrete Math, Physics, and Chemistry, achieving top scores.",
-            "Obtained top scores in both exams and scientific competitions.",
-            "Attended the National Organization for Development of Exceptional Talents high school.",
-            "Achieved a rank of 85th in Iran's entrance exam within Region 3.",
-        ],
-        hashtags: [
-            "Calc 1-2",
-            "Algebra 1-3",
-            "Discrete Math",
-            "StatisticsAndProbability",
-            "Geometery",
-            "Chemistry"
-        ]
-    }
-    ,{
         position: "Bachelor of Computer Science",
         company: {
             name: "Sharif University of Technology",
@@ -106,6 +84,28 @@ const experiences = [
             "AlgorithmDesign",
             "DataStructures",
             "StaticsandApplications"
+        ]
+    },
+    {
+        position: "Diploma of mathematics",
+        company: {
+            name: " Shahid Beheshti HighSchool",
+            location: "Yasuj, Iran"
+        },
+        duration: "Sep 2016 - Jun 2019",
+        bulletPoints: [
+            "Excelled in high school courses such as Algebra, Calculus, Geometry, Discrete Math, Physics, and Chemistry, achieving top scores.",
+            "Obtained top scores in both exams and scientific competitions.",
+            "Attended the National Organization for Development of Exceptional Talents high school.",
+            "Achieved a rank of 85th in Iran's entrance exam within Region 3.",
+        ],
+        hashtags: [
+            "Calc 1-2",
+            "Algebra 1-3",
+            "Discrete Math",
+            "StatisticsAndProbability",
+            "Geometery",
+            "Chemistry"
         ]
     }
     
