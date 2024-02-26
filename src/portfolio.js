@@ -36,7 +36,7 @@ const socialMediaLinks = {
     email: "mailto:Nikelroid@gmail.com",
     github: "https://github.com/Nikelroid",
     linkedin: "https://www.linkedin.com/in/nima-kelidari-7674aa218/",
-    telegram: "https://T.me/Adivide2",
+    //telegram: "https://T.me/Adivide2",
     xtwitter: "https://twitter.com/Adivide2",
     facebook: "https://www.facebook.com/profile.php?id=61552144558918&mibextid=ZbWKwL", 
 } // to add any additional social media links check out the README.md or src/icons.js file
@@ -115,7 +115,7 @@ const experiences = [
 const works = [
     {
         projectName: "Multi-Modal Sentiment Classification",
-        yearCompleted: "2022",
+        yearCompleted: "2023",
         description: "MSCTD (Multi-Modal Sentiment Classification and Time Dynamics) is a tool designed for multi-modal sentiment analysis and time dynamics exploration in image-text conversations.",
         techStack: "Python, Pandas, Pytorch",
         links: [
@@ -136,7 +136,7 @@ const works = [
     {
         projectName: "Image Compression Using SVD",
         yearCompleted: "2024",
-        description: "In this project, a compression method is introduced that, through the use of singular value decomposition and matrix Fourier transforms, achieves compression resulting in a significant reduction in volume alongside some loss of information and overall quality. This volume reduction can prove notably beneficial in systems requiring the preservation of image dimensions while occupying minimal space for image storage.",
+        description: "In this project, a compression method is introduced that, through the use of singular value decomposition and matrix Fourier transforms, achieves compression resulting in a significant reduction in volume alongside some loss of information and overall quality.",
         techStack: "Python, open-cv, Matlab, LaTeX",
         links: [
             {
@@ -164,43 +164,38 @@ const works = [
         alignLeft: false
     },
     {
-        projectName: "Trivia Quiz",
-        yearCompleted: "2020",
-        description: "Interested in taking a fun and interactive pop quiz? Using the HTML, CSS3, JavaScript, and jQuery I created a quiz that can be taken on numerous topics of your choice and gives instant feedback. The entire project is built mostly on JavaScript and all the functionality and events are controlled through functions such as ReadDisplay and Validate. The HTML portion of the online quiz only serves as the skeleton and template for elements that will be created via JS.",
-        techStack: "JS, HTML, CSS",
+        projectName: "Iran's COVID-19 Mortality Analysis",
+        yearCompleted: "2023",
+        description: "Our R program predicts pre-COVID mortality rates by state and age group in Iran using historical data. It then estimates COVID-19 mortality by comparing predicted values to actual data, considering age group weighting and statewide trends.",
+        techStack: "R, HTML, CSV",
         links: [
             {
                 label: "",
                 type: "git",
-                url: "https://github.com/feifyKike/JS-API-Quiz"
+                url: "https://github.com/Nikelroid/Regression-HW1"
             },
             {
-                label: "",
+                label: "Dataset",
                 type: "external",
-                url: "https://codepen.io/Max_the_coder/pen/yLXZOYL" //https://codepen.io/Max_the_coder/pen/yLXZOYL
+                url: "https://d-learn.ir/iranprovs_mortality_monthly/"
             }
         ],
-        imageLink: "images/trivia_pic.png",
+        imageLink: "images/covid.png",
         alignLeft: true
     },
     {
-        projectName: "Coronavirus Report",
-        yearCompleted: "2020",
-        description: "Created a program that displays up-to-date COVID-19 data and shows results in a graphical / visual representation. Coded with the Python programming language and libraries such as Matplotlib, Requests, and CSV.",
-        techStack: "Python",
+        projectName: "Predicting Diabetes in the USA",
+        yearCompleted: "2023",
+        description: "This project analyzes a balanced dataset to identify diabetes predictors like BMI, blood pressure, and age. Feature selection refines predictors, with training using decision trees, random forests, neural networks, KNN, and more.",
+        techStack: "R, MarkDown",
         links: [
             {
                 label: "",
                 type: "git",
-                url: "https://youtu.be/gw5kb1QKVp0"
-            },
-            {
-                label: "",
-                type: "external",
-                url: "https://github.com/feifyKike/Covid-Cases-Visual"
+                url: "https://github.com/Nikelroid/Regression-HW2"
             }
         ],
-        imageLink: "images/covid_pic.png",
+        imageLink: "images/diabates.png",
         alignLeft: false
     }
 ]
