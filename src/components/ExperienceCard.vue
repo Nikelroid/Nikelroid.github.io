@@ -4,7 +4,7 @@
         <h3 class="text-xl font-extrabold"> <a :href="experience.company.link" class="hover:text-link-color">{{ experience.company.name }}</a></h3>
         <h3 class="text-xl font-extrabold"> <a>{{ experience.company.location }}</a></h3>
         <p class="italic">{{ experience.duration }}</p>
-        <ul class="list-['\1F449'] pl-6 pt-4 text-slate-500 dark:text-slate-300">
+        <ul class="list-['\1F536'] pl-6 pt-4 text-slate-500 dark:text-slate-300">
             <li v-for="bullet in experience.bulletPoints" class="pl-2 pb-2">{{ bullet }}</li>
         </ul>
         <div class="text-slate-600 pt-4 flex flex-wrap mt-auto">
