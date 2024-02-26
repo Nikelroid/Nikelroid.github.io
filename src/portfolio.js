@@ -63,105 +63,104 @@ const about = {
 // --- Educaion Section ---
 const experiences = [
     {
+        position: "Diploma of mathematics",
+        company: {
+            name: " Shahid Beheshti HighSchool",
+            location: "Yasuj, Iran"
+        },
+        duration: "Sep 2016 - Jun 2019",
+        bulletPoints: [
+            "Excelled in high school courses such as Algebra, Calculus, Geometry, Discrete Math, Physics, and Chemistry, achieving top scores.",
+            "Obtained top scores in both exams and scientific competitions.",
+            "Attended the National Organization for Development of Exceptional Talents high school.",
+            "Achieved a rank of 85th in Iran's entrance exam within Region 3.",
+        ],
+        hashtags: [
+            "Calc 1-2",
+            "Algebra 1-3",
+            "Discrete Math",
+            "StatisticsAndProbability",
+            "Geometery",
+            "Chemistry"
+        ]
+    }
+    ,{
         position: "Bachelor of Computer Science",
         company: {
             name: "Sharif University of Technology",
             location: "Tehran, Iran",
             link: "https://en.Sharif.ir"
         },
-        duration: " Aug 2022 - Present",
+        duration: " Sep 2019 - Feb 2024",
         bulletPoints: [
-            "Resolved issues and developed new tools within several university web applications (email automation, research discovery, educational resources, scheduling tools, and text-generative AI news sharing).",
-            "Achieved 100+ github code contributions as an intern on the team.",
-            "Currently rebuilding and modernizing the university digital sign manager and system."
+            "Started specialized courses in semester 4, advancing to mid and senior-level courses in my field.",
+            "Attend research in the Computer Vision field, starting from the 7th semester.",
+            "I served as a Teaching Assistant six times during my Bachelor's degree, supporting both Computer Science and Computer Engineering departments.",
+            "I achieved an overall GPA of 3.34 out of 4, with a GPA of 3.45 out of 4 in related courses."
         ],
         hashtags: [
-            "Laravel",
-            "PHP",
-            "MySQL",
-            "JS",
-            "Vue.js",
-            "HTML",
-            "Tailwind"
-        ]
-    },
-    {
-        position: "Diploma of mathematics",
-        company: {
-            name: " Shahid Beheshti HighSchool",
-            location: "Yasuj, Iran",
-            link: ""
-        },
-        duration: "Jan 2022 - Aug 2022",
-        bulletPoints: [
-            "Taught math to students elementary through high school covering topics from basic algebra to college-level calculus.",
-            "Directed the trajectory of the student's learning plan and math topic evaluation to facilitate success in their school math class.",
-            "Requested by many students and parents for routine weekly tutoring sessions in a system with a standard random weekly rotation."
-        ],
-        hashtags: [
-            "Calc 1-2",
-            "Algebra 1-3",
-            "Discrete Math",
-            "Statistics"
+            "ImageProcessing",
+            "ComputerVision",
+            "StaticalLearning",
+            "DeepLearning",
+            "AlgorithmDesign",
+            "DataStructures",
+            "StaticsandApplications"
         ]
     }
+    
 ]
 
 // --- 💻 Work Section ---
 const works = [
     {
-        projectName: "TrackYourSubs IOS App",
+        projectName: "Multi-Modal Sentiment Classification",
         yearCompleted: "2022",
-        description: "An IOS app to track you subscriptions and expenses, all the while presenting in a clean and professional look with a load of features. Some of the more evident features are: Budgeting (monthly / yearly option available), Current monthly & yearly total expense at a glance, Custom suggestions to meet budget, Organize (Categorization & Importance) and filter through subscriptions, Reminders via scheduled notifications, Stats page: pie chart visual, bar chart visual, and streak indicator.",
-        techStack: "Swift, SwiftUI",
+        description: "MSCTD (Multi-Modal Sentiment Classification and Time Dynamics) is a tool designed for multi-modal sentiment analysis and time dynamics exploration in image-text conversations.",
+        techStack: "Python, Pandas, Pytorch",
         links: [
             {
                 label: "",
                 type: "git",
-                url: "https://github.com/feifyKike/TrackYourSubsDemo/"
+                url: "https://github.com/Nikelroid/Multi-Modal-Sentiment-Classification"
             },
             {
-                label: "",
+                label: "Dataset",
                 type: "external",
-                url: "https://youtu.be/KsTx-F70OOk"
+                url: "https://github.com/XL2248/MSCTD"
             }
         ],
-        imageLink: "images/tracksubs_pic.png",
+        imageLink: "images/multimodal.png",
         alignLeft: false
     },
     {
-        projectName: "Dynamic Portfolio Website",
-        yearCompleted: "2021",
-        description: "Developed a personal portfolio website with Python backend using the Django web development framework. Incorporated HTML, CSS, and JavaScript to construct the frontend of the website.",
-        techStack: "Django, Python, HTML, CSS, JS",
-        links: [
-            {
-                label: "",
-                type: "external",
-                url: "https://maximshelepov.com"
-            }
-        ],
-        imageLink: "images/portfolio_pic.png",
-        alignLeft: true
-    },
-    {
-        projectName: "Sudoku Game & Solver",
-        yearCompleted: "2021",
-        description: "Built a Sudoku game UI incorporating the Java Swing library. Randomly generates a Sudoku puzzle and solves itself using the backtracking algorithm written in Java..",
-        techStack: "Java",
+        projectName: "Image Compression Using SVD",
+        yearCompleted: "2024",
+        description: "In this project, a compression method is introduced that, through the use of singular value decomposition and matrix Fourier transforms, achieves compression resulting in a significant reduction in volume alongside some loss of information and overall quality. This volume reduction can prove notably beneficial in systems requiring the preservation of image dimensions while occupying minimal space for image storage.",
+        techStack: "Python, open-cv, Matlab, LaTeX",
         links: [
             {
                 label: "",
                 type: "git",
-                url: "https://github.com/feifyKike/sudokusolver"
-            },
-            {
-                label: "",
-                type: "external",
-                url: "https://youtu.be/lXOjOrjf5hU"
+                url: "https://github.com/Nikelroid/Image-Compression/"
             }
         ],
-        imageLink: "images/sudoku_pic.png",
+        imageLink: "images/image_compression.png",
+        alignLeft: true
+    },
+    {
+        projectName: "Database Manager",
+        yearCompleted: "2024",
+        description: "The SQL Database Manager streamlines database management tasks, offering features for importing/exporting metadata and manipulating rows with ease.",
+        techStack: "Python, MySQL",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/Nikelroid/Database-Manager/"
+            }
+        ],
+        imageLink: "images/database.png",
         alignLeft: false
     },
     {
