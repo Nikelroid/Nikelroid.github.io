@@ -197,6 +197,21 @@ const works = [
         ],
         imageLink: "images/diabates.png",
         alignLeft: false
+    },
+    {
+        projectName: "Simulating Torrent network",
+        yearCompleted: "2023",
+        description: "This project offers a limited simulation of a Torrent network. A manager network operates within the tracker code, overseeing peer interactions. Peers can either share or request files with detailed logs.",
+        techStack: "Python, UDP, TCP",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/Nikelroid/SocketProgramming-P2P"
+            }
+        ],
+        imageLink: "images/network.png",
+        alignLeft: true
     }
 ]
 
