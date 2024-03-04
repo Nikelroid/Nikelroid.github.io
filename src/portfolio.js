@@ -212,6 +212,56 @@ const works = [
         ],
         imageLink: "images/network.png",
         alignLeft: true
+    },
+    {
+        projectName: "Sea Battle Game",
+        yearCompleted: "2021",
+        description: "Sea Battle is a multiplayer game where players can create accounts and host games or join others' matches. It's based on the classic naval warfare concept, allowing two players to battle each other. Spectators can also watch ongoing games, check game statuses, and view the leaderboard. Join the excitement of strategic sea battles in \"Sea Battle\"!\"",
+        techStack: "JAVA, Server-Socket, CSS, JAVAFX",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/Nikelroid/Sea-Battle"
+            }
+        ],
+        imageLink: "images/seabattle.png",
+        alignLeft: false
+    },
+    {
+        projectName: "Arkanoid Game",
+        yearCompleted: "2021",
+        description: "Arkanoid is a famous and simple game where you control a paddle and a ball in a 2D space, aiming to demolish all the blocks at the top. With a variety of thrilling blocks and abilities, challenge your friends on the scoreboard for an exciting competition.",
+        techStack: "JAVA, JAVAFX",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/Nikelroid/Arkanoid"
+            }
+        ],
+        imageLink: "images/arkanoid.png",
+        alignLeft: true
+    },
+    {
+        projectName: "Caption Generator fo Images",
+        yearCompleted: "2023",
+        description: "In this project, we've developed an image captioning system leveraging both LSTM and GRU architectures. This innovative approach allows for the automatic generation of descriptive captions tailored to the content of each image, providing a seamless integration of computer vision and natural language processing techniques.",
+        techStack: "Python, NLP, CNN",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/Nikelroid/DeepLearning_HW4/blob/main/DL2022_HW4_P2.ipynb"
+            },
+            {
+                label: "Google Drive",
+                type: "external",
+                url: "https://colab.research.google.com/drive/1vKG1nrwLvdFwcnjCfdRvGwf2a1Jgz_xF#scrollTo=jC32FE_T_K0p"
+            }
+        ],
+        imageLink: "images/captionGenerator.png",
+        alignLeft: false
     }
 ]
 
