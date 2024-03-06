@@ -244,9 +244,9 @@ const works = [
         alignLeft: true
     },
     {
-        projectName: "Caption Generator fo Images",
+        projectName: "Image Caption Generator",
         yearCompleted: "2023",
-        description: "In this project, we've developed an image captioning system leveraging both LSTM and GRU architectures. This innovative approach allows for the automatic generation of descriptive captions tailored to the content of each image, providing a seamless integration of computer vision and natural language processing techniques.",
+        description: "This is an image captioning system using both LSTM and GRU methods. This approach allows for the automatic generation of captions related to the content of an image, which is integration of computer vision and natural language processing techniques.",
         techStack: "Python, NLP, CNN",
         links: [
             {
@@ -261,6 +261,46 @@ const works = [
             }
         ],
         imageLink: "images/captionGenerator.png",
+        alignLeft: false
+    },
+    {
+        projectName: "Ferdousi Poem Generator",
+        yearCompleted: "2023",
+        description: "This project is about generating poems in Ferdousi style, a famous Persian poet. We use Natural Language Processing (NLP) and two different ways , \"LSTM\" and \"GRU\" to generate poems automatically using starting sequence.",
+        techStack: "Python, NLP",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/Nikelroid/DeepLearning_HW4/blob/main/DL2022_HW4_P1.ipynb"
+            },
+            {
+                label: "Google Drive",
+                type: "external",
+                url: "https://colab.research.google.com/drive/1J8tHOYQWiJwNzXejRgNHKg0bFTiyDA3Y#scrollTo=pdND018suUx4"
+            }
+        ],
+        imageLink: "images/poemGenerator.png",
+        alignLeft: true
+    },
+    {
+        projectName: "poet Classifier",
+        yearCompleted: "2023",
+        description: "This project learns from poems written by 10 Iranian poets. Then, it figures out who wrote a poem you give it with appropraite accuracy. It uses Natural Language Processing (NLP) to do this.",
+        techStack: "Python, NLP",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/Nikelroid/DeepLearning_HW4/blob/main/DL2022_HW4_P3.ipynb"
+            },
+            {
+                label: "Google Drive",
+                type: "external",
+                url: "https://colab.research.google.com/drive/1z1FunJkGGboigBywe1URjfj4qiVuETEC#scrollTo=8vh19CH3g6eb"
+            }
+        ],
+        imageLink: "images/poetClass.png",
         alignLeft: false
     }
 ]
