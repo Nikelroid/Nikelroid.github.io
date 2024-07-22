@@ -284,7 +284,7 @@ const works = [
         alignLeft: true
     },
     {
-        projectName: "poet Classifier",
+        projectName: "Poet Classifier",
         yearCompleted: "2023",
         description: "This project learns from poems written by 10 Iranian poets. Then, it figures out who wrote a poem you give it with appropraite accuracy. It uses Natural Language Processing (NLP) to do this.",
         techStack: "Python, NLP",
@@ -302,6 +302,66 @@ const works = [
         ],
         imageLink: "images/poetClass.png",
         alignLeft: false
+    },
+    {
+        projectName: "Comparing MLP and CNN",
+        yearCompleted: "2022",
+        description: "This project compares MLP and CNN models for image classification by training both models, evaluating their performance, and visualizing results. It also explores optimization techniques like dropout and kernel factorization.",
+        techStack: "Python, CNN, MLP",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/Nikelroid/DeepLearning_HW3/blob/main/DL2022_HW3_P1.ipynb"
+            },
+            {
+                label: "Kaggle",
+                type: "external",
+                url: "https://www.kaggle.com/datasets/hasibalmuzdadid/shoe-vs-sandal-vs-boot-dataset-15k-images"
+            }
+        ],
+        imageLink: "images/shoeClassifier.png",
+        alignLeft: true
+    },
+    {
+        projectName: "Knowledge Distillation for Neural Networks",
+        yearCompleted: "2022",
+        description: "This project trains smaller neural networks using knowledge distillation from larger models, achieving high accuracy with limited resources. It evaluates performance using metrics and techniques like fine-tuning and dropout.",
+        techStack: "Python, CNN",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/Nikelroid/DeepLearning_HW3/blob/main/DL2022_HW3_P2.ipynb"
+            },
+            {
+                label: "Orginal Project",
+                type: "external",
+                url: "https://intellabs.github.io/distiller/knowledge_distillation.html"
+            }
+        ],
+        imageLink: "images/KnoledgeDistillation.png",
+        alignLeft: false
+    },
+    {
+        projectName: "Neural Network from Scratch",
+        yearCompleted: "2022",
+        description: "This project involves building a neural network from scratch using PyTorch and the Fashion-MNIST dataset, training it with SGD, and evaluating accuracy.",
+        techStack: "Python, Neural Network",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/Nikelroid/DeepLearning_HW3/blob/main/DL2022_HW2_P1.ipynb"
+            },
+            {
+                label: "Dataset",
+                type: "external",
+                url: "https://github.com/zalandoresearch/fashion-mnist/tree/master/"
+            }
+        ],
+        imageLink: "images/Strach.png",
+        alignLeft: true
     }
 ]
 
