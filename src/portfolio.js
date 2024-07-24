@@ -324,7 +324,7 @@ const works = [
         alignLeft: true
     },
     {
-        projectName: "Knowledge Distillation for Neural Networks",
+        projectName: "Knowledge Distillation for DNN",
         yearCompleted: "2022",
         description: "This project trains smaller neural networks using knowledge distillation from larger models, achieving high accuracy with limited resources. It evaluates performance using metrics and techniques like fine-tuning and dropout.",
         techStack: "Python, CNN",
@@ -361,6 +361,36 @@ const works = [
             }
         ],
         imageLink: "images/Strach.png",
+        alignLeft: true
+    },
+    {
+        projectName: "Predicting World Cup Results",
+        yearCompleted: "2022",
+        description: "This project predicts Iran's results in the 2022 World Cup group stage using historical match data and a neural network built with PyTorch, aiming for at least 60% accuracy.",
+        techStack: "Python, Neural Network, Data Analyze",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/Nikelroid/DeepLearning_HW3/blob/main/DL2022_HW2_P2.ipynb"
+            }
+        ],
+        imageLink: "images/FWC.png",
+        alignLeft: false
+    },
+    {
+        projectName: "Hand Gesture Recognition",
+        yearCompleted: "2022",
+        description: "Analyze hand movements to train an MLP for Latin letter recognition using CSV data. Test SGD and ADAM optimizers, add dropout, and aim for 75% test accuracy. Test with webcam inputs.",
+        techStack: "Python, Image Recognition",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/Nikelroid/DeepLearning_HW3/blob/main/DL2022_HW2_P3.ipynb"
+            }
+        ],
+        imageLink: "images/Alphabet.png",
         alignLeft: true
     }
 ]
