@@ -392,6 +392,61 @@ const works = [
         ],
         imageLink: "images/Alphabet.png",
         alignLeft: true
+    },
+    {
+        projectName: "Designing Recommender System",
+        yearCompleted: "2022",
+        description: "Matrix factorization improves recommendations by analyzing user-item interactions through latent factors. Methods like SVD predict preferences from sparse data, enhancing personalization and accuracy in recommendations.",
+        techStack: "Python, Matrix Factorization",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/Nikelroid/DeepLearning_HW1/blob/main/DL2022-HW1-P1.ipynb"
+            },
+            {
+                label: "Orginal Research",
+                type: "file",
+                url: "https://datajobs.com/data-science-repo/Recommender-Systems-[Netflix].pdf"
+            }
+        ],
+        imageLink: "images/RS.png",
+        alignLeft: false
+    },
+    {
+        projectName: "Prokudin-Gorskii Images Reconstruction",
+        yearCompleted: "2021",
+        description: "Reconstruct color images from Prokudin-Gorskii’s black-and-white photos by aligning RGB channels. The project involves coding for color alignment and efficient image processing.",
+        techStack: "Image Aligment, Image Processing",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/Nikelroid/Image-peocessing-1/tree/main/PictureMatching-3"
+            },
+            {
+                label: "Image Collection",
+                type: "external",
+                url: "https://www.loc.gov/collections/prokudin-gorskii/about-this-collection/"
+            }
+        ],
+        imageLink: "images/ProkudinGorskii.png",
+        alignLeft: true
+    },
+    {
+        projectName: "Histogram Specification",
+        yearCompleted: "2021",
+        description: "This project focuses on transforming the histogram of one image to match another, enhancing detail and improving its aesthetic quality.",
+        techStack: "Image Processing, Histogram",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/Nikelroid/Image-peocessing-1/tree/main/Dark-6"
+            }
+        ],
+        imageLink: "images/HistogramSpecification.png",
+        alignLeft: false
     }
 ]
 
