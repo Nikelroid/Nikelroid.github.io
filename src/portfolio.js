@@ -447,6 +447,51 @@ const works = [
         ],
         imageLink: "images/HistogramSpecification.png",
         alignLeft: false
+    },
+    {
+        projectName: "Template Matching",
+        yearCompleted: "2021",
+        description: "This project matches templates within colored images. It involves scaling, edge detection, and highlighting matched templates for efficient and accurate results.",
+        techStack: "Image Processing",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/Nikelroid/Image-processing-2/tree/main/Template%20matching%20-%202"
+            }
+        ],
+        imageLink: "images/TemplateMatching.png",
+        alignLeft: true
+    },
+    {
+        projectName: "Homography and Image Warping",
+        yearCompleted: "2021",
+        description: "Extract and straighten book covers from a given image by selecting corner points, computing the homography matrix, and applying it to warp the images.",
+        techStack: "Image Processing",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/Nikelroid/Image-processing-2/tree/main/image%20wrapping%20-%203"
+            }
+        ],
+        imageLink: "images/ImageWrapping.png",
+        alignLeft: false
+    },
+    {
+        projectName: "Hybrid Images",
+        yearCompleted: "2021",
+        description: "Create hybrid images by combining two images such that one is visible up close and the other from a distance. Select image pairs, align them, apply high-pass and low-pass filters, and merge the results to produce the final hybrid image.",
+        techStack: "Fourier Transform, Convolution",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/Nikelroid/Image-processing-2/tree/main/hybrid-4"
+            }
+        ],
+        imageLink: "images/HybridImages.png",
+        alignLeft: true
     }
 ]
 
