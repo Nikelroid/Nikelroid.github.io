@@ -526,7 +526,7 @@ const works = [
     {
         projectName: "Image Completion",
         yearCompleted: "2021",
-        description: "In this project we complete imagesby filling in missing regions through texture synthesis. The process includes refining the filled areas, and followed by smoothing to enhance the final image quality.",
+        description: "In this project we complete images by filling in missing regions through texture synthesis. The process includes refining the filled areas, and followed by smoothing to enhance the final image quality.",
         techStack: "patch optimization",
         links: [
             {
