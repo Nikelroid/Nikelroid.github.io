@@ -492,6 +492,51 @@ const works = [
         ],
         imageLink: "images/HybridImages.png",
         alignLeft: true
+    },
+    {
+        projectName: "Hough Transform for Line Detection",
+        yearCompleted: "2021",
+        description: "This project implements the Hough Transform to detect and draw lines in images, and mark corners. It involves edge detection and updating an accumulator matrix using Haugh Transform.",
+        techStack: "Line Detection, Image Transform",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/Nikelroid/Image-processing-3/tree/main/Hough-Transform"
+            }
+        ],
+        imageLink: "images/HaughTransform.png",
+        alignLeft: false
+    },
+    {
+        projectName: "Texture Synthesis",
+        yearCompleted: "2021",
+        description: "This project implements texture synthesis, focusing on generating new textures through image patching and synthesis. It covers matrix adjustments, gradient handling, and optimization techniques.",
+        techStack: "Dijkstra's algorithm",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/Nikelroid/Image-processing-3/tree/main/Texture-Synthesis"
+            }
+        ],
+        imageLink: "images/TexrureSyntesis.png",
+        alignLeft: true
+    },
+    {
+        projectName: "Image Completion",
+        yearCompleted: "2021",
+        description: "In this project we complete images by filling in missing regions. The process includes refining the filled areas, and followed by smoothing to enhance the final image quality.",
+        techStack: "patch optimization",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/Nikelroid/Image-processing-3/tree/main/I%E2%85%BFage-%E2%85%ADo%E2%85%BFp%E2%85%BCetion"
+            }
+        ],
+        imageLink: "images/ImageCompletion.png",
+        alignLeft: false
     }
 ]
 
