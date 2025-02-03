@@ -22,8 +22,8 @@ const splashScreen = true // recommended: for best behavior after refresh
 const greeting = {
     intro: "Hello 👋, my name is",
     name: "Nima Kelidari",
-    message: "I am a Computer Science graduate from Sharif University of Technology and a developer.  I have a strong interest in Data Science and its applications, particularly in image processing and computer vision.",
-    basedLocation: "Bellevue, WA",
+    message: "I am a Computer Science Student at University of Southern California and a Machine Learning Engineer.  I have a strong interest in Machine Learning and its applications, particularly in Natural Language Processing and Computer Vision.",
+    basedLocation: "Los Angeles, CA",
     resumeLink: "https://cvdesignr.com/p/65e5a2f304e92", // recommended: google drive file share link (change to "anyone on the internet can view")
     logo: {
         link: "images/initials.png", // use relative path from  parent directory -> ex: images/image.ext
@@ -33,9 +33,9 @@ const greeting = {
 }
 
 const socialMediaLinks = {
-    email: "mailto:Nikelroid@gmail.com",
+    email: "mailto:Kelidari.Nima@gmail.com",
     github: "https://github.com/Nikelroid",
-    linkedin: "https://www.linkedin.com/in/nima-kelidari-7674aa218/",
+    linkedin: "https://www.linkedin.com/in/nima-kelidari/",
     //telegram: "https://T.me/Adivide2",
     xtwitter: "https://twitter.com/Adivide2",
     facebook: "https://www.facebook.com/profile.php?id=61552144558918&mibextid=ZbWKwL", 
@@ -44,16 +44,19 @@ const socialMediaLinks = {
 // --- 😎 About Section ---
 const about = {
     autobiography: [
-        "Hello! My name is Nima Kelidari, a graduate with a B.Sc. in Computer Science from Sharif University of Technology. I am a Python and Java developer, specializing in Image Processing, Computer Vision, and the applications of Deep Learning. I have a keen interest in leveraging technology to solve real-world problems. Outside of the digital realm, I find joy in activities such as swimming, biking, and exploring the wonders of nature.",
+        "Hello! My name is Nima Kelidari, a Computer Science - AI student at University of Southern California, and a graduate with a B.Sc. in Computer Science from Sharif University of Technology. I am a Python and Java developer, specializing in Machine Learning, Computer Vision, and the applications of Deep Learning. I have a keen interest in leveraging technology to solve real-world problems. Outside of the digital realm, I find joy in activities such as swimming, biking, and exploring the wonders of nature.",
         "If you're curious to learn more about my journey, projects, and coding prowess, I invite you to explore my CV, projects, and GitHub page."
     ], // Separated items are paragraphs
     techStack: [
         "Python",
         "Java",
-        "MySQL",
+        "C++",
+        "SQL",
         "MongoDB",
-        "Pytorch",
-        "open-cv"
+        "HTML",
+        "Java Script",
+        "PyTorch",
+        "Pandas"
     ],
     photo1Link: "images/portrait1.jpg",
     photo2Link: "images/portrait2.jpg",
@@ -63,7 +66,7 @@ const about = {
 // --- Educaion Section ---
 const experiences = [
     {
-        position: "Bachelor of Computer Science",
+        position: "Bachelor of Science in Computer Science",
         company: {
             name: "Sharif University of Technology",
             location: "Tehran, Iran",
@@ -71,41 +74,38 @@ const experiences = [
         },
         duration: " Sep 2019 - Feb 2024",
         bulletPoints: [
-            "Started specialized courses in semester 4, advancing to mid and senior-level courses in my field.",
-            "Attend research in the Computer Vision field, starting from the 7th semester.",
-            "I served as a Teaching Assistant six times during my Bachelor's degree, supporting both Computer Science and Computer Engineering departments.",
-            "I achieved an overall GPA of 3.34 out of 4, with a GPA of 3.45 out of 4 in related courses."
+            "Conducted ten months of research with Dr. Tefagh, exploring innovative applications of Computer Vision as part of a 4-member team of CS students.",
+            "Completed over 15 undergraduate and graduate courses in CS and AI with an average grade of 3.5/4, covering topics such as Computer Vision, Deep Learning, Machine Learning, Advanced Programming, Algorithm Design, Probability, Statics, Data Structures, Image Processing, and Databases",
+            "Achieved an overall GPA of 3.37 out of 4, with a GPA of 3.45 out of 4 in related courses."
         ],
         hashtags: [
-            "ImageProcessing",
             "ComputerVision",
-            "StaticalLearning",
+            "StaticalMachineLearning",
             "DeepLearning",
             "AlgorithmDesign",
             "DataStructures",
-            "StaticsandApplications"
+            "StaticsandApplications",
+            "ImageProcessing",
         ]
     },
     {
-        position: "Diploma of mathematics",
+        position: "Master of Science in Computer Science - Artificial Intelligence",
         company: {
-            name: " Shahid Beheshti HighSchool",
-            location: "Yasuj, Iran"
+            name: " University of Southern California, Viterbi School of Engineering",
+            location: "Los Angeles, CA"
         },
-        duration: "Sep 2016 - Jun 2019",
+        duration: "Jan 2025 - Present",
         bulletPoints: [
-            "Excelled in high school courses such as Algebra, Calculus, Geometry, Discrete Math, Physics, and Chemistry, achieving top scores.",
-            "Obtained top scores in both exams and scientific competitions.",
-            "Attended the National Organization for Development of Exceptional Talents high school.",
-            "Achieved a rank of 85th in Iran's entrance exam within Region 3.",
+            "Currently enrolled in graduate-level Technical AI and Software Engineering courses, including Machine Learning and Web Development.",
+            "Planning to expand expertise in areas such as Natural Language Processing and Robotics to align with career goals in AI/ML Engineering.",
         ],
         hashtags: [
-            "Calc 1-2",
-            "Algebra 1-3",
-            "Discrete Math",
-            "StatisticsAndProbability",
-            "Geometery",
-            "Chemistry"
+            "WebTechnology",
+            "MachineLearning",
+            "DeepLearning",
+            "NaturalLanguageProcessing",
+            "ArtificialIntelligence",
+            "Robotics"
         ]
     }
     
