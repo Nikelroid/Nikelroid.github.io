@@ -43,8 +43,8 @@ const socialMediaLinks = {
 // --- 😎 About Section ---
 const about = {
     autobiography: [
-        "Hello! My name is Nima Kelidari, a Computer Science - AI student at University of Southern California, and a graduate with a B.Sc. in Computer Science from Sharif University of Technology. I am an AI and Machine Learning Engineer with a specialization in Robotics Engineering. I have a keen interest in leveraging technology to solve real-world problems. Outside of the digital realm, I find joy in activities such as swimming, biking, and exploring the wonders of nature.",
-        "If you're curious to learn more about my journey, projects, and coding prowess, I invite you to explore my CV, projects, and GitHub page."
+        "Hello! My name is Nima Kelidari, a Computer Science - AI student at University of Southern California, and a graduate with a Master of Science in Computer Science. I am an AI/ML Engineer with a focus on Robotics Engineering. I'm intrested in using my knowledge to solve real-world problems. Outside of the digital realm, I enjoy hiking, swimming, and playing video games.",
+        "If you're curious to learn more about my journey and projects, I invite you to explore my CV, projects, and GitHub page."
     ], // Separated items are paragraphs
     techStack: [
         "Python",
