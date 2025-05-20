@@ -36,7 +36,6 @@ const socialMediaLinks = {
     email: "mailto:Kelidari.Nima@gmail.com",
     github: "https://github.com/Nikelroid",
     linkedin: "https://www.linkedin.com/in/nima-kelidari/",
-    //telegram: "https://T.me/Adivide2",
     xtwitter: "https://twitter.com/Adivide2",
     facebook: "https://www.facebook.com/profile.php?id=61552144558918&mibextid=ZbWKwL", 
 } // to add any additional social media links check out the README.md or src/icons.js file
@@ -44,7 +43,7 @@ const socialMediaLinks = {
 // --- 😎 About Section ---
 const about = {
     autobiography: [
-        "Hello! My name is Nima Kelidari, a Computer Science - AI student at University of Southern California, and a graduate with a B.Sc. in Computer Science from Sharif University of Technology. I am a Python and Java developer, specializing in Machine Learning, Computer Vision, and the applications of Deep Learning. I have a keen interest in leveraging technology to solve real-world problems. Outside of the digital realm, I find joy in activities such as swimming, biking, and exploring the wonders of nature.",
+        "Hello! My name is Nima Kelidari, a Computer Science - AI student at University of Southern California, and a graduate with a B.Sc. in Computer Science from Sharif University of Technology. I am an AI and Machine Learning Engineer with a specialization in Robotics Engineering. I have a keen interest in leveraging technology to solve real-world problems. Outside of the digital realm, I find joy in activities such as swimming, biking, and exploring the wonders of nature.",
         "If you're curious to learn more about my journey, projects, and coding prowess, I invite you to explore my CV, projects, and GitHub page."
     ], // Separated items are paragraphs
     techStack: [
@@ -53,10 +52,7 @@ const about = {
         "C++",
         "SQL",
         "MongoDB",
-        "HTML",
-        "Java Script",
-        "PyTorch",
-        "Pandas"
+        "PyTorch"
     ],
     photo1Link: "images/portrait1.jpg",
     photo2Link: "images/portrait2.jpg",
