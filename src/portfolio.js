@@ -22,9 +22,9 @@ const splashScreen = true // recommended: for best behavior after refresh
 const greeting = {
     intro: "Hello 👋, my name is",
     name: "Nima Kelidari",
-    message: "I am a Computer Science Student at University of Southern California and a Machine Learning Engineer.  I have a strong interest in Machine Learning and its applications, particularly in Natural Language Processing and Computer Vision.",
+    message: "I am a Computer Science - AI Student at University of Southern California and a Machine Learning Engineer. I have a strong interest in Applied Machine Learning fields, such as in Natural Language Processing, Computer Vision and Robotics.",
     basedLocation: "Los Angeles, CA",
-    resumeLink: "https://cvdesignr.com/p/65e5a2f304e92", // recommended: google drive file share link (change to "anyone on the internet can view")
+    resumeLink: "https://drive.google.com/file/d/1EYOMyc3QInaEO3dH0BetlxiRXg9s1q4i/view?usp=sharing", // recommended: google drive file share link (change to "anyone on the internet can view")
     logo: {
         link: "images/initials.png", // use relative path from  parent directory -> ex: images/image.ext
         custom: true // takes precedence over image logo and allows for custom HTML logo (./components/Navbar.vue)
@@ -43,7 +43,7 @@ const socialMediaLinks = {
 // --- 😎 About Section ---
 const about = {
     autobiography: [
-        "Hello! My name is Nima Kelidari, a Computer Science - AI student at University of Southern California, and a graduate with a Master of Science in Computer Science. I am an AI/ML Engineer with a focus on Robotics Engineering. I'm intrested in using my knowledge to solve real-world problems. Outside of the digital realm, I enjoy hiking, swimming, and playing video games.",
+        "Hello! My name is Nima Kelidari, a Computer Science - AI student at University of Southern California, graduated with a Master of Science in Computer Science. I am an AI/ML Engineer with a focus on Robotics Engineering. My goal is using my knowledge to solve real-world problems. I enjoy hiking, swimming, and playing video games.",
         "If you're curious to learn more about my journey and projects, I invite you to explore my CV, projects, and GitHub page."
     ], // Separated items are paragraphs
     techStack: [
