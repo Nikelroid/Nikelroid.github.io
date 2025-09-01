@@ -24,7 +24,7 @@ const greeting = {
     name: "Nima Kelidari",
     message: "I am a Computer Science - AI Student at University of Southern California and a Machine Learning Engineer. I have a strong interest in Applied Machine Learning fields, such as in Natural Language Processing, Computer Vision and Robotics.",
     basedLocation: "Los Angeles, CA",
-    resumeLink: "https://drive.google.com/file/d/1EYOMyc3QInaEO3dH0BetlxiRXg9s1q4i/view?usp=sharing", // recommended: google drive file share link (change to "anyone on the internet can view")
+    resumeLink: "https://drive.google.com/file/d/1Mmq29q3AEOvj_eYhQgs1TlS4Ii2W_cma/view?usp=sharing", // recommended: google drive file share link (change to "anyone on the internet can view")
     logo: {
         link: "images/initials.png", // use relative path from  parent directory -> ex: images/image.ext
         custom: true // takes precedence over image logo and allows for custom HTML logo (./components/Navbar.vue)
@@ -127,6 +127,41 @@ const works = [
             }
         ],
         imageLink: "images/multimodal.png",
+        alignLeft: false
+    },
+    {
+        projectName: "Real-Time AI Vision Assistant",
+        yearCompleted: "2025",
+        description: "An intelligent image analysis app that answers natural language questions about live camera input. Powered by a FastAPI backend with Google Cloud Vision and Vertex AI, deployed in Docker. Supports multimodal NLP and real-time WebSocket communication, with a Swift iOS app as the user interface.",
+        techStack: "Docker, MLOps, FastAPI, Swift",
+        links: [
+            {
+                label: "Server Side",
+                type: "external",
+                url: "https://github.com/Nikelroid/QA-image-server"
+            },
+            {
+                label: "Front-end Side",
+                type: "external",
+                url: "https://github.com/Nikelroid/QA-image-IOS"
+            }
+        ],
+        imageLink: "images/artist-app.jpg",
+        alignLeft: true
+    },
+    {
+        projectName: "Artist Explorer App",
+        yearCompleted: "2025",
+        description: "Artsy Artist Explorer demonstrates full-stack development progression through three parts: Python Flask with vanilla JavaScript, Angular TypeScript with Node.js and MongoDB Atlas, and Android Kotlin with Jetpack Compose. Features artist search, authentication, and favorites using Artsy API integration. (Codes are private, contact me for codes)",
+        techStack: "HTML, JavaScript, Angular, Kotlin",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/Nikelroid/artist-explorer-app/"
+            }
+        ],
+        imageLink: "images/artist-app.jpg",
         alignLeft: false
     },
     {
