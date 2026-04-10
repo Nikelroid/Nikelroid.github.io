@@ -37,7 +37,7 @@ const socialMediaLinks = {
     github: "https://github.com/Nikelroid",
     linkedin: "https://www.linkedin.com/in/nima-kelidari/",
     xtwitter: "https://twitter.com/Adivide2",
-    facebook: "https://www.facebook.com/profile.php?id=61552144558918&mibextid=ZbWKwL", 
+    facebook: "https://www.facebook.com/profile.php?id=61552144558918&mibextid=ZbWKwL",
 } // to add any additional social media links check out the README.md or src/icons.js file
 
 // --- 😎 About Section ---
@@ -104,12 +104,69 @@ const experiences = [
             "Robotics"
         ]
     }
-    
+
 ]
 
 // --- 💻 Work Section ---
 const works = [
     {
+        projectName: "Linguistic-Agnostic Speech Emotion Recognition:A Probing Approach to Acoustic Emotion Encoding",
+        yearCompleted: "2026",
+        description: "A probing framework for Speech Emotion Recognition (SER) transformers to evaluate how and where paralinguistic, acoustic knowledge is encoded across their hidden layers.",
+        techStack: "Python, Pytorch, HuggingFace",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/Nikelroid/linguistic-agnostic-ser"
+            }
+        ],
+        imageLink: "images/ser.png",
+        alignLeft: true
+    },
+
+    {
+        projectName: "Adversarial Co-Evolution of RL and LLM Agents",
+        yearCompleted: "2025",
+        description: "A framework for training high-performance PPO agents against Large Language Models in Card games, utilizing curriculum learning and knowledge distillation.",
+        techStack: "Python, Ollama, PPO",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/Nikelroid/adversarial-coevolution"
+            }
+        ],
+        imageLink: "images/adverserial-coev.png",
+        alignLeft: false
+    },
+
+    {
+        projectName: "Risk-Scaled and Token-Aware Steering in Mixture-of-Experts Language Models",
+        yearCompleted: "2026",
+        description: "Developed token-aware steering mechanisms for Mixture-of-Experts (MoE) language models utilizing novel 3D delta tensors and custom loss optimization. By leveraging SQuAD-derived datasets, this approach dynamically scales expert activations based on precise semantic context to improve safety and faithfulness entirely at inference time.",
+        techStack: "Python, VLLM, Pytorch, HuggingFace",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/adsrivatsa/llm-steering"
+            },
+            {
+                label: "Dataset",
+                type: "external",
+                url: "https://rajpurkar.github.io/SQuAD-explorer/"
+            },
+            {
+                label: "Paper",
+                type: "external",
+                url: "https://arxiv.org/abs/1606.05250"
+            }
+        ],
+        imageLink: "images/llm-steering.gif",
+        alignLeft: true
+    }
+    , {
         projectName: "Multi-Modal Sentiment Classification",
         yearCompleted: "2023",
         description: "MSCTD (Multi-Modal Sentiment Classification and Time Dynamics) is a tool designed for multi-modal sentiment analysis and time dynamics exploration in image-text conversations.",
@@ -146,7 +203,7 @@ const works = [
                 url: "https://github.com/Nikelroid/QA-image-IOS"
             }
         ],
-        imageLink: "images/artist-app.jpg",
+        imageLink: "images/qa-ui.jpeg",
         alignLeft: true
     },
     {
