@@ -46,24 +46,26 @@
 
 						<AboutView :content="portfolio.about" :transitions="portfolio.transitions" />
 
+						<WorkExperienceView :content="portfolio.professionalExperiences" :transitions="portfolio.transitions" />
+
 						<ExperienceView :content="portfolio.experiences" :transitions="portfolio.transitions" />
 
-						<WorkView :content="portfolio.works" :transitions="portfolio.transitions" />
+						<WorkView :transitions="portfolio.transitions" />
 
 						<ContactView :content="portfolio.contact" :transitions="portfolio.transitions" />
 
-						<footer class="hidden text-center md:block mb-5">
-							<p>🚀 Designed & Created by <a href="https://maximshelepov.com" class="hover:text-link-color" target="_blank">Maxim Shelepov</a></p>
-							<a href="https://github.com/feifyKike/webdev_portfolio" class="hover:text-link-color" target="_blank">Code available on Github 👾</a>
+						<footer class="hidden text-center md:block mb-5 text-sm text-slate-500 dark:text-slate-400">
+							<p>Built with Vue, Vite, and Tailwind CSS by Nima Kelidari.</p>
+							<p>Template adapted from <a href="https://github.com/feifyKike/webdev_portfolio" class="hover:text-link-color" target="_blank">webdev_portfolio</a> by Maxim Shelepov.</p>
 						</footer>
 					</div>
 				</div>
 				<div class="hidden col-span-1 md:flex flex-initial relative order-2 text-center md:order-none">
 					<p :class="['fixed bottom-2 right-10 origin-top-right rotate-90 transition-all motion-reduce:transition-none duration-500', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">📍 Based in {{ portfolio.greeting.basedLocation }}</p>
 				</div>
-				<footer class="block text-center text-sm md:hidden order-last mb-5">
-					<p>🚀 Designed & Created by <a href="https://maximshelepov.com" class="hover:text-link-color" target="_blank">Maxim Shelepov</a></p>
-					<a href="https://github.com/feifyKike/webdev_portfolio" class="hover:text-link-color" target="_blank">Code available on Github 👾</a>
+				<footer class="block text-center text-xs md:hidden order-last mb-5 text-slate-500 dark:text-slate-400">
+					<p>Built with Vue, Vite, and Tailwind CSS by Nima Kelidari.</p>
+					<p>Template adapted from <a href="https://github.com/feifyKike/webdev_portfolio" class="hover:text-link-color" target="_blank">webdev_portfolio</a> by Maxim Shelepov.</p>
 				</footer>
 			</div>
 		</div>
@@ -77,6 +79,7 @@ import { useRouter } from 'vue-router'
 import Navbar from '../components/Navbar.vue'
 import LandingView from './LandingView.vue'
 import AboutView from './AboutView.vue'
+import WorkExperienceView from './WorkExperienceView.vue'
 import ExperienceView from './ExperienceView.vue'
 import WorkView from './WorkView.vue'
 import ContactView from './ContactView.vue'

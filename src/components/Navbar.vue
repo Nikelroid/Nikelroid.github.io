@@ -34,20 +34,23 @@
                         <router-link class="block py-2 pl-3 pr-4 hover:text-link-color" to="/#about-section">About</router-link>
                     </li>
                     <li :class="['transition-all motion-reduce:transition-none duration-500 delay-[100ms]', showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
-                        <router-link class="block py-2 pl-3 pr-4 hover:text-link-color" to="/#experience-section">Education</router-link>
+                        <router-link class="block py-2 pl-3 pr-4 hover:text-link-color" to="/#experience-section">Experience</router-link>
                     </li>
                     <li :class="['transition-all motion-reduce:transition-none duration-500 delay-[150ms]', showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
-                        <router-link class="block py-2 pl-3 pr-4 hover:text-link-color" to="/#project-section">Projects</router-link>
+                        <router-link class="block py-2 pl-3 pr-4 hover:text-link-color" to="/#education-section">Education</router-link>
                     </li>
                     <li :class="['transition-all motion-reduce:transition-none duration-500 delay-[200ms]', showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
-                        <router-link class="block py-2 pl-3 pr-4 hover:text-link-color" to="/#contact-section">Contact</router-link>
+                        <router-link class="block py-2 pl-3 pr-4 hover:text-link-color" to="/#project-section">Projects</router-link>
                     </li>
                     <li :class="['transition-all motion-reduce:transition-none duration-500 delay-[250ms]', showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
+                        <router-link class="block py-2 pl-3 pr-4 hover:text-link-color" to="/#contact-section">Contact</router-link>
+                    </li>
+                    <li :class="['transition-all motion-reduce:transition-none duration-500 delay-[300ms]', showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
                         <a :href="portfolio.greeting.resumeLink" target="_blank">
                             <button class="block py-2 px-6 bg-transparent border border-button-color shadow-sm shadow-button-color text-button-color transition ease-in-out hover:bg-button-color hover:text-white hover:dark:text-slate-300 focus:bg-button-color focus:text-white active:bg-button-color active:text-white duration-300">Resume</button>
                         </a>
                     </li>
-                    <li :class="['transition-all motion-reduce:transition-none duration-500 delay-[250ms]', showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
+                    <li :class="['transition-all motion-reduce:transition-none duration-500 delay-[300ms]', showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
                         <button v-if="darkModeActive" class="block py-2" @click="$emit('toggle-dark')">
                             <MoonIcon class="h-7 w-7 text-slate-300 hover:text-button-color"/>
                         </button>
@@ -67,7 +70,10 @@
                         <router-link class="block py-5  hover:text-link-color" to="/#about-section">😎 About</router-link>
                     </li>
                     <li>
-                        <router-link class="block py-5  hover:text-link-color" to="/#experience-section">🎓 Education</router-link>
+                        <router-link class="block py-5  hover:text-link-color" to="/#experience-section">💼 Experience</router-link>
+                    </li>
+                    <li>
+                        <router-link class="block py-5  hover:text-link-color" to="/#education-section">🎓 Education</router-link>
                     </li>
                     <li>
                         <router-link class="block py-5  hover:text-link-color" to="/#project-section">💻 Projects</router-link>
