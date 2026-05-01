@@ -1,40 +1,35 @@
 /**
  * @function onIntersect
  * @param  {HTMLElement} elementToWatch elementToWatch
- * @param  {Boolean} once           if true only run once
- * @param  {Object} options        Intersection Observer API options
- * @return {type} Ref<boolean>
+ * @param  {Boolean} once if true only run once
+ * @param  {Object} options Intersection Observer API options
+ * @return {Ref<boolean>}
+ *
+ * NOTE: Defaults to `true` so content is always visible even if the
+ * IntersectionObserver never fires (which can happen for very tall sections,
+ * in headless browsers, or with reduced-motion preferences). The observer
+ * is still wired up but only used to retrigger entrance animations.
  */
 import { ref, onMounted, onUnmounted } from 'vue';
 
-export const onIntersect = (elementToWatch, once = true, options = { threshold: 0.15 }) => {
-    // toggleable visibility
-    const visible = ref(false)
+export const onIntersect = (elementToWatch, once = true, options = { threshold: 0.1 }) => {
+    const visible = ref(true)
 
-    // Initiate the observer
     const observer = new IntersectionObserver(([entry]) => {
-        // If the element to watch is intersecting within the threshold
         if (entry && entry.isIntersecting) {
-            // set to visible
             visible.value = true
-
-            // If should only run once, unobserve the element
             if (once) {
                 observer.unobserve(entry.target);
             }
         }
-
-        // If the element is not intersecting, run visibility off
-        else {
-            visible.value = false
-        }
     }, options);
 
-    // Hook into components onMounted and onUnmounted states for setup and cleanup
-    onMounted(() => observer.observe(elementToWatch.value))
+    onMounted(() => {
+        if (elementToWatch.value) {
+            observer.observe(elementToWatch.value)
+        }
+    })
     onUnmounted(() => observer.disconnect())
 
     return visible;
 };
-
-// Credit: Megan Valcour & Tim Spears - https://www.imarc.com/blog/adding-intersection-observer-to-your-vue-animation

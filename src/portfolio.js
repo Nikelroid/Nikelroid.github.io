@@ -65,7 +65,9 @@ const about = {
     ],
     photo1Link: "images/portrait1.jpg",
     photo2Link: "images/portrait2.jpg",
-    photo3Link: "images/portrait3.jpg"
+    photo3Link: "images/portrait3.jpg",
+    photo4Link: "images/portrait4.jpg",
+    photo5Link: "images/portrait5.jpg"
 }
 
 // --- Education Section ---
@@ -239,6 +241,17 @@ const featuredWorks = [
         ],
         imageLink: "images/qa-ui.jpeg",
         alignLeft: true
+    },
+    {
+        projectName: "Image Compression via SVD and FFT",
+        yearCompleted: "2024",
+        description: "A lossy image compression method combining Singular Value Decomposition with matrix Fourier transforms to dramatically reduce file size with minimal perceptual loss. Includes mathematical analysis of rank truncation tradeoffs and a written paper detailing reconstruction quality versus compression ratio.",
+        techStack: "Python, OpenCV, MATLAB, LaTeX, Linear Algebra",
+        links: [
+            { label: "", type: "git", url: "https://github.com/Nikelroid/image-compression-svd-fft" }
+        ],
+        imageLink: "images/image_compression.png",
+        alignLeft: false
     }
 ]
 
@@ -384,15 +397,6 @@ const workCategories = [
         emoji: "👁️",
         description: "Classical and deep learning approaches to vision: detection, segmentation, stitching, and reconstruction.",
         projects: [
-            {
-                projectName: "Image Compression via SVD and FFT",
-                yearCompleted: "2024",
-                description: "Lossy image compression combining Singular Value Decomposition and Fast Fourier Transform to dramatically reduce file size with minimal perceptual loss.",
-                techStack: "Python, OpenCV, MATLAB, LaTeX",
-                links: [
-                    { label: "", type: "git", url: "https://github.com/Nikelroid/image-compression-svd-fft" }
-                ]
-            },
             {
                 projectName: "AlexNet Scene Recognition",
                 yearCompleted: "2024",

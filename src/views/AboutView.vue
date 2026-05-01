@@ -1,30 +1,36 @@
 <template>
-    <section class="min-h-screen w-full" ref="aboutSection" id="about-section">
+    <section class="min-h-fit w-full" ref="aboutSection" id="about-section">
         <div class="relative flex py-5 items-center" :class="[visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm', 'transition-all motion-reduce:transition-none duration-500']">
-            <h1 class="text-3xl font-bold pr-5">About Me</h1>
+            <h1 class="text-3xl font-bold pr-5">😎 About Me</h1>
             <div class="flex-grow border-t border-black dark:border-white border-1"></div>
         </div>
-        <div :class="['flex flex-col gap-y-4 xl:grid xl:grid-cols-2 xl:gap-x-5 xl:gap-y-0 mb-36 text-slate-500 dark:text-slate-300 transition-all motion-reduce:transition-none duration-500 delay-300', visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm']">
-            <div class="order-2 xl:order-none">
-                <p v-for="paragraph in content.autobiography">{{ paragraph }}<br/><br/></p>
-                <div>
-                    <p class="pb-3">Most Recent Tech Stack...</p>
-                    <ul class="list-['\2705'] pl-6 grid grid-cols-2 sm:grid-cols-3 gap-y-1">
-                        <li v-for="tech in content.techStack" class="pl-2">{{ tech }}</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="grid grid-rows-2 gap-y-4 order-1 xl:order-none">
-                <div class="grid grid-cols-2 gap-x-4">
+        <div>
+            <div :class="['flex flex-col gap-y-6 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-0 mb-20 text-[17px] text-slate-500 dark:text-slate-300 transition-all motion-reduce:transition-none duration-500 delay-300', visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm']">
+                <div class="order-2 lg:order-none flex flex-col gap-5">
+                    <p v-for="paragraph in content.autobiography" class="leading-relaxed">{{ paragraph }}</p>
                     <div>
-                        <img :src="getImageUrl(content.photo1Link)" class="shadow-md" loading="lazy"/>
-                    </div>
-                    <div>
-                        <img :src="getImageUrl(content.photo2Link)" class="shadow-md" loading="lazy"/>
+                        <p class="pb-3 text-base text-slate-700 dark:text-slate-200 font-semibold">Most Recent Tech Stack</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span v-for="tech in content.techStack" class="text-sm font-mono px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">{{ tech }}</span>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <img :src="getImageUrl(content.photo3Link)" class="shadow-md" loading="lazy"/>
+                <div class="grid grid-cols-2 gap-3 order-1 lg:order-none content-start">
+                    <div class="col-span-2 aspect-[16/9] overflow-hidden rounded-md shadow-md">
+                        <img :src="getImageUrl(content.photo4Link)" class="w-full h-full object-cover" loading="lazy"/>
+                    </div>
+                    <div class="aspect-[5/4] overflow-hidden rounded-md shadow-md">
+                        <img :src="getImageUrl(content.photo5Link)" class="w-full h-full object-cover" loading="lazy"/>
+                    </div>
+                    <div class="aspect-[5/4] overflow-hidden rounded-md shadow-md">
+                        <img :src="getImageUrl(content.photo1Link)" class="w-full h-full object-cover" loading="lazy"/>
+                    </div>
+                    <div class="aspect-[5/4] overflow-hidden rounded-md shadow-md">
+                        <img :src="getImageUrl(content.photo2Link)" class="w-full h-full object-cover" loading="lazy"/>
+                    </div>
+                    <div class="aspect-[5/4] overflow-hidden rounded-md shadow-md">
+                        <img :src="getImageUrl(content.photo3Link)" class="w-full h-full object-cover" loading="lazy"/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -40,11 +46,11 @@ const props = defineProps({
 })
 
 const aboutSection = ref({})
-const visible = props.transitions.active && window.matchMedia('(prefers-reduced-motion: no-preference)').matches ? onIntersect(aboutSection, !!props.transitions.showOnce, { threshold: props.transitions.thresholdOption }) : true
+const visible = props.transitions.active && window.matchMedia('(prefers-reduced-motion: no-preference)').matches
+    ? onIntersect(aboutSection, !!props.transitions.showOnce, { threshold: props.transitions.thresholdOption })
+    : true
 
-// Static Images
 let getImageUrl = (path) => {
   return new URL(`../assets/${path}`, import.meta.url).href
 }
-
 </script>
