@@ -9,7 +9,7 @@
                 <p v-for="paragraph in content.autobiography">{{ paragraph }}<br/><br/></p>
                 <div>
                     <p class="pb-3">Most Recent Tech Stack...</p>
-                    <ul class="flow flow-col list-['\2705'] pl-6 sm:grid sm:grid-rows-2 sm:grid-flow-col">
+                    <ul class="list-['\2705'] pl-6 grid grid-cols-2 sm:grid-cols-3 gap-y-1">
                         <li v-for="tech in content.techStack" class="pl-2">{{ tech }}</li>
                     </ul>
                 </div>
