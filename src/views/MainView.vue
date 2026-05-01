@@ -26,6 +26,11 @@
 					<font-awesome-icon icon="fa-brands fa-facebook" class="h-9 w-9 text-black hover:-translate-y-1 transition duration-300 dark:text-slate-300"></font-awesome-icon>
 				</a>
 			</li>
+			<li :class="['transition-all motion-reduce:transition-none duration-500 delay-[400ms] pt-4 border-t border-slate-300 dark:border-slate-700', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']" title="Get in touch">
+				<router-link to="/#contact-section">
+					<EnvelopeIcon class="h-9 w-9 text-black dark:text-slate-300 hover:-translate-y-1 transition duration-300"/>
+				</router-link>
+			</li>
 		</ul>
 
 		<!-- Fixed right-edge location text (centered inside right margin) -->
@@ -39,6 +44,7 @@
 			<li v-show="linkedinLink"><a :href="linkedinLink" target="_blank"><font-awesome-icon icon="fa-brands fa-linkedin" class="h-6 w-6 dark:text-slate-300"></font-awesome-icon></a></li>
 			<li v-show="xTwitterLink"><a :href="xTwitterLink" target="_blank"><font-awesome-icon icon="fa-brands fa-x-twitter" class="h-6 w-6 dark:text-slate-300"></font-awesome-icon></a></li>
 			<li v-show="faceBookLink"><a :href="faceBookLink" target="_blank"><font-awesome-icon icon="fa-brands fa-facebook" class="h-6 w-6 dark:text-slate-300"></font-awesome-icon></a></li>
+			<li><router-link to="/#contact-section"><EnvelopeIcon class="h-6 w-6 text-black dark:text-slate-300"/></router-link></li>
 		</ul>
 
 		<!-- Centered content area with comfortable side borders -->
@@ -68,6 +74,7 @@
 <script setup>
 import { onMounted, ref } from 'vue'
 import { useRouter } from 'vue-router'
+import { EnvelopeIcon } from '@heroicons/vue/24/solid'
 
 import Navbar from '../components/Navbar.vue'
 import LandingView from './LandingView.vue'
