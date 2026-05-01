@@ -1,69 +1,62 @@
 <template>
 	<SplashView v-if="showingSplash"/>
 
-  	<div v-show="!showingSplash" class="min-h-screen overscroll-contain bg-white dark:bg-slate-900 dark:text-slate-300 text-base md:text-xl">
+  	<div v-show="!showingSplash" class="min-h-screen overscroll-contain bg-white dark:bg-slate-900 dark:text-slate-300 text-base">
 		<Navbar :show-transition="showLanding" :dark-mode-active="darkModeActive" @toggle-dark="toggleDark"/>
 
-		<div class="min-h-full mx-10">
-			<div class="flex flex-col md:grid md:grid-cols-6 min-h-full">
-				<div class="col-span-1 flex-initial relative mx-auto md:mx-0 order-2 md:order-none">
-					<ul class="md:fixed md:bottom-0 mb-7 flex items-center space-x-8 md:flex-col md:space-y-4 md:space-x-0">
-						<li v-show="githubLink" :class="['transition-all motion-reduce:transition-none duration-500', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
-							<a :href="githubLink" target="_blank">
-								<font-awesome-icon icon="fa-brands fa-github" class="h-8 w-8 md:h-12 md:w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300"></font-awesome-icon>
-							</a>
-						</li>
-						<li v-show="linkedinLink" :class="['transition-all motion-reduce:transition-none duration-500 delay-[100ms]', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
-							<a :href="linkedinLink" target="_blank">
-								<font-awesome-icon icon="fa-brands fa-linkedin" class="h-8 w-8 md:h-12 md:w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300"></font-awesome-icon>
-							</a>
-						</li>
-						<!-- <li v-show="telegramLink" :class="['transition-all motion-reduce:transition-none duration-500 delay-[150ms]', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
-							<a :href="telegramLink" target="_blank">
-								<font-awesome-icon icon="fa-brands fa-telegram" class="h-8 w-8 md:h-12 md:w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300"></font-awesome-icon>
-							</a>
-						</li> -->
-						<li v-show="stackoverflowLink" :class="['transition-all motion-reduce:transition-none duration-500 delay-[200ms]', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
-							<a :href="stackoverflowLink" target="_blank">
-								<font-awesome-icon icon="fa-brands fa-stack-overflow" class="h-8 w-8 md:h-12 md:w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300"></font-awesome-icon>
-							</a>
-						</li>
-						<li v-show="xTwitterLink" :class="['transition-all motion-reduce:transition-none duration-500 delay-[200ms]', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
-							<a :href="xTwitterLink" target="_blank">
-								<font-awesome-icon icon="fa-brands fa-x-twitter" class="h-8 w-8 md:h-12 md:w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300"></font-awesome-icon>
-							</a>
-						</li>
-						<li v-show="faceBookLink" :class="['transition-all motion-reduce:transition-none duration-500 delay-[200ms]', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
-							<a :href="faceBookLink" target="_blank">
-								<font-awesome-icon icon="fa-brands fa-facebook" class="h-8 w-8 md:h-12 md:w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300"></font-awesome-icon>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-span-4 flex-1 flex-col order-1 md:order-none">
-					<div class="container mx-auto max-w-full 2xl:max-w-6xl">
-						<LandingView :content="portfolio.greeting" :show-transition="showLanding"/>
+		<!-- Fixed left-edge social icons (centered inside left margin) -->
+		<ul class="hidden md:flex md:fixed md:bottom-6 md:flex-col md:space-y-5 z-20 md:left-[22px] lg:left-[32px] xl:left-[40px]">
+			<li v-show="githubLink" :class="['transition-all motion-reduce:transition-none duration-500', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
+				<a :href="githubLink" target="_blank">
+					<font-awesome-icon icon="fa-brands fa-github" class="h-9 w-9 text-black hover:-translate-y-1 transition duration-300 dark:text-slate-300"></font-awesome-icon>
+				</a>
+			</li>
+			<li v-show="linkedinLink" :class="['transition-all motion-reduce:transition-none duration-500 delay-[100ms]', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
+				<a :href="linkedinLink" target="_blank">
+					<font-awesome-icon icon="fa-brands fa-linkedin" class="h-9 w-9 text-black hover:-translate-y-1 transition duration-300 dark:text-slate-300"></font-awesome-icon>
+				</a>
+			</li>
+			<li v-show="xTwitterLink" :class="['transition-all motion-reduce:transition-none duration-500 delay-[200ms]', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
+				<a :href="xTwitterLink" target="_blank">
+					<font-awesome-icon icon="fa-brands fa-x-twitter" class="h-9 w-9 text-black hover:-translate-y-1 transition duration-300 dark:text-slate-300"></font-awesome-icon>
+				</a>
+			</li>
+			<li v-show="faceBookLink" :class="['transition-all motion-reduce:transition-none duration-500 delay-[300ms]', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
+				<a :href="faceBookLink" target="_blank">
+					<font-awesome-icon icon="fa-brands fa-facebook" class="h-9 w-9 text-black hover:-translate-y-1 transition duration-300 dark:text-slate-300"></font-awesome-icon>
+				</a>
+			</li>
+		</ul>
 
-						<AboutView :content="portfolio.about" :transitions="portfolio.transitions" />
+		<!-- Fixed right-edge location text (centered inside right margin) -->
+		<p :class="['hidden md:block fixed origin-bottom-right rotate-90 transition-all motion-reduce:transition-none duration-500 z-20 text-base font-medium text-slate-500 dark:text-slate-400 whitespace-nowrap md:bottom-6 md:right-[36px] lg:right-[48px] xl:right-[56px]', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
+			📍 Based in {{ portfolio.greeting.basedLocation }}
+		</p>
 
-						<WorkExperienceView :content="portfolio.professionalExperiences" :transitions="portfolio.transitions" />
+		<!-- Mobile social icons row -->
+		<ul class="flex md:hidden items-center justify-center gap-6 py-4">
+			<li v-show="githubLink"><a :href="githubLink" target="_blank"><font-awesome-icon icon="fa-brands fa-github" class="h-6 w-6 dark:text-slate-300"></font-awesome-icon></a></li>
+			<li v-show="linkedinLink"><a :href="linkedinLink" target="_blank"><font-awesome-icon icon="fa-brands fa-linkedin" class="h-6 w-6 dark:text-slate-300"></font-awesome-icon></a></li>
+			<li v-show="xTwitterLink"><a :href="xTwitterLink" target="_blank"><font-awesome-icon icon="fa-brands fa-x-twitter" class="h-6 w-6 dark:text-slate-300"></font-awesome-icon></a></li>
+			<li v-show="faceBookLink"><a :href="faceBookLink" target="_blank"><font-awesome-icon icon="fa-brands fa-facebook" class="h-6 w-6 dark:text-slate-300"></font-awesome-icon></a></li>
+		</ul>
 
-						<ExperienceView :content="portfolio.experiences" :transitions="portfolio.transitions" />
+		<!-- Centered content area with comfortable side borders -->
+		<div class="px-4 sm:px-8 md:px-20 lg:px-28 xl:px-32">
+			<div class="container mx-auto max-w-full 2xl:max-w-7xl">
+				<LandingView :content="portfolio.greeting" :show-transition="showLanding"/>
 
-						<WorkView :transitions="portfolio.transitions" />
+				<AboutView :content="portfolio.about" :transitions="portfolio.transitions" />
 
-						<ContactView :content="portfolio.contact" :transitions="portfolio.transitions" />
+				<WorkExperienceView :content="portfolio.professionalExperiences" :transitions="portfolio.transitions" />
 
-						<footer class="hidden text-center md:block mb-5 text-sm text-slate-500 dark:text-slate-400">
-							<p>Built with Vue, Vite, and Tailwind CSS by Nima Kelidari.</p>
-							<p>Template adapted from <a href="https://github.com/feifyKike/webdev_portfolio" class="hover:text-link-color" target="_blank">webdev_portfolio</a> by Maxim Shelepov.</p>
-						</footer>
-					</div>
-				</div>
-				<div class="hidden col-span-1 md:flex flex-initial relative order-2 text-center md:order-none">
-					<p :class="['fixed bottom-2 right-10 origin-top-right rotate-90 transition-all motion-reduce:transition-none duration-500', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">📍 Based in {{ portfolio.greeting.basedLocation }}</p>
-				</div>
-				<footer class="block text-center text-xs md:hidden order-last mb-5 text-slate-500 dark:text-slate-400">
+				<ExperienceView :content="portfolio.experiences" :transitions="portfolio.transitions" />
+
+				<WorkView :transitions="portfolio.transitions" />
+
+				<ContactView :content="portfolio.contact" :transitions="portfolio.transitions" />
+
+				<footer class="text-center pb-6 text-xs text-slate-500 dark:text-slate-400">
 					<p>Built with Vue, Vite, and Tailwind CSS by Nima Kelidari.</p>
 					<p>Template adapted from <a href="https://github.com/feifyKike/webdev_portfolio" class="hover:text-link-color" target="_blank">webdev_portfolio</a> by Maxim Shelepov.</p>
 				</footer>
