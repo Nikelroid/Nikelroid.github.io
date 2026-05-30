@@ -22,7 +22,7 @@ const splashScreen = true
 const greeting = {
     intro: "Hello, my name is",
     name: "Nima Kelidari",
-    message: "I am a Computer Science - Artificial Intelligence Master's student at the University of Southern California (Viterbi School of Engineering) and an AI/ML Engineer with research and engineering experience across NLP, Computer Vision, Reinforcement Learning, and Robotics. I am passionate about building production-grade ML systems that solve real-world problems.",
+    message: "I am a Computer Science - Artificial Intelligence Master's student at the University of Southern California (Viterbi School of Engineering) and an ML researcher and engineer with experience across large language models, reinforcement learning, speech, and computer vision. I am passionate about building rigorous, production-grade ML systems that solve real-world problems.",
     basedLocation: "Los Angeles, CA",
     resumeLink: "https://drive.google.com/file/d/1Mmq29q3AEOvj_eYhQgs1TlS4Ii2W_cma/view?usp=sharing",
     logo: {
@@ -44,7 +44,7 @@ const socialMediaLinks = {
 const about = {
     autobiography: [
         "Hello! I'm Nima Kelidari, a Computer Science - Artificial Intelligence Master's student at the University of Southern California's Viterbi School of Engineering. I hold a Bachelor of Science in Computer Science from Sharif University of Technology, where I spent ten months as a research assistant working with Dr. Tefagh on Computer Vision applications using Vision Transformers and 3D CNNs in generative AI pipelines.",
-        "I focus on the intersection of Machine Learning and Robotics, with hands-on experience across the full ML stack — from low-level PyTorch implementations and distributed training pipelines to MLOps infrastructure (Docker, Kubernetes, MLflow, DVC, Jenkins) and full-stack deployment (FastAPI, Flask, Swift, Angular). My recent work spans Speech Emotion Recognition probing, Mixture-of-Experts steering for LLMs, and adversarial RL training against large language models.",
+        "I work across large language models, reinforcement learning, and speech and multimodal understanding, with hands-on experience across the full ML stack — from low-level PyTorch implementations and distributed training pipelines to MLOps infrastructure (Docker, Kubernetes, MLflow, DVC, Jenkins) and full-stack deployment (FastAPI, Flask, Swift, Angular). My recent work spans Speech Emotion Recognition probing, steering and interpretability for LLMs, and adversarial RL training against large language models.",
         "Outside of research and engineering, I served as a Teaching Assistant for 4 semesters across 6 courses at Sharif (300+ students), built and delivered TensorFlow workshops, and worked as a Technical Sales Advisor at Best Buy. I enjoy hiking, swimming, and playing video games. If you're curious to learn more, explore my projects, CV, or GitHub below."
     ],
     techStack: [
@@ -80,7 +80,7 @@ const experiences = [
         },
         duration: "Dec 2024 - Dec 2026",
         bulletPoints: [
-            "GPA: 3.32/4.0. Building interdisciplinary expertise at the intersection of Machine Learning and Robotics through advanced coursework in AI and autonomous systems.",
+            "GPA: 3.55/4.0. Building interdisciplinary expertise across machine learning, large language models, and applied AI through advanced graduate coursework.",
             "Relevant Coursework: Applied Natural Language Processing, Multi-modal Probabilistic Learning, Web Technologies, Machine Learning, Deep Learning.",
             "Pursuing additional coursework in Robotics and NLP to align with AI/ML Engineering career goals."
         ],
@@ -206,14 +206,13 @@ const featuredWorks = [
         alignLeft: false
     },
     {
-        projectName: "Risk-Scaled and Token-Aware Steering for MoE LLMs",
+        projectName: "Low-Rank Steering Head for Mixture-of-Experts LLMs",
         yearCompleted: "2026",
-        description: "A token-aware steering mechanism for Mixture-of-Experts language models that uses novel 3D delta tensors and custom loss optimization to dynamically scale expert activations to semantic context. Integrated into the vLLM plugin architecture, it improves alignment and safety on SQuAD entirely at inference time, eliminating expensive fine-tuning.",
-        techStack: "Python, vLLM, PyTorch, HuggingFace",
+        description: "A learned low-rank steering head for Mixture-of-Experts LLMs that redirects expert routing at inference time, with zero changes to model weights. Trained on contrastive pairs and evaluated on OLMoE across six faithfulness benchmarks, it improves faithfulness over prior steering methods while eliminating expensive fine-tuning.",
+        techStack: "Python, PyTorch, HuggingFace, vLLM",
         links: [
-            { label: "", type: "git", url: "https://github.com/adsrivatsa/llm-steering" },
-            { label: "Dataset", type: "external", url: "https://rajpurkar.github.io/SQuAD-explorer/" },
-            { label: "Paper", type: "external", url: "https://arxiv.org/abs/1606.05250" }
+            { label: "", type: "git", url: "https://github.com/Nikelroid/moe-steering-3d-delta" },
+            { label: "Dataset", type: "external", url: "https://rajpurkar.github.io/SQuAD-explorer/" }
         ],
         imageLink: "images/llm-steering.gif",
         alignLeft: true
@@ -787,7 +786,7 @@ const contact = {
     externalLink: {
         shortTitle: "Get in Touch",
         note: [
-            "Currently seeking AI/ML Engineering internships and full-time roles starting 2026, with a focus on Applied ML, NLP, Robotics, and MLOps.",
+            "Currently seeking Machine Learning research and engineering roles starting 2026, with a focus on large language models, applied ML, NLP, and MLOps.",
             "Also open to research collaborations, startup ideas, and professional connections — feel free to reach out."
         ],
         link: {
