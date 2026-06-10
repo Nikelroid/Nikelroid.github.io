@@ -189,7 +189,8 @@ const featuredWorks = [
         description: "An MLOps probing framework for Speech Emotion Recognition transformers that evaluates how acoustic emotion is encoded across 24 hidden layers. Automated parallel experiments across 6 models and 8 datasets on HPC clusters via SLURM Array, paired with a full-stack FastAPI + JavaScript dashboard for real-time layer-wise visualization.",
         techStack: "Python, PyTorch, HuggingFace, FastAPI, SLURM",
         links: [
-            { label: "", type: "git", url: "https://github.com/Nikelroid/linguistic-agnostic-ser" }
+            { label: "", type: "git", url: "https://github.com/Nikelroid/linguistic-agnostic-ser" },
+            { label: "Website", type: "external", url: "https://kelidari.com/linguistic-agnostic-ser/" }
         ],
         imageLink: "images/ser.png",
         alignLeft: true
@@ -200,7 +201,8 @@ const featuredWorks = [
         description: "A distributed multi-core PPO training pipeline for Gin Rummy that distills strategic knowledge from large language models into RL policies. A custom three-phase curriculum learning approach prevents strategy collapse and achieves a 99.12% win rate against baselines, with an interactive Flask dashboard for live human-vs-agent testing.",
         techStack: "Python, PyTorch, Stable-Baselines3, Ollama, Flask",
         links: [
-            { label: "", type: "git", url: "https://github.com/Nikelroid/adversarial-coevolution" }
+            { label: "", type: "git", url: "https://github.com/Nikelroid/adversarial-coevolution" },
+            { label: "Website", type: "external", url: "https://kelidari.com/adversarial-coevolution/" }
         ],
         imageLink: "images/adverserial-coev.png",
         alignLeft: false
@@ -212,6 +214,7 @@ const featuredWorks = [
         techStack: "Python, PyTorch, HuggingFace, vLLM",
         links: [
             { label: "", type: "git", url: "https://github.com/Nikelroid/moe-steering-3d-delta" },
+            { label: "Website", type: "external", url: "https://kelidari.com/moe-steering-3d-delta/" },
             { label: "Dataset", type: "external", url: "https://rajpurkar.github.io/SQuAD-explorer/" }
         ],
         imageLink: "images/llm-steering.gif",
@@ -650,8 +653,18 @@ const workCategories = [
     {
         name: "Games & Interactive",
         emoji: "🎮",
-        description: "Game implementations exploring AI, multiplayer architecture, and game-engine fundamentals.",
+        description: "Game implementations and interactive toys exploring AI, multiplayer architecture, and game-engine fundamentals.",
         projects: [
+            {
+                projectName: "Dastan — Gesture Guitar Studio",
+                yearCompleted: "2026",
+                description: "A fun in-browser instrument: strum real guitar chords with hand gestures through your webcam, with Persian 6/8 and flamenco rhythms, Karplus–Strong string synthesis, a theremin-style melody hand, and built-in recording — all in one dependency-free HTML file.",
+                techStack: "JavaScript, Web Audio API, MediaPipe",
+                links: [
+                    { label: "Play it", type: "external", url: "https://kelidari.com/dastan-gesture-guitar/" },
+                    { label: "", type: "git", url: "https://github.com/Nikelroid/dastan-gesture-guitar" }
+                ]
+            },
             {
                 projectName: "Sea Battle Multiplayer Game",
                 yearCompleted: "2021",
