@@ -1,14 +1,563 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="icon" type="image/png" href="/favicon.png">
-        <link rel="icon" href="/favicon.ico">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nima Kelidari</title> <!-- Add your name here (will appear in the browser tab)-->
-    </head>
-    <body>
-        <div id="app"></div>
-        <script type="module" src="/src/main.js"></script>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nima Kelidari — Machine Learning Researcher &amp; Engineer</title>
+  <meta name="description" content="ML researcher and engineer in Los Angeles — M.S. in AI at USC, graduate researcher, and summer 2026 optimization intern at Memorial Sloan Kettering.">
+  <meta name="author" content="Nima Kelidari">
+  <link rel="canonical" href="https://kelidari.com/">
+
+  <meta name="theme-color" content="#F7F3EB" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#17130E" media="(prefers-color-scheme: dark)">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://kelidari.com/">
+  <meta property="og:site_name" content="Nima Kelidari">
+  <meta property="og:title" content="Nima Kelidari — Machine Learning Researcher &amp; Engineer">
+  <meta property="og:description" content="M.S. in AI at USC · graduate researcher · summer 2026 optimization intern at Memorial Sloan Kettering Cancer Center.">
+  <meta property="og:image" content="https://kelidari.com/assets/og-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Nima Kelidari — machine learning, research and engineering. kelidari.com">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nima Kelidari — Machine Learning Researcher &amp; Engineer">
+  <meta name="twitter:description" content="M.S. in AI at USC · graduate researcher · summer 2026 optimization intern at Memorial Sloan Kettering.">
+  <meta name="twitter:image" content="https://kelidari.com/assets/og-card.png">
+
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+  <link rel="preload" href="/fonts/fraunces-100-900.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/newsreader-200-800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/ibm-plex-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/styles.css">
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nima Kelidari",
+    "alternateName": "Nikelroid",
+    "url": "https://kelidari.com/",
+    "image": "https://kelidari.com/assets/portrait.webp",
+    "email": "mailto:Kelidari.Nima@gmail.com",
+    "jobTitle": "Machine Learning Researcher & Engineer",
+    "worksFor": [
+      {
+        "@type": "Organization",
+        "name": "Memorial Sloan Kettering Cancer Center",
+        "department": "Department of Medical Physics",
+        "url": "https://www.mskcc.org/"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Southern California",
+        "url": "https://www.usc.edu/"
+      }
+    ],
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Southern California",
+        "url": "https://www.usc.edu/"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Sharif University of Technology",
+        "url": "https://en.sharif.ir/"
+      }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Los Angeles",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "sameAs": [
+      "https://github.com/Nikelroid",
+      "https://www.linkedin.com/in/nima-kelidari/",
+      "https://twitter.com/Adivide2"
+    ],
+    "knowsAbout": [
+      "Machine Learning",
+      "Convex Optimization",
+      "Large Language Models",
+      "Reinforcement Learning",
+      "Computer Vision",
+      "Speech Processing",
+      "GPU Computing",
+      "MLOps"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Nima Kelidari",
+    "url": "https://kelidari.com/"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="wrap">
+    <header class="masthead">
+      <a class="brand" href="/">Nima Kelidari<span class="dot">.</span></a>
+      <nav aria-label="Site">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="/projects/">Index</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+
+      <!-- ============ Hero ============ -->
+      <section class="hero" aria-label="Introduction">
+        <div>
+          <p class="kicker">Machine learning · Research &amp; engineering</p>
+          <h1>Nima Kelidari</h1>
+          <p class="deck">
+            I build machine-learning systems end to end. This summer I'm an optimization
+            intern at <a href="https://www.mskcc.org/">Memorial Sloan Kettering Cancer
+            Center</a>, speeding up the solvers behind radiotherapy planning; the rest of
+            the year it's graduate research and a master's in AI at USC.
+          </p>
+          <ul class="hero-links">
+            <li><a href="mailto:Kelidari.Nima@gmail.com">Email <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+            <li><a href="https://github.com/Nikelroid">GitHub <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+            <li><a href="https://www.linkedin.com/in/nima-kelidari/">LinkedIn <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+            <li><a href="/NimaKelidari_CV.pdf">R&eacute;sum&eacute; <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+          </ul>
+        </div>
+        <div class="portrait">
+          <div class="mount">
+            <img src="/assets/portrait.webp" alt="Nima Kelidari, outdoors on a tree-lined street in autumn" width="640" height="640" fetchpriority="high">
+          </div>
+          <p class="meta"><span>Los Angeles, CA</span> <span>34.02&deg; N, 118.28&deg; W</span></p>
+        </div>
+      </section>
+
+      <!-- ============ About ============ -->
+      <section id="about" class="block">
+        <div class="rail reveal">
+          <span class="kicker"><span class="no">01</span>About</span>
+        </div>
+        <div class="reveal">
+          <h2>Models are easy to train and hard to trust.</h2>
+          <div class="prose">
+            <p class="lede">
+              I'm a master's student in computer science (artificial intelligence) at USC's
+              Viterbi School of Engineering, with a B.S. in computer science from Sharif
+              University of Technology. The through-line in my work is taking models out of
+              notebooks and making them hold up: in distributed training pipelines, on HPC
+              clusters, behind APIs, on phones.
+            </p>
+            <p>
+              Recent projects run across the stack — probing how speech transformers encode
+              emotion layer by layer, steering mixture-of-experts LLMs at inference time
+              without touching their weights, and training reinforcement-learning agents
+              against LLM opponents. Before USC, I spent ten months as a research assistant
+              in Dr. Tefagh's group at Sharif, building generative computer-vision pipelines
+              with vision transformers and 3D CNNs.
+            </p>
+            <p>
+              I've also taught: four semesters as a teaching assistant across six courses
+              and 300-plus students, including TensorFlow workshops I designed and ran myself.
+              Away from a keyboard I hike, swim, and lose entire evenings to strategy games.
+            </p>
+          </div>
+          <p class="stack-line" aria-label="Tools I use">
+            Python <span class="sep">&middot;</span> PyTorch <span class="sep">&middot;</span> JAX
+            <span class="sep">&middot;</span> CuPy <span class="sep">&middot;</span> TensorFlow
+            <span class="sep">&middot;</span> Hugging&nbsp;Face <span class="sep">&middot;</span> CUDA
+            <span class="sep">&middot;</span> SLURM <span class="sep">&middot;</span> Docker
+            <span class="sep">&middot;</span> Kubernetes <span class="sep">&middot;</span> MLflow
+            <span class="sep">&middot;</span> DVC <span class="sep">&middot;</span> FastAPI
+            <span class="sep">&middot;</span> GCP <span class="sep">&middot;</span> AWS
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ Experience ============ -->
+      <section id="experience" class="block">
+        <div class="rail reveal">
+          <h2 class="kicker"><span class="no" aria-hidden="true">02</span>Experience</h2>
+        </div>
+        <div>
+          <article class="role reveal">
+            <span class="org-mark" aria-hidden="true"><img src="/assets/logos/mskcc.png" alt=""></span>
+            <div class="role-head">
+              <h3>Computational Optimization Intern</h3>
+              <span class="meta when"><time datetime="2026-05">May 2026</time> — Present · Remote</span>
+            </div>
+            <p class="where">
+              <a href="https://www.mskcc.org/">Memorial Sloan Kettering Cancer Center</a>,
+              Department of Medical Physics
+            </p>
+            <ul class="points">
+              <li>
+                IMRT radiotherapy planning reduces to a convex quadratic program with up to
+                <strong>~380K variables and ~570K constraints</strong> per clinical case. I work on making
+                that solve fast: a path-following ADMM that warm-starts an interior-point method,
+                GPU-accelerated with CuPy and mixed precision on V100 nodes.
+              </li>
+              <li>
+                Implemented and benchmarked first-order methods from the recent literature —
+                PDHG/PDQP (JAX/MPAX), ADMM with over-relaxation and adaptive penalties
+                (residual-balancing, OSQP-style, spectral/ARADMM), Fast-ADMM with restart, and
+                safeguarded Anderson acceleration — on real lung and prostate cases.
+              </li>
+              <li>
+                Designed a combined ADMM variant (aggressive spectral penalty recovery plus
+                safeguarded Anderson mixing) that <strong>roughly halves iterations</strong> to a usable
+                warm start — up to ~4&times; from a mis-set penalty — and was the only method to reach
+                the tight KKT tolerance on both cancer sites.
+              </li>
+              <li>
+                Built a PDQP&#8594;interior-point hybrid reaching a <strong>~100&times; tighter optimality
+                gap</strong> than the production solver, plus a matrix-free warm-started conjugate-gradient
+                GPU engine and a SLURM experiment harness with verified CPU/GPU parity.
+              </li>
+            </ul>
+          </article>
+
+          <article class="role reveal">
+            <span class="org-mark" aria-hidden="true"><img src="/assets/logos/usc.png" alt=""></span>
+            <div class="role-head">
+              <h3>Graduate Student Researcher</h3>
+              <span class="meta when"><time datetime="2025-08">Aug 2025</time> — Present · Hybrid</span>
+            </div>
+            <p class="where"><a href="https://www.usc.edu/">University of Southern California</a> · Los Angeles</p>
+            <ul class="points">
+              <li>
+                <strong>Inference-time steering for mixture-of-experts LLMs</strong>, with Prof. Robin Jia
+                and Prof. Xuezhe Ma — a <strong>50K-parameter</strong> learned low-rank head that intervenes
+                on MoE routing with no changes to model weights. Trained on contrastive pairs from SQuAD,
+                HotpotQA, and FEVER, it improves mean faithfulness by <strong>+0.101</strong> across six
+                benchmarks and beats the published SteerMoE baseline (ICML 2026) on five of six tasks.
+                Manuscript in preparation.
+              </li>
+              <li>
+                <strong>Adversarial co-evolution of RL and LLM agents</strong>, with Prof. Yan Liu —
+                a distributed PPO pipeline with a three-phase curriculum reaching a
+                <strong>99.12% win rate</strong> against baselines, plus a master&#8211;worker inference
+                engine that distills strategy from Llama-3, Gemma, and GPT-OSS into compact RL policies.
+              </li>
+              <li>
+                <strong>Language-agnostic speech emotion recognition</strong>, with Prof. Mohammad Soleymani
+                (USC SAIL) — a PyTorch / Hugging Face probing framework evaluating six pretrained speech
+                encoders across eight datasets on SLURM, with a FastAPI dashboard for layer-wise
+                paralinguistic analysis.
+              </li>
+            </ul>
+          </article>
+
+          <article class="role reveal">
+            <span class="org-mark" aria-hidden="true"><img src="/assets/logos/sharif.png" alt=""></span>
+            <div class="role-head">
+              <h3>Research Assistant, Computer Vision</h3>
+              <span class="meta when"><time datetime="2022-09">Sep 2022</time> — <time datetime="2023-08">Aug 2023</time> · Tehran</span>
+            </div>
+            <p class="where"><a href="https://en.sharif.ir/">Sharif University of Technology</a></p>
+            <ul class="points">
+              <li>
+                Ten months in Dr. Tefagh's group on a four-person team, surveying and prototyping
+                generative computer-vision pipelines built on vision transformers and 3D CNNs.
+              </li>
+              <li>
+                Ran the experimental side across Git, Kaggle, Google Colab, and university GPU
+                servers, keeping the team's long-running training jobs organized and reproducible.
+              </li>
+            </ul>
+          </article>
+
+          <article class="role reveal">
+            <span class="org-mark" aria-hidden="true"><img src="/assets/logos/sharif.png" alt=""></span>
+            <div class="role-head">
+              <h3>Teaching Assistant &amp; Tutor</h3>
+              <span class="meta when"><time datetime="2021-09">Sep 2021</time> — <time datetime="2023-07">Jul 2023</time> · Tehran</span>
+            </div>
+            <p class="where"><a href="https://en.sharif.ir/">Sharif University of Technology</a></p>
+            <ul class="points">
+              <li>
+                Four semesters, six courses, 300+ students — lectures, assignment design, quizzes,
+                and grading for basic and advanced programming, computer fundamentals, and machine
+                learning, working in TA teams alongside head TAs and course professors.
+              </li>
+              <li>
+                Built and delivered TensorFlow workshops and diagnostic sessions for sixty
+                students in the ML course, holding 65% attendance across the series.
+              </li>
+            </ul>
+          </article>
+
+          <article class="role aside-role reveal">
+            <span class="org-mark" aria-hidden="true"><img src="/assets/logos/bestbuy.png" alt=""></span>
+            <div class="role-head">
+              <h3>Technical Sales Advisor — Best Buy</h3>
+              <span class="meta when"><time datetime="2024-05">May 2024</time> — <time datetime="2025-01">Jan 2025</time> · Issaquah, WA</span>
+            </div>
+            <p class="note">
+              Part-time technical PC advisor: hardware recommendations, debugging, and device
+              tuning on a busy sales floor — steady practice in initiative, teamwork, and
+              explaining technical trade-offs to non-experts.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ Education ============ -->
+      <section id="education" class="block">
+        <div class="rail reveal">
+          <h2 class="kicker"><span class="no" aria-hidden="true">03</span>Education</h2>
+        </div>
+        <div>
+          <article class="role reveal">
+            <span class="org-mark" aria-hidden="true"><img src="/assets/logos/usc.png" alt=""></span>
+            <div class="role-head">
+              <h3>M.S. Computer Science — Artificial Intelligence</h3>
+              <span class="meta when"><time datetime="2024-12">Dec 2024</time> — <time datetime="2026-12">Dec 2026</time></span>
+            </div>
+            <p class="where"><a href="https://www.usc.edu/">University of Southern California</a>, Viterbi School of Engineering · Los Angeles</p>
+            <ul class="points">
+              <li><span class="gpa">GPA 3.55&thinsp;/&thinsp;4.0.</span> Coursework in applied NLP, multimodal probabilistic learning, machine learning, deep learning, and web technologies — with NLP and robotics next, to match where the field is going.</li>
+              <li>Off the clock: volleyball and hiking.</li>
+            </ul>
+          </article>
+
+          <article class="role reveal">
+            <span class="org-mark" aria-hidden="true"><img src="/assets/logos/sharif.png" alt=""></span>
+            <div class="role-head">
+              <h3>B.S. Computer Science</h3>
+              <span class="meta when"><time datetime="2019-09">Sep 2019</time> — <time datetime="2024-02">Feb 2024</time></span>
+            </div>
+            <p class="where">Sharif University of Technology · Tehran</p>
+            <ul class="points">
+              <li><span class="gpa">GPA 3.37&thinsp;/&thinsp;4.0</span> overall, with fifteen-plus CS and AI courses at a 3.5&thinsp;/&thinsp;4 average — computer vision, deep learning, machine learning, algorithm design, numerical analysis, data structures, image processing, databases — on top of a heavy mathematical core.</li>
+              <li>Ten months of computer-vision research in Dr. Tefagh's group; teaching assistance and the volleyball court filled the rest.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ Selected work ============ -->
+      <section id="work" class="block">
+        <div class="rail reveal">
+          <h2 class="kicker"><span class="no" aria-hidden="true">04</span>Selected work</h2>
+        </div>
+        <div>
+          <article class="project reveal">
+            <figure class="plate">
+              <a href="https://github.com/Nikelroid/linguistic-agnostic-ser" aria-label="Speech emotion recognition probing framework on GitHub">
+                <img src="/assets/ser-probing.webp" alt="Layer-wise emotion-probing architecture and accuracy curves for wav2vec 2.0, HuBERT, and Whisper" width="1200" height="900" loading="lazy">
+              </a>
+              <figcaption><span>Fig. 01</span><span>Layer-wise probing, 3 model families</span></figcaption>
+            </figure>
+            <div>
+              <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 10v4M6.5 7.5v9M10 4.5v15M13.5 7.5v9M17 10v4M20.5 11v2"/></svg></span>Language-Agnostic Speech Emotion Recognition <span class="meta year">2026</span></h3>
+              <p class="prose">
+                A probing framework that asks where acoustic emotion actually lives inside speech
+                transformers, layer by layer across 24 hidden layers. Parallel experiments over six
+                models and eight datasets run unattended on SLURM, feeding a FastAPI dashboard for
+                real-time, layer-wise visualization.
+              </p>
+              <span class="meta tools">PyTorch · Hugging Face · FastAPI · SLURM</span>
+              <ul class="project-links">
+                <li><a href="https://github.com/Nikelroid/linguistic-agnostic-ser">Code <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+                <li><a href="https://kelidari.com/linguistic-agnostic-ser/">Project site <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project flip reveal">
+            <figure class="plate">
+              <a href="https://github.com/Nikelroid/moe-steering-3d-delta" aria-label="Mixture-of-experts steering project on GitHub">
+                <img src="/assets/moe-steering.webp" alt="Three-step diagram of expert-routing analysis and test-time steering in a mixture-of-experts LLM" width="1600" height="660" loading="lazy">
+              </a>
+              <figcaption><span>Fig. 02</span><span>Routing-level steering, zero weight edits</span></figcaption>
+            </figure>
+            <div>
+              <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12h5"/><circle cx="9" cy="12" r="1.5"/><path d="M10.5 11.2 16 6.5h5.5M10.5 12h11M10.5 12.8 16 17.5h5.5"/></svg></span>Low-Rank Steering for Mixture-of-Experts LLMs <span class="meta year">2026</span></h3>
+              <p class="prose">
+                A 50K-parameter learned steering head that redirects expert routing at inference
+                time — no changes to model weights. Trained on contrastive pairs from SQuAD,
+                HotpotQA, and FEVER, it improves mean faithfulness by +0.101 across six benchmarks,
+                beating the published SteerMoE baseline on five of six tasks. With Prof. Robin Jia
+                and Prof. Xuezhe Ma; manuscript in preparation.
+              </p>
+              <span class="meta tools">PyTorch · Hugging Face · vLLM</span>
+              <ul class="project-links">
+                <li><a href="https://github.com/Nikelroid/moe-steering-3d-delta">Code <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+                <li><a href="https://kelidari.com/moe-steering-3d-delta/">Project site <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <figure class="plate">
+              <a href="https://github.com/Nikelroid/adversarial-coevolution" aria-label="Adversarial co-evolution project on GitHub">
+                <img src="/assets/adversarial-coevolution.webp" alt="System diagram of RL learner, LLM opponent, curriculum manager, and evaluators in a Gym environment" width="1400" height="923" loading="lazy">
+              </a>
+              <figcaption><span>Fig. 03</span><span>Three-phase curriculum vs. strategy collapse</span></figcaption>
+            </figure>
+            <div>
+              <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12a7.5 7.5 0 0 1 13-5.1"/><path d="M17.5 3.4v3.8h-3.8"/><path d="M19.5 12a7.5 7.5 0 0 1-13 5.1"/><path d="M6.5 20.6v-3.8h3.8"/></svg></span>Adversarial Co-Evolution of RL &amp; LLM Agents <span class="meta year">2025</span></h3>
+              <p class="prose">
+                A distributed PPO pipeline for Gin Rummy, advised by Prof. Yan Liu, that distills
+                strategic knowledge from Llama-3, Gemma, and GPT-OSS into compact RL policies. A
+                three-phase curriculum prevents strategy collapse and reaches a 99.12% win rate
+                against baselines, with a live Flask dashboard for human-vs-agent play.
+              </p>
+              <span class="meta tools">PyTorch · Stable-Baselines3 · Ollama · Flask</span>
+              <ul class="project-links">
+                <li><a href="https://github.com/Nikelroid/adversarial-coevolution">Code <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+                <li><a href="https://kelidari.com/adversarial-coevolution/">Project site <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project flip reveal">
+            <figure class="plate">
+              <a href="https://github.com/Nikelroid/multimodal-sentiment-classification" aria-label="Multimodal sentiment classification project on GitHub">
+                <img src="/assets/multimodal-sentiment.webp" alt="Dialogue frames from a TV scene annotated with negative and neutral sentiment labels" width="1300" height="813" loading="lazy">
+              </a>
+              <figcaption><span>Fig. 04</span><span>RoBERTa + ViT + wav2vec2 fusion</span></figcaption>
+            </figure>
+            <div>
+              <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="9.5" r="4.6"/><circle cx="15" cy="9.5" r="4.6"/><circle cx="12" cy="14.8" r="4.6"/></svg></span>Multi-Modal Sentiment Classification <span class="meta year">2023</span></h3>
+              <p class="prose">
+                A fusion network joining RoBERTa, ViT, and wav2vec2 to read sentiment from
+                image-text-audio conversations (69% accuracy on MSCTD). Trained through an
+                automated SLURM + Weights&nbsp;&amp;&nbsp;Biases pipeline and served with FastAPI
+                for live predictions.
+              </p>
+              <span class="meta tools">PyTorch · Hugging Face · FastAPI · W&amp;B</span>
+              <ul class="project-links">
+                <li><a href="https://github.com/Nikelroid/multimodal-sentiment-classification">Code <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+                <li><a href="https://github.com/XL2248/MSCTD">Dataset <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <figure class="plate">
+              <a href="https://github.com/Nikelroid/qa-vision-server" aria-label="Real-time AI vision assistant server on GitHub">
+                <img src="/assets/vision-assistant.webp" alt="iOS app interface answering natural-language questions about a live camera scene" width="1280" height="1174" loading="lazy">
+              </a>
+              <figcaption><span>Fig. 05</span><span>Camera &#8594; WebSocket &#8594; Vertex AI, round trip</span></figcaption>
+            </figure>
+            <div>
+              <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M2.5 12S6 5.8 12 5.8 21.5 12 21.5 12 18 18.2 12 18.2 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="2.6"/></svg></span>Real-Time AI Vision Assistant <span class="meta year">2025</span></h3>
+              <p class="prose">
+                Point a phone at something and ask about it. A Dockerized FastAPI backend on
+                Google Cloud Vision and Vertex AI talks to a native SwiftUI client over
+                WebSockets, answering natural-language questions about the live camera feed.
+              </p>
+              <span class="meta tools">Docker · FastAPI · GCP · Swift · WebSockets</span>
+              <ul class="project-links">
+                <li><a href="https://github.com/Nikelroid/qa-vision-server">Server <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+                <li><a href="https://github.com/Nikelroid/qa-vision-ios-client">iOS client <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project flip reveal">
+            <figure class="plate">
+              <a href="https://github.com/Nikelroid/image-compression-svd-fft" aria-label="SVD and FFT image compression project on GitHub">
+                <img src="/assets/svd-compression.webp" alt="Compression study: original and reconstructed images with file-size versus singular-value-threshold plot" width="800" height="525" loading="lazy">
+              </a>
+              <figcaption><span>Fig. 06</span><span>Rank truncation vs. perceptual loss</span></figcaption>
+            </figure>
+            <div>
+              <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 4H4.5v16h4M15.5 4h4v16h-4"/><circle cx="10.4" cy="12" r="0.4" fill="currentColor"/><circle cx="13.6" cy="12" r="0.4" fill="currentColor"/></svg></span>Image Compression via SVD &amp; FFT <span class="meta year">2024</span></h3>
+              <p class="prose">
+                A lossy compression method pairing singular value decomposition with matrix
+                Fourier transforms, cutting file size dramatically at minimal perceptual cost —
+                with a written analysis of the rank-truncation trade-off.
+              </p>
+              <span class="meta tools">Python · OpenCV · MATLAB · LaTeX</span>
+              <ul class="project-links">
+                <li><a href="https://github.com/Nikelroid/image-compression-svd-fft">Code <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+              </ul>
+            </div>
+          </article>
+
+          <p class="work-outro reveal">
+            Off the clock: <a class="fun" href="https://kelidari.com/dastan-gesture-guitar/">Dastan</a>,
+            a guitar you strum with hand gestures through your webcam — Karplus-Strong string synthesis,
+            Persian 6/8 rhythms, one HTML file. There's also a
+            <a href="/projects/">full index of sixty-odd projects</a>, from SDN controllers to Persian
+            poem generators.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ Contact ============ -->
+      <section id="contact" class="block">
+        <div class="rail reveal">
+          <span class="kicker"><span class="no">05</span>Contact</span>
+        </div>
+        <div class="reveal">
+          <h2>Get in touch.</h2>
+          <div class="prose">
+            <p>
+              I'm looking for machine-learning research and engineering roles for 2026 —
+              large language models, applied ML, and numerical optimization. If you're hiring,
+              or you just want to compare notes on any of the work above, my inbox is open.
+            </p>
+          </div>
+          <a class="email-line" href="mailto:Kelidari.Nima@gmail.com">Kelidari.Nima@gmail.com</a>
+          <ul class="contact-links">
+            <li><a href="https://github.com/Nikelroid">GitHub <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+            <li><a href="https://www.linkedin.com/in/nima-kelidari/">LinkedIn <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+            <li><a href="https://twitter.com/Adivide2">X / Twitter <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+            <li><a href="/NimaKelidari_CV.pdf">R&eacute;sum&eacute; (PDF) <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="colophon">
+      <p class="meta">&copy; 2026 Nima Kelidari · Los Angeles</p>
+      <p class="meta">
+        Hand-coded in plain HTML &amp; CSS — no framework, no build step, no trackers.
+        Set in Fraunces, Newsreader &amp; IBM Plex Mono.
+      </p>
+      <p class="meta">Last updated July 2026 · <a href="#main">Back to top &#8593;</a></p>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window) ||
+          window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        els.forEach(function (e) { e.classList.add('on'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (x) {
+          if (x.isIntersecting) { x.target.classList.add('on'); io.unobserve(x.target); }
+        });
+      }, { threshold: 0.08 });
+      els.forEach(function (e) { io.observe(e); });
+    })();
+  </script>
+</body>
 </html>

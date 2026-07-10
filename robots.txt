@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kelidari.com/sitemap.xml
