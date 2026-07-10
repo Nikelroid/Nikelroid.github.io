@@ -1,0 +1,11 @@
+/* TEAM */
+Everything: Nima Kelidari
+Location: Los Angeles, CA
+Contact: Kelidari.Nima@gmail.com
+GitHub: @Nikelroid
+
+/* SITE */
+Stack: plain HTML & CSS, a few lines of JavaScript
+Type: Fraunces, Newsreader, IBM Plex Mono (self-hosted)
+Hosting: GitHub Pages
+Trackers: none

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Project Index — Nima Kelidari</title>
+  <meta name="description" content="The complete index of Nima Kelidari's research and engineering projects: machine learning and MLOps, NLP, computer vision, full-stack applications, systems and networking, and more.">
+  <meta name="author" content="Nima Kelidari">
+  <link rel="canonical" href="https://kelidari.com/projects/">
+
+  <meta name="theme-color" content="#F7F3EB" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#17130E" media="(prefers-color-scheme: dark)">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kelidari.com/projects/">
+  <meta property="og:site_name" content="Nima Kelidari">
+  <meta property="og:title" content="Project Index — Nima Kelidari">
+  <meta property="og:description" content="Sixty-odd projects across machine learning, MLOps, NLP, computer vision, systems, and full-stack development.">
+  <meta property="og:image" content="https://kelidari.com/assets/og-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Project Index — Nima Kelidari">
+  <meta name="twitter:description" content="Sixty-odd projects across machine learning, MLOps, NLP, computer vision, systems, and full-stack development.">
+  <meta name="twitter:image" content="https://kelidari.com/assets/og-card.png">
+
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+  <link rel="preload" href="/fonts/fraunces-100-900.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/newsreader-200-800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/ibm-plex-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/styles.css">
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Nima Kelidari", "item": "https://kelidari.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Project Index", "item": "https://kelidari.com/projects/" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="wrap">
+    <header class="masthead">
+      <a class="brand" href="/">Nima Kelidari<span class="dot">.</span></a>
+      <nav aria-label="Site">
+        <ul>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#experience">Experience</a></li>
+          <li><a href="/#work">Work</a></li>
+          <li><a href="/projects/" aria-current="page">Index</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <header class="index-head">
+        <p class="kicker">Catalogue · 2021 — present</p>
+        <h1>Project Index</h1>
+        <p class="prose">
+          Everything, or close to it: coursework that got out of hand, research prototypes,
+          weekend builds, and a few things made purely for the fun of it. The six projects I'd
+          show first are <a href="/#work">on the home page</a>; the rest live here, grouped by
+          area. Nearly all of it is public on <a href="https://github.com/Nikelroid">GitHub</a>.
+        </p>
+      </header>
+
+      <!-- I. Machine Learning & MLOps -->
+      <section class="cat" aria-labelledby="cat-ml">
+        <h2 id="cat-ml"><span class="no">I</span>Machine Learning &amp; MLOps</h2>
+        <p class="cat-desc">End-to-end ML systems with production pipelines, deployment, and experiment tracking.</p>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/anime-recommender-application">Hybrid Anime Recommender System <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2025</span>
+          <p class="desc">Neural collaborative filtering over 80M+ user-anime interactions (300K users &times; 14K titles), with Comet ML and DVC tracking, Jenkins CI/CD, and deployment on GKE.</p>
+          <span class="meta tools">TensorFlow · Docker · Kubernetes · Jenkins · DVC</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/hotel-cancel-detection-application">Hotel Cancellation Detection <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2025</span>
+          <p class="desc">LightGBM + Flask application predicting hotel booking cancellations, with a full MLOps pipeline from data ingestion to deployment.</p>
+          <span class="meta tools">Python · LightGBM · Flask · MLflow</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/deeplearning-classification-transferlearning">Knowledge Distillation for DNNs <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2022</span>
+          <p class="desc">Compact student networks trained via distillation from larger teachers, keeping accuracy while cutting compute.</p>
+          <span class="meta tools">Python · PyTorch</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/deeplearning-classification-projects">Comparing MLP &amp; CNN Architectures <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2022</span>
+          <p class="desc">Comparative study for image classification with ablations over dropout, kernel factorization, and architecture choices.</p>
+          <span class="meta tools">Python · PyTorch</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/deeplearning-classification-projects">Neural Network from Scratch <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2022</span>
+          <p class="desc">Hand-built network trained with SGD on Fashion-MNIST, evaluated across multiple optimization regimes.</p>
+          <span class="meta tools">Python · PyTorch</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/deeplearning-classification-projects">Predicting World Cup 2022 Results <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2022</span>
+          <p class="desc">Neural network forecasting Iran's group-stage results from historical match data.</p>
+          <span class="meta tools">Python · PyTorch</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/deeplearning-classification-projects">Hand Gesture Recognition <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2022</span>
+          <p class="desc">MLP for Latin-letter recognition from hand-movement data, compared across SGD and Adam, validated on live webcam input.</p>
+          <span class="meta tools">Python · OpenCV</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/classic-ml-algorithms-implementation">Matrix Factorization Recommender <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2022</span>
+          <p class="desc">Latent-factor and SVD-based methods predicting user preferences from sparse interaction data.</p>
+          <span class="meta tools">Python · NumPy</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/classic-ml-algorithms-implementation">Classic ML Algorithms <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2022</span>
+          <p class="desc">Reference implementations: music recommendation, heart-disease classification, regression models.</p>
+          <span class="meta tools">Python · scikit-learn · Pandas</span>
+        </article>
+      </section>
+
+      <!-- II. NLP & Deep Learning -->
+      <section class="cat" aria-labelledby="cat-nlp">
+        <h2 id="cat-nlp"><span class="no">II</span>NLP &amp; Deep Learning</h2>
+        <p class="cat-desc">Sequence modeling from Persian-language tasks to image captioning.</p>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/deeplearning-nlp-vision-projects">Image Caption Generator <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2023</span>
+          <p class="desc">CNN feature extractors feeding LSTM/GRU decoders for automatic caption generation.</p>
+          <span class="meta tools">PyTorch · LSTM · GRU</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/deeplearning-nlp-vision-projects">Ferdowsi Poem Generator <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2023</span>
+          <p class="desc">Sequence models generating verse in the style of Ferdowsi, trained on a Persian poetry corpus.</p>
+          <span class="meta tools">Python · LSTM · GRU</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/deeplearning-nlp-vision-projects">Persian Poet Classifier <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2023</span>
+          <p class="desc">Attribution of poems across ten Iranian poets with high accuracy on held-out verses.</p>
+          <span class="meta tools">Python · RNN</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/Persian_poems_corpus">Persian Poems Corpus <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2023</span>
+          <p class="desc">Curated, preprocessed corpus with stopword lists, ready for generation and classification tasks.</p>
+          <span class="meta tools">Python · NLP</span>
+        </article>
+      </section>
+
+      <!-- III. Computer Vision & Image Processing -->
+      <section class="cat" aria-labelledby="cat-cv">
+        <h2 id="cat-cv"><span class="no">III</span>Computer Vision &amp; Image Processing</h2>
+        <p class="cat-desc">Classical and deep approaches: detection, segmentation, stitching, reconstruction.</p>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/alexnet-scene-recognition">AlexNet Scene Recognition <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2024</span>
+          <p class="desc">Scene classification across AlexNet configurations: transfer learning and feature-extraction strategies.</p>
+          <span class="meta tools">PyTorch</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/cv-scene-recognition-epipolar-geometry">Bag-of-Visual-Words Scene Recognition <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2024</span>
+          <p class="desc">SIFT descriptors and BoVW pipeline, with epipolar-geometry analysis for multi-view scenes.</p>
+          <span class="meta tools">OpenCV · SIFT · SVM</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/cv-harris-homography-ransac">Harris Corners &amp; Image Stitching <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2024</span>
+          <p class="desc">Corner detection and homography-based stitching with RANSAC for robust panoramas.</p>
+          <span class="meta tools">OpenCV · RANSAC</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/hog-svm-face-detector">HOG-SVM Face Detector <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2024</span>
+          <p class="desc">Histogram-of-oriented-gradients features with an SVM classifier and non-maximum suppression.</p>
+          <span class="meta tools">OpenCV · scikit-learn</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/video-panorama-stitching">Video Panorama Stitching <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2024</span>
+          <p class="desc">Panoramas from video sequences plus background subtraction, via SIFT-based homography estimation.</p>
+          <span class="meta tools">OpenCV · SIFT</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/advanced-image-segmentation-toolkit">Image Segmentation Toolkit <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2024</span>
+          <p class="desc">K-Means, Mean-Shift, SLIC superpixels, and GrabCut, implemented and compared on real data.</p>
+          <span class="meta tools">OpenCV · scikit-image</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/advanced-image-blending-techniques">Image Blending Techniques <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2023</span>
+          <p class="desc">Face morphing, Poisson blending, and Laplacian stacks for seamless composites.</p>
+          <span class="meta tools">OpenCV · Poisson solver</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/visionlab-fundamentals">Prokudin-Gorskii Reconstruction <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2021</span>
+          <p class="desc">Full-color images recovered from historical black-and-white plates by pyramid-based RGB channel alignment.</p>
+          <span class="meta tools">Python · NumPy</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/visionlab-fundamentals">Histogram Specification <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2021</span>
+          <p class="desc">Histogram matching between images to enhance detail and tonal quality.</p>
+          <span class="meta tools">Python · OpenCV</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/advanced-image-processing-techniques">Template Matching <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2021</span>
+          <p class="desc">Multi-scale template matching in color, with edge detection and match highlighting.</p>
+          <span class="meta tools">Python · OpenCV</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/advanced-image-processing-techniques">Homography &amp; Image Warping <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2021</span>
+          <p class="desc">Rectifying book covers from photographs: corner selection, homography computation, warping.</p>
+          <span class="meta tools">Python · OpenCV</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/advanced-image-processing-techniques">Hybrid Images <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2021</span>
+          <p class="desc">High-pass/low-pass frequency-domain blends: one image up close, another from across the room.</p>
+          <span class="meta tools">Python · FFT</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/visioncraft-synthesis-hough">Hough Transform Line Detection <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2021</span>
+          <p class="desc">Line and corner detection by parameter-space voting after edge detection.</p>
+          <span class="meta tools">Python · OpenCV</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/visioncraft-synthesis-hough">Texture Synthesis <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2021</span>
+          <p class="desc">Patch-based synthesis with Dijkstra-optimal seams and gradient handling.</p>
+          <span class="meta tools">Python</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/visioncraft-synthesis-hough">Image Completion / Inpainting <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2021</span>
+          <p class="desc">Filling missing regions with patch-based synthesis followed by smoothing.</p>
+          <span class="meta tools">Python</span>
+        </article>
+      </section>
+
+      <!-- IV. Full-Stack & Applications -->
+      <section class="cat" aria-labelledby="cat-apps">
+        <h2 id="cat-apps"><span class="no">IV</span>Full-Stack &amp; Applications</h2>
+        <p class="cat-desc">Web and mobile applications, backend to frontend to database.</p>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/artist-explorer-app">Artist Explorer App <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2025</span>
+          <p class="desc">One product, three builds: Flask + vanilla JS, Angular + Node.js + MongoDB Atlas, and Android in Kotlin with Jetpack Compose. Artist search, auth, and favorites on the Artsy API. (Code private — ask for access.)</p>
+          <span class="meta tools">Flask · Angular · Node.js · MongoDB · Kotlin</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/qa-vision-ios-client">QA Vision iOS Client <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2025</span>
+          <p class="desc">SwiftUI client for the Real-Time AI Vision Assistant: camera streaming, animations, activity suggestions.</p>
+          <span class="meta tools">Swift · SwiftUI · WebSockets</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/mysql-metadata-manager">MySQL Metadata Manager <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2024</span>
+          <p class="desc">Tkinter GUI that reverse-engineers and manages database schema metadata, with import/export and row-level editing.</p>
+          <span class="meta tools">Python · MySQL · Tkinter</span>
+        </article>
+      </section>
+
+      <!-- V. Systems, Networking & Algorithms -->
+      <section class="cat" aria-labelledby="cat-sys">
+        <h2 id="cat-sys"><span class="no">V</span>Systems, Networking &amp; Algorithms</h2>
+        <p class="cat-desc">Low-level systems, distributed networking, and classical algorithms.</p>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/p2p-file-sharer">P2P File Sharer <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2023</span>
+          <p class="desc">Multi-threaded torrent-style file sharing over TCP sockets with a central tracker, peer discovery, and detailed logs.</p>
+          <span class="meta tools">Python · Sockets · Multithreading</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/mininet-floodlight-controller">Mininet Floodlight SDN Controller <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2023</span>
+          <p class="desc">Custom eight-switch topology with a Floodlight controller doing K-shortest-path routing.</p>
+          <span class="meta tools">Java · Mininet · OpenFlow</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/threadpool-jobrunner">Threadpool Job Runner <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2022</span>
+          <p class="desc">Custom Java thread pool: resource-aware scheduling, priority queues, dynamic worker scaling.</p>
+          <span class="meta tools">Java · Concurrency</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/mips-stack-machine">MIPS Stack Machine <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2022</span>
+          <p class="desc">Stack machine in MIPS assembly with expression evaluation and a custom calling convention.</p>
+          <span class="meta tools">MIPS Assembly</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/huffman-encoder-decoder">Huffman Encoder / Decoder <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2022</span>
+          <p class="desc">Lossless and lossy text compression with frequency analysis and tree serialization.</p>
+          <span class="meta tools">Java</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/linear-grammar-dfa-minimization">DFA Minimization Toolkit <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2022</span>
+          <p class="desc">Linear-grammar parsing and DFA minimization with automaton visualization.</p>
+          <span class="meta tools">Java · Automata theory</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/algorithm-design-assignments">Algorithm Design Assignments <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2022</span>
+          <p class="desc">Computational geometry, graph theory, and dynamic programming problem sets.</p>
+          <span class="meta tools">Python</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/advanced-algorithmic-design-questions-solutions">Advanced Algorithmic Solutions <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2022</span>
+          <p class="desc">Curated solutions spanning competitive programming and academic problem sets.</p>
+          <span class="meta tools">Python</span>
+        </article>
+      </section>
+
+      <!-- VI. Games & Interactive -->
+      <section class="cat" aria-labelledby="cat-games">
+        <h2 id="cat-games"><span class="no">VI</span>Games &amp; Interactive</h2>
+        <p class="cat-desc">Games and toys exploring AI, multiplayer architecture, and engine fundamentals.</p>
+
+        <article class="entry">
+          <h3><a href="https://kelidari.com/dastan-gesture-guitar/">Dastan — Gesture Guitar Studio <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2026</span>
+          <p class="desc">Strum real guitar chords with hand gestures through your webcam: Karplus-Strong synthesis, Persian 6/8 and flamenco rhythms, a theremin-style melody hand, and recording — one dependency-free HTML file. <span class="links"><a href="https://github.com/Nikelroid/dastan-gesture-guitar">code</a></span></p>
+          <span class="meta tools">JavaScript · Web Audio · MediaPipe</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/sea-battle-game">Sea Battle Multiplayer <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2021</span>
+          <p class="desc">Client-server battleship with accounts, hosted matches, spectator mode, and a leaderboard.</p>
+          <span class="meta tools">Java · JavaFX · Sockets</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/arkanoid-fx">Arkanoid FX <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2021</span>
+          <p class="desc">JavaFX clone of the arcade classic: power-ups, save/load, scoreboard, many brick types.</p>
+          <span class="meta tools">Java · JavaFX</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/pac-nam-cpp">Pac-Nam <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2021</span>
+          <p class="desc">Pac-Man-style game in C++ with BFS ghost AI, level loading, and a custom render loop.</p>
+          <span class="meta tools">C++ · BFS</span>
+        </article>
+      </section>
+
+      <!-- VII. Nwitter -->
+      <section class="cat" aria-labelledby="cat-nwitter">
+        <h2 id="cat-nwitter"><span class="no">VII</span>Nwitter — Social Network Suite</h2>
+        <p class="cat-desc">A multi-component social platform: backend, desktop clients, CLI, and chatbot extensions.</p>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/nwitter-backend-server">Nwitter Backend Server <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2022</span>
+          <p class="desc">Java backend with MongoDB, authentication, timelines, and a REST API for clients and bots.</p>
+          <span class="meta tools">Java · MongoDB · REST</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/nwitter-frontend-client">Nwitter Frontend Client <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2022</span>
+          <p class="desc">JavaFX desktop client with offline support and message caching.</p>
+          <span class="meta tools">Java · JavaFX</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/graphical_nwitter">Graphical Nwitter <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2022</span>
+          <p class="desc">Alternative JavaFX client focused on UI animation and component composition.</p>
+          <span class="meta tools">Java · JavaFX</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/nwitter-offline-cli">Nwitter Offline CLI <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2022</span>
+          <p class="desc">Terminal client with JSON persistence and offline composing.</p>
+          <span class="meta tools">Java · JSON</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/xo-game-bot-extention">XO Game Bot <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2022</span>
+          <p class="desc">Tic-tac-toe over messages, with dynamic board rendering.</p>
+          <span class="meta tools">Java · Bot API</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/calculator-bot-extention">Calculator Bot <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2022</span>
+          <p class="desc">Expression-parser bot with an extensible operator set.</p>
+          <span class="meta tools">Java · Parsing</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/vote-bot-extention">Vote Bot <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2022</span>
+          <p class="desc">Interactive polls with real-time tallies.</p>
+          <span class="meta tools">Java · Bot API</span>
+        </article>
+      </section>
+
+      <!-- VIII. Statistics & Data Analysis -->
+      <section class="cat" aria-labelledby="cat-stats">
+        <h2 id="cat-stats"><span class="no">VIII</span>Statistics &amp; Data Analysis</h2>
+        <p class="cat-desc">Statistical modeling and exploratory analysis in R.</p>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/provinces-covid-mortality-analysis">Iran COVID-19 Mortality Analysis <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2023</span>
+          <p class="desc">Excess-mortality estimates across 31 provinces: regression on pre-COVID data versus observed deaths.</p>
+          <span class="meta tools">R</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/diabetes-prediction">Diabetes Prediction (USA) <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2023</span>
+          <p class="desc">Decision trees, random forests, neural networks, and KNN compared on a balanced diabetes dataset.</p>
+          <span class="meta tools">R</span>
+        </article>
+      </section>
+
+      <p class="work-outro" style="margin-top: 0; border-top: 1px solid var(--line); padding-block: 2rem 3rem;">
+        Older odds and ends live in the
+        <a href="https://github.com/Nikelroid?tab=repositories">full repository list</a> on GitHub.
+      </p>
+    </main>
+
+    <footer class="colophon">
+      <p class="meta">&copy; 2026 Nima Kelidari · Los Angeles</p>
+      <p class="meta">
+        Hand-coded in plain HTML &amp; CSS — no framework, no build step, no trackers.
+        Set in Fraunces, Newsreader &amp; IBM Plex Mono.
+      </p>
+      <p class="meta">Last updated July 2026 · <a href="/">Back home</a></p>
+    </footer>
+  </div>
+</body>
+</html>
