@@ -430,6 +430,32 @@ section[id] { scroll-margin-top: 1.5rem; }
 /* Education entries reuse .role */
 .role .gpa { color: var(--ink); }
 
+/* Certificates: compact rows under education */
+.certs {
+  margin-top: 2rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--line);
+  max-width: var(--measure);
+}
+.certs-label { margin-bottom: 0.7rem; }
+.certs-list { list-style: none; margin: 0; padding: 0; }
+.certs-list li {
+  font-size: 0.98rem;
+  color: var(--ink-soft);
+  margin-top: 0.45rem;
+}
+.certs-list a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 150ms ease;
+}
+.certs-list a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+.certs-list .arrow { color: var(--accent); font-size: 0.8em; }
+.certs-list .meta { margin-left: 0.6em; white-space: nowrap; }
+
 /* ---------- Selected work ---------- */
 
 .project {
