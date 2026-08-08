@@ -215,9 +215,9 @@
             <ul class="points">
               <li>
                 IMRT radiotherapy planning reduces to a convex quadratic program with up to
-                <strong>~380K variables and ~570K constraints</strong> per clinical case. I work on making
+                <strong>~216K beamlet variables</strong> per clinical case. I work on making
                 that solve fast: a path-following ADMM that warm-starts an interior-point method,
-                GPU-accelerated with CuPy and mixed precision on V100 nodes.
+                GPU-accelerated with CuPy and mixed precision on V100 and P100 nodes.
               </li>
               <li>
                 Implemented and benchmarked first-order methods from the recent literature —
@@ -226,15 +226,19 @@
                 safeguarded Anderson acceleration — on real lung and prostate cases.
               </li>
               <li>
-                Designed a combined ADMM variant (aggressive spectral penalty recovery plus
-                safeguarded Anderson mixing) that <strong>roughly halves iterations</strong> to a usable
-                warm start — up to ~4&times; from a mis-set penalty — and was the only method to reach
-                the tight KKT tolerance on both cancer sites.
+                Replaced the solver's hand-tuned settings with <strong>Bayesian optimization over
+                1,015 Optuna trials</strong>: <strong>78 &#8594; 21 iterations</strong> to a usable warm
+                start on a held-out clinical case — 3.7&times; fewer, 3.2&#8211;3.8&times; less
+                wall-clock — then derived and validated a bound that explains the gain rather than
+                just reporting it.
               </li>
               <li>
-                Built a PDQP&#8594;interior-point hybrid reaching a <strong>~100&times; tighter optimality
-                gap</strong> than the production solver, plus a matrix-free warm-started conjugate-gradient
-                GPU engine and a SLURM experiment harness with verified CPU/GPU parity.
+                Rebuilt the penalty recovery rule so runtime barely depends on a mis-set starting
+                penalty — <strong>6 &#8594; 21 iterations</strong> across four orders of magnitude, against
+                8 &#8594; 78 for the prior rule and 20 &#8594; 337 for the textbook one — on a platform
+                behind <strong>~1,100 solver runs</strong>: a matrix-free warm-started conjugate-gradient
+                GPU engine, an NFS-safe SLURM search harness, and an early exit cutting trial cost
+                1.8&#8211;4.4&times;.
               </li>
             </ul>
           </article>
@@ -252,20 +256,25 @@
                 and Prof. Xuezhe Ma — a <strong>50K-parameter</strong> learned low-rank head that intervenes
                 on MoE routing with no changes to model weights. Trained on contrastive pairs from SQuAD,
                 HotpotQA, and FEVER, it improves mean faithfulness by <strong>+0.101</strong> across six
-                benchmarks and beats the published SteerMoE baseline (ICML 2026) on five of six tasks.
-                Manuscript in preparation.
+                benchmarks — <strong>4&times; the gain</strong> of the published SteerMoE baseline
+                (ICLR 2026) — and the recipe transfers across three MoE families
+                (7B&#8211;47B, 8&#8211;128 experts). Manuscript in preparation.
               </li>
               <li>
                 <strong>Adversarial co-evolution of RL and LLM agents</strong>, with Prof. Yan Liu —
                 a distributed PPO pipeline with a three-phase curriculum reaching a
                 <strong>99.12% win rate</strong> against baselines, plus a master&#8211;worker inference
                 engine that distills strategy from Llama-3, Gemma, and GPT-OSS into compact RL policies.
+                First-author paper <strong>accepted to AIIDE 2026</strong> (AAAI) —
+                <a href="https://arxiv.org/abs/2607.06854">arXiv:2607.06854</a>.
               </li>
               <li>
                 <strong>Language-agnostic speech emotion recognition</strong>, with Prof. Mohammad Soleymani
-                (USC SAIL) — a PyTorch / Hugging Face probing framework evaluating six pretrained speech
-                encoders across eight datasets on SLURM, with a FastAPI dashboard for layer-wise
-                paralinguistic analysis.
+                (USC ICT, IHP Lab) — a PyTorch / Hugging Face probing framework evaluating six pretrained
+                speech encoders across eight datasets on SLURM, with a FastAPI dashboard for layer-wise
+                paralinguistic analysis. A sparse-autoencoder dissection explaining <strong>93% of the
+                signal</strong> over ~940K frame activations isolates <strong>61 confound-controlled
+                emotion features</strong>, 60 of them acoustic — the models listen to tone, not words.
               </li>
             </ul>
           </article>
@@ -421,8 +430,8 @@
                 A 50K-parameter learned steering head that redirects expert routing at inference
                 time — no changes to model weights. Trained on contrastive pairs from SQuAD,
                 HotpotQA, and FEVER, it improves mean faithfulness by +0.101 across six benchmarks,
-                beating the published SteerMoE baseline on five of six tasks. With Prof. Robin Jia
-                and Prof. Xuezhe Ma; manuscript in preparation.
+                beating the published SteerMoE baseline on five of six tasks — 4&times; its gain
+                overall. With Prof. Robin Jia and Prof. Xuezhe Ma; manuscript in preparation.
               </p>
               <span class="meta tools">PyTorch · Hugging Face · vLLM</span>
               <ul class="project-links">
@@ -445,11 +454,12 @@
                 A distributed PPO pipeline for Gin Rummy, advised by Prof. Yan Liu, that distills
                 strategic knowledge from Llama-3, Gemma, and GPT-OSS into compact RL policies. A
                 three-phase curriculum prevents strategy collapse and reaches a 99.12% win rate
-                against baselines, with a live Flask dashboard for human-vs-agent play.
+                against baselines, with a live Flask dashboard for human-vs-agent play. The paper
+                behind it is <strong>accepted to AIIDE 2026</strong> (AAAI).
               </p>
               <span class="meta tools">PyTorch · Stable-Baselines3 · Ollama · Flask</span>
               <ul class="project-links">
-                <li><a href="https://arxiv.org/abs/2607.06854">Paper <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+                <li><a href="https://arxiv.org/abs/2607.06854">Paper · AIIDE 2026 <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
                 <li><a href="https://github.com/Nikelroid/adversarial-coevolution">Code <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
                 <li><a href="https://kelidari.com/adversarial-coevolution/">Project site <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
               </ul>
