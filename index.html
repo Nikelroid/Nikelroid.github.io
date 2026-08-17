@@ -120,6 +120,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#work">Work</a></li>
+          <li><a href="#playgrounds">Playgrounds</a></li>
           <li><a href="/projects/">Index</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -252,13 +253,14 @@
             <p class="where"><a href="https://www.usc.edu/">University of Southern California</a> · Los Angeles</p>
             <ul class="points">
               <li>
-                <strong>Inference-time steering for mixture-of-experts LLMs</strong>, with Prof. Robin Jia
-                and Prof. Xuezhe Ma — a <strong>50K-parameter</strong> learned low-rank head that intervenes
-                on MoE routing with no changes to model weights. Trained on contrastive pairs from SQuAD,
-                HotpotQA, and FEVER, it improves mean faithfulness by <strong>+0.101</strong> across six
-                benchmarks — <strong>4&times; the gain</strong> of the published SteerMoE baseline
-                (ICLR 2026) — and the recipe transfers across three MoE families
-                (7B&#8211;47B, 8&#8211;128 experts). Manuscript in preparation.
+                <strong>Inference-time steering for mixture-of-experts LLMs</strong> — a
+                <strong>197K-parameter</strong> learned low-rank head that intervenes on MoE routing
+                with no changes to model weights. Trained on <strong>9,027 contrastive pairs</strong>
+                from SQuAD, HotpotQA, and FEVER, it improves mean faithfulness by
+                <strong>+0.101</strong> across six benchmarks — <strong>4&times; the gain</strong> of
+                the published SteerMoE baseline (ICLR 2026) — and the plugin runs unmodified across
+                <strong>four MoE families</strong> (1.3B&#8211;47B, 8&#8211;128 experts), with results
+                reported on OLMoE. Sole-authored manuscript in preparation.
               </li>
               <li>
                 <strong>Adversarial co-evolution of RL and LLM agents</strong>, with Prof. Yan Liu —
@@ -428,11 +430,11 @@
             <div>
               <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12h5"/><circle cx="9" cy="12" r="1.5"/><path d="M10.5 11.2 16 6.5h5.5M10.5 12h11M10.5 12.8 16 17.5h5.5"/></svg></span>Low-Rank Steering for Mixture-of-Experts LLMs <span class="meta year">2026</span></h3>
               <p class="prose">
-                A 50K-parameter learned steering head that redirects expert routing at inference
-                time — no changes to model weights. Trained on contrastive pairs from SQuAD,
+                A 197K-parameter learned steering head that redirects expert routing at inference
+                time — no changes to model weights. Trained on 9,027 contrastive pairs from SQuAD,
                 HotpotQA, and FEVER, it improves mean faithfulness by +0.101 across six benchmarks,
                 beating the published SteerMoE baseline on five of six tasks — 4&times; its gain
-                overall. With Prof. Robin Jia and Prof. Xuezhe Ma; manuscript in preparation.
+                overall. Sole-authored manuscript in preparation.
               </p>
               <span class="meta tools">PyTorch · Hugging Face · vLLM</span>
               <ul class="project-links">
@@ -473,20 +475,23 @@
               <a href="https://github.com/Nikelroid/multimodal-sentiment-classification" aria-label="Multimodal sentiment classification project on GitHub">
                 <img src="/assets/multimodal-sentiment.webp" alt="Dialogue frames from a TV scene annotated with negative and neutral sentiment labels" width="1300" height="813" loading="lazy">
               </a>
-              <figcaption><span>Fig. 04</span><span>RoBERTa + ViT + wav2vec2 fusion</span></figcaption>
+              <figcaption><span>Fig. 04</span><span>Text &#183; face &#183; voice, fused and deployed</span></figcaption>
             </figure>
             <div>
-              <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="9.5" r="4.6"/><circle cx="15" cy="9.5" r="4.6"/><circle cx="12" cy="14.8" r="4.6"/></svg></span>Multi-Modal Sentiment Classification <span class="meta year">2023</span></h3>
+              <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="9.5" r="4.6"/><circle cx="15" cy="9.5" r="4.6"/><circle cx="12" cy="14.8" r="4.6"/></svg></span>Tri-Modal Sentiment Analysis, Benchmarked and Deployed <span class="meta year">2026</span></h3>
               <p class="prose">
-                A fusion network joining RoBERTa, ViT, and wav2vec2 to read sentiment from
-                image-text-audio conversations (69% accuracy on MSCTD). Trained through an
-                automated SLURM + Weights&nbsp;&amp;&nbsp;Biases pipeline and served with FastAPI
-                for live predictions.
+                Text, face, and voice fused into one model at <strong>74.5% accuracy / 0.743
+                weighted-F1 on MELD</strong> (2,607 utterances). It began as a 2022 course project
+                stuck at 63%: modern backbones barely moved it, but changing the <em>data</em>
+                gained <strong>11.5 points</strong>. It now runs live on scale-to-zero Cloud Run,
+                with browser labs that personalize it to a user in five minutes.
               </p>
-              <span class="meta tools">PyTorch · Hugging Face · FastAPI · W&amp;B</span>
+              <span class="meta tools">RoBERTa &#183; ModernBERT &#183; DINOv2 &#183; Whisper &#183; MTCNN &#183; FastAPI &#183; Cloud Run &#183; GitHub Actions</span>
               <ul class="project-links">
+                <li><a href="https://kelidari.com/multimodal-sentiment-classification/">Live playground <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
                 <li><a href="https://github.com/Nikelroid/multimodal-sentiment-classification">Code <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-                <li><a href="https://github.com/XL2248/MSCTD">Dataset <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+                <li><a href="https://kelidari.com/multimodal-sentiment-classification/lab.html">Voice calibration lab <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+                <li><a href="https://kelidari.com/multimodal-sentiment-classification/face-lab.html">Face calibration lab <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
               </ul>
             </div>
           </article>
@@ -569,10 +574,90 @@
         </div>
       </section>
 
+
+      <!-- ============ Playgrounds ============ -->
+      <section id="playgrounds" class="block">
+        <div class="rail reveal">
+          <h2 class="kicker"><span class="no" aria-hidden="true">05</span>Playgrounds</h2>
+        </div>
+        <div class="reveal">
+          <p class="prose lede">
+            Eight things you can open and use right now &mdash; no install, no signup, nothing to
+            read first. Every claim on this site closes its own loop in about a minute.
+          </p>
+          <ul class="playground-grid">
+            <li class="pg-card pg-feature">
+              <a href="https://kelidari.com/multimodal-sentiment-classification/">
+                <span class="pg-head"><svg class="pg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8.5" cy="9" r="4.2"/><circle cx="15.5" cy="9" r="4.2"/><circle cx="12" cy="14.5" r="4.2"/></svg><span class="pg-tag"><span class="pg-live" aria-hidden="true"></span>Live model</span></span>
+                <h3>Tri-Modal Sentiment Playground</h3>
+                <p>Type a sentence, show your face, or record your voice. Three models read you independently and a confidence-weighted fusion arbitrates when they disagree. Local mode keeps everything on your machine.</p>
+                <span class="pg-stat">74.5% on MELD</span>
+              </a>
+            </li>
+            <li class="pg-card">
+              <a href="https://kelidari.com/multimodal-sentiment-classification/lab.html">
+                <span class="pg-head"><svg class="pg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5a2.6 2.6 0 0 1 2.6 2.6v5.2a2.6 2.6 0 0 1-5.2 0V6.1A2.6 2.6 0 0 1 12 3.5Z"/><path d="M6 11.3a6 6 0 0 0 12 0M12 17.3v3.2"/></svg><span class="pg-tag">Calibration lab</span></span>
+                <h3>Voice Lab</h3>
+                <p>Record fixed sentences across moods and the model learns your prosody instead of the average speaker's.</p>
+                <span class="pg-stat">88.3% &rarr; 96.7% LOO</span>
+              </a>
+            </li>
+            <li class="pg-card">
+              <a href="https://kelidari.com/multimodal-sentiment-classification/face-lab.html">
+                <span class="pg-head"><svg class="pg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.4"/><path d="M9 10.2h.01M15 10.2h.01M8.6 14.6a4.6 4.6 0 0 0 6.8 0"/></svg><span class="pg-tag">Calibration lab</span></span>
+                <h3>Face Lab</h3>
+                <p>Auto-captures seven acted expressions and fits a transform that knows your particular surprise from your particular fear.</p>
+                <span class="pg-stat">81% &rarr; 90.5% LOO</span>
+              </a>
+            </li>
+            <li class="pg-card">
+              <a href="https://kelidari.com/machine-learning-implementations/">
+                <span class="pg-head"><svg class="pg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 19.5V9M9.5 19.5V4.5M14.5 19.5v-7M19.5 19.5v-11"/></svg><span class="pg-tag">10 modules</span></span>
+                <h3>Machine Learning from Scratch</h3>
+                <p>Backpropagation, AdaBoost, K-means++, HMM Viterbi, attention, Q-learning &mdash; hand-written in NumPy, each training live in front of you.</p>
+                <span class="pg-stat">Runs in-browser</span>
+              </a>
+            </li>
+            <li class="pg-card">
+              <a href="https://kelidari.com/adversarial-coevolution/explorer.html">
+                <span class="pg-head"><svg class="pg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12a7.5 7.5 0 0 1 13-5.1"/><path d="M17.5 3.4v3.8h-3.8"/><path d="M19.5 12a7.5 7.5 0 0 1-13 5.1"/><path d="M6.5 20.6v-3.8h3.8"/></svg><span class="pg-tag">AIIDE 2026</span></span>
+                <h3>Co-Evolution Explorer</h3>
+                <p>Every training run behind the paper &mdash; including the 99.12% win rate that turned out to be 34% once measured honestly.</p>
+                <span class="pg-stat">76 runs &#183; 412 GPU-hours</span>
+              </a>
+            </li>
+            <li class="pg-card">
+              <a href="https://kelidari.com/linguistic-agnostic-ser/explorer.html">
+                <span class="pg-head"><svg class="pg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10v4M6.5 7v10M10 4.2v15.6M13.5 7v10M17 10v4M20.5 11.2v1.6"/></svg><span class="pg-tag">Probing study</span></span>
+                <h3>Speech Emotion Explorer</h3>
+                <p>Where emotion actually lives inside speech transformers, layer by layer, plus the noise battery down to 0&nbsp;dB.</p>
+                <span class="pg-stat">6 encoders &#183; 8 corpora</span>
+              </a>
+            </li>
+            <li class="pg-card">
+              <a href="https://kelidari.com/dastan-gesture-guitar/">
+                <span class="pg-head"><svg class="pg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8.6" cy="15.4" r="3.4"/><path d="M11 13 18.4 5.6M16.2 3.8l4 4-1.8 1.8-4-4z"/></svg><span class="pg-tag">Webcam</span></span>
+                <h3>Dastan &mdash; Gesture Guitar</h3>
+                <p>Play chords with your hands. One dependency-free HTML file, 25&nbsp;ms audio lookahead decoupled from the render loop.</p>
+                <span class="pg-stat">Zero dependencies</span>
+              </a>
+            </li>
+            <li class="pg-card">
+              <a href="https://kelidari.com/FWC26-Schedule/">
+                <span class="pg-head"><svg class="pg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.4"/><path d="M12 3.6 9.2 8.4l1.1 4.4h3.4l1.1-4.4z"/><path d="M20.4 12 15.8 12.8M3.6 12l4.6.8M9.6 20.2l1.6-4M14.4 20.2l-1.6-4"/></svg><span class="pg-tag">Utility</span></span>
+                <h3>World Cup 2026 Schedule</h3>
+                <p>Built because I wanted it to exist. All 104 matches, filterable, in one page.</p>
+                <span class="pg-stat">Static</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <!-- ============ Contact ============ -->
       <section id="contact" class="block">
         <div class="rail reveal">
-          <span class="kicker"><span class="no">05</span>Contact</span>
+          <span class="kicker"><span class="no">06</span>Contact</span>
         </div>
         <div class="reveal">
           <h2>Get in touch.</h2>
