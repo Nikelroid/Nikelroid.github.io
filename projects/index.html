@@ -70,7 +70,7 @@
         <h1>Project Index</h1>
         <p class="prose">
           Everything, or close to it: coursework that got out of hand, research prototypes,
-          weekend builds, and a few things made purely for the fun of it. The seven projects I'd
+          weekend builds, and a few things made purely for the fun of it. The projects I'd
           show first are <a href="/#work">on the home page</a>; the rest live here, grouped by
           area. Nearly all of it is public on <a href="https://github.com/Nikelroid">GitHub</a>.
         </p>
@@ -80,6 +80,13 @@
       <section class="cat" aria-labelledby="cat-ml">
         <h2 id="cat-ml"><span class="no">I</span>Machine Learning &amp; MLOps</h2>
         <p class="cat-desc">End-to-end ML systems with production pipelines, deployment, and experiment tracking.</p>
+
+        <article class="entry">
+          <h3><a href="https://kelidari.com/multimodal-sentiment-classification/">Tri-Modal Sentiment Analysis &mdash; Benchmarked &amp; Deployed <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2026</span>
+          <p class="desc">Text, facial expression, and voice prosody fused into one model scoring <strong>74.5% accuracy / 0.743 weighted-F1 on MELD</strong> (2,607 utterances) &mdash; the level of published multimodal systems. A RoBERTa-large + ModernBERT-large ensemble, an MTCNN&rarr;FER-ViT face branch at 98.5% coverage, and a frozen Whisper encoder with learnable layer weighting. It started as a 2022 course project stuck at 63%; modern backbones barely moved it, but changing the <em>data</em> gained 11.5 points. Runs live on scale-to-zero Cloud Run under $1/month, with CI on every push and deploys gated by a smoke test that fails on degraded responses. Two browser calibration labs personalize it to a user in five minutes &mdash; voice to 96.7%, face to 90.5% leave-one-out. <a href="https://kelidari.com/multimodal-sentiment-classification/">Playground</a> &middot; <a href="https://kelidari.com/multimodal-sentiment-classification/lab.html">voice lab</a> &middot; <a href="https://kelidari.com/multimodal-sentiment-classification/face-lab.html">face lab</a> &middot; <a href="https://github.com/Nikelroid/multimodal-sentiment-classification">code</a>.</p>
+          <span class="meta tools">RoBERTa · ModernBERT · DINOv2 · Whisper · MTCNN · FastAPI · Cloud Run · GitHub Actions</span>
+        </article>
 
         <article class="entry">
           <h3><a href="https://kelidari.com/machine-learning-implementations/">Machine Learning from Scratch &mdash; Interactive Lab <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
