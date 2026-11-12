@@ -284,6 +284,34 @@ p:last-child { margin-bottom: 0; }
 }
 .hero-links a:hover { border-color: var(--accent); color: var(--accent); }
 .hero-links .arrow { color: var(--accent); }
+.hero-links a.primary {
+  background: var(--accent);
+  color: var(--paper);
+  border: 1px solid var(--accent);
+  padding: 0.55rem 0.95rem 0.5rem;
+}
+.hero-links a.primary .arrow { color: inherit; }
+.hero-links a.primary:hover { background: var(--accent-strong); border-color: var(--accent-strong); color: var(--paper); }
+
+/* Availability line under the hero deck */
+.status {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin: 1.5rem 0 0;
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+.status-dot {
+  flex: none;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent);
+}
 
 .portrait { justify-self: center; width: min(21rem, 100%); }
 @media (min-width: 920px) { .portrait { justify-self: end; } }
@@ -455,6 +483,33 @@ section[id] { scroll-margin-top: 1.5rem; }
 .certs-list a:hover { color: var(--accent); text-decoration-color: var(--accent); }
 .certs-list .arrow { color: var(--accent); font-size: 0.8em; }
 .certs-list .meta { margin-left: 0.6em; white-space: nowrap; }
+
+/* ---------- Publications ---------- */
+
+.pubs { list-style: none; margin: 0; padding: 0; max-width: var(--measure); }
+.pub {
+  padding-block: 1.3rem;
+  border-top: 1px solid color-mix(in srgb, var(--line) 55%, transparent);
+}
+.pub:first-child { padding-top: 0; border-top: 0; }
+.pub .venue { display: block; }
+.pub .venue.accepted { color: var(--accent); }
+.pub h3 { font-size: 1.14rem; font-weight: 540; line-height: 1.35; margin-top: 0.4rem; }
+.pub .authors { margin: 0.35rem 0 0; color: var(--ink-soft); font-size: 0.98rem; }
+.pub .authors b { color: var(--ink); font-weight: 600; }
+.pub .authors .note { color: var(--muted); font-size: 0.9em; }
+.pub-links { display: flex; flex-wrap: wrap; gap: 0.3rem 1.2rem; margin: 0.5rem 0 0; padding: 0; list-style: none; }
+.pub-links a {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 3px;
+  transition: color 150ms ease;
+}
+.pub-links a:hover { color: var(--accent); text-decoration-color: var(--accent); }
 
 /* ---------- Selected work ---------- */
 

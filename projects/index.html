@@ -82,9 +82,23 @@
         <p class="cat-desc">End-to-end ML systems with production pipelines, deployment, and experiment tracking.</p>
 
         <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/footnote-rag">Footnote: RAG for SEC Filings <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2026</span>
+          <p class="desc">A question-answering assistant for company filings that names the page behind every answer: page-bounded chunks, hybrid BM25 and vector search with a cross-encoder reranker, routing by company and year, and a LangGraph agent allowed one extra search. On all 150 FinanceBench questions the agent is right <strong>85.8%</strong> of the time (87.2% on the 99 held-back questions), against 33.6% with no documents. Amended copies of real statement pages show the risk: with both versions in front of the model, answers lead with the old amount up to 100% of the time, and filing dates plus one sentence that the later filing wins bring it to 0% on three models.</p>
+          <span class="meta tools">LangChain · LangGraph · Chroma · FastAPI · MCP · Google ADK</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://arxiv.org/abs/2608.04669">Differentiating Through Dual Prices <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2026</span>
+          <p class="desc">Decision-focused learning for treatment policies under a capacity limit, trained through Lagrangian dual prices by implicit differentiation. In a queueing simulation it stayed within capacity on all 6 datasets while the standard pipeline overloaded 4 (up to 116%), with up to +72% policy value. Co-first author, accepted at the NeurIPS 2026 ML&times;OR workshop; I was the largest code contributor (41 of 73 commits). <span class="links"><a href="https://github.com/mahdisalmani/end2end-capacity-constrained-policy-learning">code</a></span></p>
+          <span class="meta tools">PyTorch · Implicit differentiation · SLURM</span>
+        </article>
+
+        <article class="entry">
           <h3><a href="https://kelidari.com/multimodal-sentiment-classification/">Tri-Modal Sentiment Analysis &mdash; Benchmarked &amp; Deployed <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
           <span class="meta">2026</span>
-          <p class="desc">Text, facial expression, and voice prosody fused into one model scoring <strong>74.5% accuracy / 0.743 weighted-F1 on MELD</strong> (2,607 utterances) &mdash; the level of published multimodal systems. A RoBERTa-large + ModernBERT-large ensemble, an MTCNN&rarr;FER-ViT face branch at 98.5% coverage, and a frozen Whisper encoder with learnable layer weighting. It started as a 2022 course project stuck at 63%; modern backbones barely moved it, but changing the <em>data</em> gained 11.5 points. Runs live on scale-to-zero Cloud Run under $1/month, with CI on every push and deploys gated by a smoke test that fails on degraded responses. Two browser calibration labs personalize it to a user in five minutes &mdash; voice to 96.7%, face to 90.5% leave-one-out. <a href="https://kelidari.com/multimodal-sentiment-classification/">Playground</a> &middot; <a href="https://kelidari.com/multimodal-sentiment-classification/lab.html">voice lab</a> &middot; <a href="https://kelidari.com/multimodal-sentiment-classification/face-lab.html">face lab</a> &middot; <a href="https://github.com/Nikelroid/multimodal-sentiment-classification">code</a>.</p>
+          <p class="desc">Text, facial expression, and voice prosody fused into one model scoring <strong>74.5% accuracy / 0.743 weighted-F1 on MELD</strong> (2,607 utterances) &mdash; the level of published multimodal systems. A RoBERTa-large + ModernBERT-large ensemble, an MTCNN&rarr;FER-ViT face branch at 98.5% coverage, and a frozen Whisper encoder with learnable layer weighting. It started as a 2022 course project stuck at 63% on its original corpus, where newer backbones moved it only half a point, so the limit was the data and I rebuilt it on MELD. Runs live on scale-to-zero Cloud Run under $1/month, with CI on every push and deploys gated by a smoke test that fails on degraded responses. Two browser calibration labs personalize it to a user in five minutes &mdash; voice to 96.7%, face to 90.5% leave-one-out. <a href="https://kelidari.com/multimodal-sentiment-classification/">Playground</a> &middot; <a href="https://kelidari.com/multimodal-sentiment-classification/lab.html">voice lab</a> &middot; <a href="https://kelidari.com/multimodal-sentiment-classification/face-lab.html">face lab</a> &middot; <a href="https://github.com/Nikelroid/multimodal-sentiment-classification">code</a>.</p>
           <span class="meta tools">RoBERTa · ModernBERT · DINOv2 · Whisper · MTCNN · FastAPI · Cloud Run · GitHub Actions</span>
         </article>
 
@@ -171,6 +185,13 @@
           <p class="desc">Imitation learning on MuJoCo continuous control. On Hopper, behavior cloning collapses to 23% of expert return under compounding distribution shift; DAgger recovers 99.8% within six iterations.</p>
           <span class="meta tools">PyTorch · MuJoCo · Gymnasium</span>
         </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/csci645-in-hand-rotation/tree/mjlab-1.6">In-Hand Cube Rotation on a Simulated LEAP Hand <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2026</span>
+          <p class="desc">PPO policies for HORA-style in-hand rotation in mjlab (MuJoCo Warp), from proprioception only: 16 runs and 145.5 GPU-hours, each policy tested in 7 conditions at 1,024 episodes. Randomizing friction and cube mass in training was the one significant gain on slippery cubes (0.378 vs 0.280 rad/s at friction 0.3), a proportional drift gate cut tilt error 13%, and I found a reset-reference bug in mjlab 1.1.1, then ported the task to mjlab 1.6. Simulation only.</p>
+          <span class="meta tools">PyTorch · MuJoCo Warp · RSL-RL · SLURM</span>
+        </article>
       </section>
 
       <!-- II. NLP & Deep Learning -->
@@ -211,6 +232,13 @@
       <section class="cat" aria-labelledby="cat-cv">
         <h2 id="cat-cv"><span class="no">III</span>Computer Vision &amp; Image Processing</h2>
         <p class="cat-desc">Classical and deep approaches: detection, segmentation, stitching, reconstruction.</p>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/image-compression-svd-fft">Image Compression via SVD &amp; FFT <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2024</span>
+          <p class="desc">Lossy compression that pairs singular value decomposition with matrix Fourier transforms, with a written analysis of the rank-truncation trade-off.</p>
+          <span class="meta tools">Python · OpenCV · MATLAB</span>
+        </article>
 
         <article class="entry">
           <h3><a href="https://github.com/Nikelroid/alexnet-scene-recognition">AlexNet Scene Recognition <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
@@ -324,9 +352,16 @@
         <p class="cat-desc">Web and mobile applications, backend to frontend to database.</p>
 
         <article class="entry">
+          <h3><a href="https://kelidari.com/FWC26-Schedule/">World Cup 2026 Schedule <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2026</span>
+          <p class="desc">An installable web app for the 2026 FIFA World Cup: all 104 matches, filterable, in one page. <span class="links"><a href="https://github.com/Nikelroid/FWC26-Schedule">code</a></span></p>
+          <span class="meta tools">JavaScript · PWA</span>
+        </article>
+
+        <article class="entry">
           <h3><a href="https://github.com/Nikelroid/artist-explorer-app">Artist Explorer App <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
           <span class="meta">2025</span>
-          <p class="desc">One product, three builds: Flask + vanilla JS, Angular + Node.js + MongoDB Atlas, and Android in Kotlin with Jetpack Compose. Artist search, auth, and favorites on the Artsy API. (Code private — ask for access.)</p>
+          <p class="desc">One product, three builds: Flask + vanilla JS, Angular + Node.js + MongoDB Atlas, and Android in Kotlin with Jetpack Compose. Artist search, auth, and favorites on the Artsy API.</p>
           <span class="meta tools">Flask · Angular · Node.js · MongoDB · Kotlin</span>
         </article>
 
@@ -439,6 +474,20 @@
           <p class="desc">Pac-Man-style game in C++ with BFS ghost AI, level loading, and a custom render loop.</p>
           <span class="meta tools">C++ · BFS</span>
         </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Nikelroid/diagnosing_game_plateau">Is It the Game or the Agent? <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2026</span>
+          <p class="desc">A three-arm protocol (baseline, a privileged-information oracle, and a shape-matched placebo) calibrated against exact solutions on eleven games, then applied to Gin Rummy: 24 runs per arm bound the value of seeing the opponent's hand to under 0.4 percentage points. Across an 88-configuration atlas of hidden information, independent bounds caught three silent measurement failures, one of them in my own placebo control.</p>
+          <span class="meta tools">PyTorch · OpenSpiel · RLCard · PettingZoo · SLURM</span>
+        </article>
+
+        <article class="entry">
+          <h3><a href="https://github.com/Farama-Foundation/PettingZoo/pulls?q=is%3Apr+is%3Amerged+author%3ANikelroid">PettingZoo Gin Rummy Fix <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2026</span>
+          <p class="desc">Found that seeded resets silently reverted custom knock and gin rewards to library defaults in the Farama Foundation's Gin Rummy environment, then landed three merged pull requests: the fix, a repaired tutorial CI job, and the v4 to v5 version bump.</p>
+          <span class="meta tools">Python · Open source</span>
+        </article>
       </section>
 
       <!-- VII. Nwitter -->
@@ -524,11 +573,8 @@
 
     <footer class="colophon">
       <p class="meta">&copy; 2026 Nima Kelidari · Los Angeles</p>
-      <p class="meta">
-        Hand-coded in plain HTML &amp; CSS — no framework, no build step, no trackers.
-        Set in Fraunces, Newsreader &amp; IBM Plex Mono.
-      </p>
-      <p class="meta">Last updated July 2026 · <a href="/">Back home</a></p>
+      <p class="meta">Hand-coded in plain HTML &amp; CSS, with no framework, no build step and no trackers. Set in Fraunces, Newsreader &amp; IBM Plex Mono.</p>
+      <p class="meta">Last updated November 2026 · <a href="/">Back home</a></p>
     </footer>
   </div>
 </body>

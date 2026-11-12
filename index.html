@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Nima Kelidari — Machine Learning Researcher &amp; Engineer</title>
-  <meta name="description" content="ML researcher and engineer in Los Angeles — M.S. in AI at USC, graduate researcher, and summer 2026 optimization intern at Memorial Sloan Kettering.">
+  <meta name="description" content="ML researcher and engineer in Los Angeles: M.S. in AI at USC (December 2026), graduate research assistant at Memorial Sloan Kettering, first-author paper at AIIDE 2026.">
   <meta name="author" content="Nima Kelidari">
   <link rel="canonical" href="https://kelidari.com/">
 
@@ -17,7 +17,7 @@
   <meta property="og:url" content="https://kelidari.com/">
   <meta property="og:site_name" content="Nima Kelidari">
   <meta property="og:title" content="Nima Kelidari — Machine Learning Researcher &amp; Engineer">
-  <meta property="og:description" content="M.S. in AI at USC · graduate researcher · summer 2026 optimization intern at Memorial Sloan Kettering Cancer Center.">
+  <meta property="og:description" content="M.S. in AI at USC · graduate research assistant at Memorial Sloan Kettering Cancer Center · papers at AIIDE 2026 and the NeurIPS 2026 ML×OR workshop.">
   <meta property="og:image" content="https://kelidari.com/assets/og-card.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -27,7 +27,7 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Nima Kelidari — Machine Learning Researcher &amp; Engineer">
-  <meta name="twitter:description" content="M.S. in AI at USC · graduate researcher · summer 2026 optimization intern at Memorial Sloan Kettering.">
+  <meta name="twitter:description" content="M.S. in AI at USC · graduate research assistant at Memorial Sloan Kettering · papers at AIIDE 2026 and the NeurIPS 2026 ML×OR workshop.">
   <meta name="twitter:image" content="https://kelidari.com/assets/og-card.png">
 
   <link rel="icon" href="/favicon.ico" sizes="32x32">
@@ -92,6 +92,8 @@
       "Machine Learning",
       "Convex Optimization",
       "Large Language Models",
+      "Retrieval-Augmented Generation",
+      "Model Interpretability",
       "Reinforcement Learning",
       "Computer Vision",
       "Speech Processing",
@@ -119,6 +121,7 @@
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#publications">Papers</a></li>
           <li><a href="#work">Work</a></li>
           <li><a href="#playgrounds">Playgrounds</a></li>
           <li><a href="/projects/">Index</a></li>
@@ -134,18 +137,14 @@
         <div>
           <p class="kicker">Machine learning · Research &amp; engineering</p>
           <h1>Nima Kelidari</h1>
-          <p class="deck">
-            I build machine-learning systems end to end. This summer I'm an optimization
-            intern at <a href="https://www.mskcc.org/">Memorial Sloan Kettering Cancer
-            Center</a>, speeding up the solvers behind radiotherapy planning; the rest of
-            the year it's graduate research and a master's in AI at USC.
-          </p>
+          <p class="deck">I build machine-learning systems end to end and test whether they hold up. I'm a graduate research assistant at <a href="https://www.mskcc.org/">Memorial Sloan Kettering Cancer Center</a>, making the solvers behind radiotherapy planning faster, and I finish my M.S. in AI at USC in December 2026.</p>
+          <p class="status"><span class="status-dot" aria-hidden="true"></span>Open to full-time ML research and engineering roles from January 2027</p>
           <ul class="hero-links">
+            <li><a class="primary" href="/NimaKelidari_CV.pdf">R&eacute;sum&eacute; <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
             <li><a href="mailto:Kelidari.Nima@gmail.com">Email <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-            <li><a href="https://github.com/Nikelroid">GitHub <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
             <li><a href="https://www.linkedin.com/in/nima-kelidari/">LinkedIn <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+            <li><a href="https://github.com/Nikelroid">GitHub <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
             <li><a href="https://scholar.google.com/citations?user=4bTONqMAAAAJ">Scholar <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-            <li><a href="/NimaKelidari_CV.pdf">R&eacute;sum&eacute; <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
           </ul>
         </div>
         <div class="portrait">
@@ -164,36 +163,10 @@
         <div class="reveal">
           <h2>Models are easy to train and hard to trust.</h2>
           <div class="prose">
-            <p class="lede">
-              I'm a master's student in computer science (artificial intelligence) at USC's
-              Viterbi School of Engineering, with a B.S. in computer science from Sharif
-              University of Technology. The through-line in my work is taking models out of
-              notebooks and making them hold up: in distributed training pipelines, on HPC
-              clusters, behind APIs, on phones.
-            </p>
-            <p>
-              Recent projects run across the stack — probing how speech transformers encode
-              emotion layer by layer, steering mixture-of-experts LLMs at inference time
-              without touching their weights, and training reinforcement-learning agents
-              against LLM opponents. Before USC, I spent ten months as a research assistant
-              in Dr. Tefagh's group at Sharif, building generative computer-vision pipelines
-              with vision transformers and 3D CNNs.
-            </p>
-            <p>
-              I've also taught: four semesters as a teaching assistant across six courses
-              and 300-plus students, including TensorFlow workshops I designed and ran myself.
-              Away from a keyboard I hike, swim, and lose entire evenings to strategy games.
-            </p>
+            <p class="lede">I'm finishing an M.S. in computer science (artificial intelligence) at USC's Viterbi School of Engineering, after a B.S. in computer science at Sharif University of Technology. Most of my work is about taking models out of notebooks and making them hold up: on HPC clusters, behind APIs, and under tests built to find where they fail.</p>
+            <p>Recent work runs across the stack: finding which features speech models actually use to detect Parkinson's disease, steering mixture-of-experts LLMs at inference time without touching their weights, measuring game-playing agents against a fixed expert, and testing what a RAG assistant answers after a filing is amended. I also taught for four semesters at Sharif, six courses and 300+ students. Away from a keyboard I hike, swim, and lose evenings to strategy games.</p>
           </div>
-          <p class="stack-line" aria-label="Tools I use">
-            Python <span class="sep">&middot;</span> PyTorch <span class="sep">&middot;</span> JAX
-            <span class="sep">&middot;</span> CuPy <span class="sep">&middot;</span> TensorFlow
-            <span class="sep">&middot;</span> Hugging&nbsp;Face <span class="sep">&middot;</span> CUDA
-            <span class="sep">&middot;</span> SLURM <span class="sep">&middot;</span> Docker
-            <span class="sep">&middot;</span> Kubernetes <span class="sep">&middot;</span> MLflow
-            <span class="sep">&middot;</span> DVC <span class="sep">&middot;</span> FastAPI
-            <span class="sep">&middot;</span> GCP <span class="sep">&middot;</span> AWS
-          </p>
+          <p class="stack-line" aria-label="Tools I use">Python <span class="sep">&middot;</span> PyTorch <span class="sep">&middot;</span> JAX <span class="sep">&middot;</span> TensorFlow <span class="sep">&middot;</span> Hugging&nbsp;Face <span class="sep">&middot;</span> vLLM <span class="sep">&middot;</span> LangGraph <span class="sep">&middot;</span> CUDA <span class="sep">&middot;</span> CuPy <span class="sep">&middot;</span> SLURM <span class="sep">&middot;</span> Docker <span class="sep">&middot;</span> Kubernetes <span class="sep">&middot;</span> FastAPI <span class="sep">&middot;</span> MLflow <span class="sep">&middot;</span> GCP <span class="sep">&middot;</span> AWS</p>
         </div>
       </section>
 
@@ -206,41 +179,28 @@
           <article class="role reveal">
             <span class="org-mark" aria-hidden="true"><img src="/assets/logos/mskcc.png" alt=""></span>
             <div class="role-head">
-              <h3>Computational Optimization Intern</h3>
-              <span class="meta when"><time datetime="2026-05">May 2026</time> — Present · Remote</span>
+              <h3>Graduate Research Assistant</h3>
+              <span class="meta when"><time datetime="2026-09">Sep 2026</time> — Present · Remote</span>
             </div>
-            <p class="where">
-              <a href="https://www.mskcc.org/">Memorial Sloan Kettering Cancer Center</a>,
-              Department of Medical Physics
-            </p>
+            <p class="where"><a href="https://www.mskcc.org/">Memorial Sloan Kettering Cancer Center</a>, Department of Medical Physics</p>
             <ul class="points">
-              <li>
-                IMRT radiotherapy planning reduces to a convex quadratic program with up to
-                <strong>~216K beamlet variables</strong> per clinical case. I work on making
-                that solve fast: a path-following ADMM that warm-starts an interior-point method,
-                GPU-accelerated with CuPy and mixed precision on V100 and P100 nodes.
-              </li>
-              <li>
-                Implemented and benchmarked first-order methods from the recent literature —
-                PDHG/PDQP (JAX/MPAX), ADMM with over-relaxation and adaptive penalties
-                (residual-balancing, OSQP-style, spectral/ARADMM), Fast-ADMM with restart, and
-                safeguarded Anderson acceleration — on real lung and prostate cases.
-              </li>
-              <li>
-                Replaced the solver's hand-tuned settings with <strong>Bayesian optimization over
-                1,015 Optuna trials</strong>: <strong>78 &#8594; 21 iterations</strong> to a usable warm
-                start on a held-out clinical case — 3.7&times; fewer, 3.2&#8211;3.8&times; less
-                wall-clock — then derived and validated a bound that explains the gain rather than
-                just reporting it.
-              </li>
-              <li>
-                Rebuilt the penalty recovery rule so runtime barely depends on a mis-set starting
-                penalty — <strong>6 &#8594; 21 iterations</strong> across four orders of magnitude, against
-                8 &#8594; 78 for the prior rule and 20 &#8594; 337 for the textbook one — on a platform
-                behind <strong>~1,100 solver runs</strong>: a matrix-free warm-started conjugate-gradient
-                GPU engine, an NFS-safe SLURM search harness, and an early exit cutting trial cost
-                1.8&#8211;4.4&times;.
-              </li>
+              <li>Extending <strong>Warm-IP</strong>, the group's interior-point QP solver for radiotherapy planning, into a benchmark against its cold-start IP, Gurobi, MOSEK, Clarabel, PIQP and OSQP on <strong>282 public problems</strong>, with Bayesian tuning (Optuna TPE) for all seven solvers and our accelerated ADMM inside four of them.</li>
+              <li>Wrote <strong>warm-start patches for PIQP (C++) and Clarabel (Rust)</strong>, whose releases cannot take a starting point, and kept every extension off by default behind an equivalence test against the upstream code.</li>
+              <li>Diagnosed <strong>thread contention</strong> between OpenBLAS and MKL that made vector operations <strong>~150&times; slower</strong>, fixed it in one line, reran every affected study and reported the smaller gain. Campaigns run up to <strong>~2,100 task-hours</strong> on SLURM with train/test splits and paired bootstrap intervals; the paper is in preparation for IEEE CEC 2027.</li>
+            </ul>
+          </article>
+
+          <article class="role reveal">
+            <span class="org-mark" aria-hidden="true"><img src="/assets/logos/mskcc.png" alt=""></span>
+            <div class="role-head">
+              <h3>Computational Optimization Intern</h3>
+              <span class="meta when"><time datetime="2026-05">May 2026</time> — <time datetime="2026-09">Sep 2026</time> · Remote</span>
+            </div>
+            <p class="where"><a href="https://www.mskcc.org/">Memorial Sloan Kettering Cancer Center</a>, Department of Medical Physics</p>
+            <ul class="points">
+              <li>Accelerated the convex QP behind IMRT radiotherapy planning, up to <strong>~216K variables</strong> per clinical case: a path-following ADMM that warm-starts an interior-point method, on GPU with CuPy. Bayesian optimization replaced hand-tuning and cut iterations to a usable warm start from <strong>78 to 21</strong>, 3.7&times; fewer and <strong>3.2&#8211;3.8&times; less wall-clock</strong> on a held-out clinical case.</li>
+              <li>Derived a <strong>predictive bound</strong> showing the capped penalty schedule, not the solver, was the bottleneck (69 of the old method's 78 iterations), confirmed in 10 of 10 ablations. The rebuilt rule needs 6 to 21 iterations across four orders of magnitude of starting penalty, against 8 to 78 before.</li>
+              <li>Built the platform behind <strong>~2,700 solver runs</strong>, with a matrix-free conjugate-gradient GPU engine, an NFS-safe SLURM search and an early exit that cut trial cost 1.8&#8211;4.4&times;, and shipped <strong>admm_tuner</strong>, the two-function tune/solve tool the planning team asked for.</li>
             </ul>
           </article>
 
@@ -248,36 +208,15 @@
             <span class="org-mark" aria-hidden="true"><img src="/assets/logos/usc.png" alt=""></span>
             <div class="role-head">
               <h3>Graduate Student Researcher</h3>
-              <span class="meta when"><time datetime="2025-08">Aug 2025</time> — Present · Hybrid</span>
+              <span class="meta when"><time datetime="2025-08">Aug 2025</time> — Present · Los Angeles</span>
             </div>
-            <p class="where"><a href="https://www.usc.edu/">University of Southern California</a> · Los Angeles</p>
+            <p class="where"><a href="https://www.usc.edu/">University of Southern California</a></p>
             <ul class="points">
-              <li>
-                <strong>Inference-time steering for mixture-of-experts LLMs</strong> — a
-                <strong>197K-parameter</strong> learned low-rank head that intervenes on MoE routing
-                with no changes to model weights. Trained on <strong>9,027 contrastive pairs</strong>
-                from SQuAD, HotpotQA, and FEVER, it improves mean faithfulness by
-                <strong>+0.101</strong> across six benchmarks — <strong>4&times; the gain</strong> of
-                the published SteerMoE baseline (ICLR 2026) — and the plugin runs unmodified across
-                <strong>four MoE families</strong> (1.3B&#8211;47B, 8&#8211;128 experts), with results
-                reported on OLMoE. Sole-authored manuscript in preparation.
-              </li>
-              <li>
-                <strong>Adversarial co-evolution of RL and LLM agents</strong> —
-                a distributed PPO pipeline with a three-phase curriculum reaching a
-                <strong>99.12% win rate</strong> against baselines, plus a master&#8211;worker inference
-                engine that distills strategy from Llama-3, Gemma, and GPT-OSS into compact RL policies.
-                First-author paper <strong>accepted to AIIDE 2026</strong> (AAAI) —
-                <a href="https://arxiv.org/abs/2607.06854">arXiv:2607.06854</a>.
-              </li>
-              <li>
-                <strong>Language-agnostic speech emotion recognition</strong>, with Prof. Mohammad Soleymani
-                (USC ICT, IHP Lab) — a PyTorch / Hugging Face probing framework evaluating six pretrained
-                speech encoders across eight datasets on SLURM, with a FastAPI dashboard for layer-wise
-                paralinguistic analysis. A sparse-autoencoder dissection explaining <strong>93% of the
-                signal</strong> over ~940K frame activations isolates <strong>61 confound-controlled
-                emotion features</strong>, 60 of them acoustic — the models listen to tone, not words.
-              </li>
+              <li><strong>Interpretable clinical speech models</strong>, advised by Prof. Mohammad Soleymani (USC ICT): sparse autoencoders on six speech encoders across four Parkinson's datasets in three languages, keeping only features whose link to the disease replicates across datasets. Steering along them moves predictions toward Parkinson's in <strong>22 of 22</strong> configurations, and five recording-condition features alone predict the disease in 3 of 4 public datasets. First author, under review at ICASSP 2027.</li>
+              <li><strong>Steering mixture-of-experts LLMs</strong>: a <strong>197K-parameter</strong> learned head that steers expert routing at inference with zero weight changes. On OLMoE it lifts mean faithfulness by <strong>+0.101</strong> over six benchmarks, about 4&times; the gain of SteerMoE (ICLR 2026), and the recipe transfers across six MoE families from 1.3B to 30.5B parameters.</li>
+              <li><strong>Evaluating game-playing agents</strong>: with a fixed rule-based expert as the yardstick, 100+ controlled PPO/TRPO runs isolated five training choices that lift the agent from about 30% to <strong>34.2 &plusmn; 2.1%</strong> against it, and ruled out four, including imitating an LLM guide. First-author paper <strong>accepted at AIIDE 2026</strong> (AAAI).</li>
+              <li><strong>Decision-focused learning</strong>: co-first author of a paper <strong>accepted at the NeurIPS 2026 ML&times;OR workshop</strong> that trains outcome models through Lagrangian dual prices. In a queueing simulation it stayed within capacity on all 6 datasets while the standard pipeline overloaded 4; I was the largest code contributor (41 of 73 commits).</li>
+              <li><strong>Infrastructure</strong>: a fault-tolerant master&#8211;worker stack serving three LLM families across 14 GPU workers at ~32 req/s, and a worker cold start traced to an 11 MB/s NFS mount and cut <strong>62&times;</strong>, from ~28 minutes to ~27 seconds.</li>
             </ul>
           </article>
 
@@ -289,14 +228,7 @@
             </div>
             <p class="where"><a href="https://en.sharif.ir/">Sharif University of Technology</a></p>
             <ul class="points">
-              <li>
-                Ten months in Dr. Tefagh's group on a four-person team, surveying and prototyping
-                generative computer-vision pipelines built on vision transformers and 3D CNNs.
-              </li>
-              <li>
-                Ran the experimental side across Git, Kaggle, Google Colab, and university GPU
-                servers, keeping the team's long-running training jobs organized and reproducible.
-              </li>
+              <li>Ten months in Dr. Tefagh's group on a four-person team, prototyping generative computer-vision pipelines with vision transformers and 3D CNNs on university GPU servers.</li>
             </ul>
           </article>
 
@@ -308,15 +240,7 @@
             </div>
             <p class="where"><a href="https://en.sharif.ir/">Sharif University of Technology</a></p>
             <ul class="points">
-              <li>
-                Four semesters, six courses, 300+ students — lectures, assignment design, quizzes,
-                and grading for basic and advanced programming, computer fundamentals, and machine
-                learning, working in TA teams alongside head TAs and course professors.
-              </li>
-              <li>
-                Built and delivered TensorFlow workshops and diagnostic sessions for sixty
-                students in the ML course, holding 65% attendance across the series.
-              </li>
+              <li>Four semesters, six courses, 300+ students: lectures, assignment design and grading for programming and machine-learning courses, plus a TensorFlow workshop series for 60 students that I designed and ran.</li>
             </ul>
           </article>
 
@@ -326,19 +250,66 @@
               <h3>Technical Sales Advisor — Best Buy</h3>
               <span class="meta when"><time datetime="2024-05">May 2024</time> — <time datetime="2025-01">Jan 2025</time> · Issaquah, WA</span>
             </div>
-            <p class="note">
-              Part-time technical PC advisor: hardware recommendations, debugging, and device
-              tuning on a busy sales floor — steady practice in initiative, teamwork, and
-              explaining technical trade-offs to non-experts.
-            </p>
+            <p class="note">Part-time technical PC advisor: hardware recommendations, debugging and device tuning, and practice explaining technical trade-offs to non-experts.</p>
           </article>
+        </div>
+      </section>
+
+      <!-- ============ Publications ============ -->
+      <section id="publications" class="block">
+        <div class="rail reveal">
+          <h2 class="kicker"><span class="no" aria-hidden="true">03</span>Publications</h2>
+        </div>
+        <div class="reveal">
+          <ol class="pubs">
+            <li class="pub">
+              <span class="meta venue accepted">Accepted · AIIDE 2026 (AAAI)</span>
+              <h3>A Gold-Standard Study of What Makes a Lightweight Game-Playing Agent Strong</h3>
+              <p class="authors"><b>Nima Kelidari</b>, Mohammadsaeed Haghi, Mahdi Salmani</p>
+              <ul class="pub-links">
+                <li><a href="https://arxiv.org/abs/2607.06854">arXiv:2607.06854</a></li>
+                <li><a href="https://github.com/Nikelroid/adversarial-coevolution">Code</a></li>
+                <li><a href="https://kelidari.com/adversarial-coevolution/">Project</a></li>
+              </ul>
+            </li>
+            <li class="pub">
+              <span class="meta venue accepted">Accepted · NeurIPS 2026 Workshop on ML&times;OR</span>
+              <h3>Differentiating Through Dual Prices: End-to-End Policy Learning Under Capacity Constraints</h3>
+              <p class="authors">Mohammadsaeed Haghi*, Mahdi Salmani*, <b>Nima Kelidari*</b>, Vishal Gupta, Phebe Vayanos <span class="note">(*equal contribution)</span></p>
+              <ul class="pub-links">
+                <li><a href="https://arxiv.org/abs/2608.04669">arXiv:2608.04669</a></li>
+                <li><a href="https://github.com/mahdisalmani/end2end-capacity-constrained-policy-learning">Code</a></li>
+              </ul>
+            </li>
+            <li class="pub">
+              <span class="meta venue">Under review · ICASSP 2027</span>
+              <h3>Interpreting Speech-Based Parkinson's Disease Detection with Sparse Autoencoders</h3>
+              <p class="authors"><b>Nima Kelidari</b>, Minoo Ahmadi, Chaitanya Parwatkar, Ashutosh Chaubey, Mohammad Soleymani</p>
+            </li>
+            <li class="pub">
+              <span class="meta venue">Under review · ICASSP 2027</span>
+              <h3>The Representation Utility Gap in Audio LLMs for Clinical Speech</h3>
+              <p class="authors">Chaitanya Parwatkar, <b>Nima Kelidari</b>, Minoo Ahmadi, Ashutosh Chaubey, Mohammad Soleymani</p>
+              <ul class="pub-links">
+                <li><a href="https://github.com/cparw/audio-llm-utility-gap">Code</a></li>
+              </ul>
+            </li>
+            <li class="pub">
+              <span class="meta venue">In preparation</span>
+              <h3>3D-DELTA: A Learned Low-Rank Expert-Steering Head for Frozen Mixture-of-Experts LLMs</h3>
+              <p class="authors"><b>Nima Kelidari</b>, Mahdi Salmani</p>
+              <ul class="pub-links">
+                <li><a href="https://kelidari.com/moe-steering-3d-delta/">Project</a></li>
+              </ul>
+            </li>
+          </ol>
         </div>
       </section>
 
       <!-- ============ Education ============ -->
       <section id="education" class="block">
         <div class="rail reveal">
-          <h2 class="kicker"><span class="no" aria-hidden="true">03</span>Education</h2>
+          <h2 class="kicker"><span class="no" aria-hidden="true">04</span>Education</h2>
         </div>
         <div>
           <article class="role reveal">
@@ -349,8 +320,7 @@
             </div>
             <p class="where"><a href="https://www.usc.edu/">University of Southern California</a>, Viterbi School of Engineering · Los Angeles</p>
             <ul class="points">
-              <li><span class="gpa">GPA 3.55&thinsp;/&thinsp;4.0.</span> Coursework in applied NLP, multimodal probabilistic learning, machine learning, deep learning, and web technologies — with NLP and robotics next, to match where the field is going.</li>
-              <li>Off the clock: volleyball and hiking.</li>
+              <li><span class="gpa">GPA 3.55&thinsp;/&thinsp;4.0, and 3.8 in AI/ML courses.</span> Machine learning, deep learning, applied NLP, multimodal probabilistic learning, analysis of algorithms, robot manipulation. Merit scholarship, USC Viterbi.</li>
             </ul>
           </article>
 
@@ -362,10 +332,21 @@
             </div>
             <p class="where">Sharif University of Technology · Tehran</p>
             <ul class="points">
-              <li><span class="gpa">GPA 3.37&thinsp;/&thinsp;4.0</span> overall, with fifteen-plus CS and AI courses at a 3.5&thinsp;/&thinsp;4 average — computer vision, deep learning, machine learning, algorithm design, numerical analysis, data structures, image processing, databases — on top of a heavy mathematical core.</li>
-              <li>Ten months of computer-vision research in Dr. Tefagh's group; teaching assistance and the volleyball court filled the rest.</li>
+              <li><span class="gpa">GPA 3.37&thinsp;/&thinsp;4.0,</span> and 3.5 across fifteen-plus CS and AI courses: computer vision, deep learning, statistical learning, algorithm design, data structures, image processing, numerical analysis, databases.</li>
+              <li>Thesis graded 20/20: segmenting medical images in 3D by lifting 2D MedSAM masks through a pretrained NeRF on CT volumes, advised by Dr. Tefagh.</li>
             </ul>
           </article>
+
+          <div class="certs reveal">
+            <p class="kicker certs-label">Honors</p>
+            <ul class="certs-list">
+              <li>Finalist, Anthropic Fellows Program (AI Safety) <span class="meta">November 2026 cohort</span></li>
+              <li>85th nationally (top 0.05%), National University Entrance Exam, math and physics</li>
+              <li>11th of 1,200 teams, Pardis Code programming contest</li>
+              <li>Top 10 groups, Mustafa Prize innovation competition</li>
+              <li><a href="https://github.com/Farama-Foundation/PettingZoo/pulls?q=is%3Apr+is%3Amerged+author%3ANikelroid">Three merged pull requests to PettingZoo <span class="arrow" aria-hidden="true">&#8599;</span></a> <span class="meta">Farama Foundation · 2026</span></li>
+            </ul>
+          </div>
 
           <div class="certs reveal">
             <p class="kicker certs-label">Certificates</p>
@@ -393,29 +374,22 @@
       <!-- ============ Selected work ============ -->
       <section id="work" class="block">
         <div class="rail reveal">
-          <h2 class="kicker"><span class="no" aria-hidden="true">04</span>Selected work</h2>
+          <h2 class="kicker"><span class="no" aria-hidden="true">05</span>Selected work</h2>
         </div>
         <div>
           <article class="project reveal">
             <figure class="plate">
-              <a href="https://github.com/Nikelroid/linguistic-agnostic-ser" aria-label="Speech emotion recognition probing framework on GitHub">
-                <img src="/assets/ser-probing.webp" alt="Layer-wise emotion-probing architecture and accuracy curves for wav2vec 2.0, HuBERT, and Whisper" width="1200" height="900" loading="lazy">
+              <a href="https://github.com/Nikelroid/footnote-rag" aria-label="Footnote RAG assistant on GitHub">
+                <img src="/assets/footnote-rag.webp" alt="Diagram of how Footnote answers a question: route to the filing, keyword and vector search with reranking, statements pinned first, one optional retry, then an answer from eight whole pages that names its pages" width="1400" height="694" loading="lazy">
               </a>
-              <figcaption><span>Fig. 01</span><span>Layer-wise probing, 3 model families</span></figcaption>
+              <figcaption><span>Fig. 01</span><span>Route, search, retry once, cite the page</span></figcaption>
             </figure>
             <div>
-              <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 10v4M6.5 7.5v9M10 4.5v15M13.5 7.5v9M17 10v4M20.5 11v2"/></svg></span>Language-Agnostic Speech Emotion Recognition <span class="meta year">2026</span></h3>
-              <p class="prose">
-                A probing framework that asks where acoustic emotion actually lives inside speech
-                transformers, layer by layer across 24 hidden layers. Parallel experiments over six
-                models and eight datasets run unattended on SLURM, feeding a FastAPI dashboard for
-                real-time, layer-wise visualization.
-              </p>
-              <span class="meta tools">PyTorch · Hugging Face · FastAPI · SLURM</span>
+              <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 3.5h9l4 4v13h-13z"/><path d="M14.5 3.5v4h4"/><path d="M8.5 11h7M8.5 14h7M8.5 17.5h3"/><circle cx="14.6" cy="17.5" r="0.5" fill="currentColor"/></svg></span>Footnote: RAG for SEC Filings <span class="meta year">2026</span></h3>
+              <p class="prose">A question-answering assistant for company filings that names the page behind every answer. On all 150 FinanceBench questions its LangGraph agent is right <strong>85.8%</strong> of the time (87.2% on the 99 held-back questions), against 33.6% with no documents. I then tested amended copies of real statement pages: with both versions in front of the model, answers lead with the old amount up to 100% of the time, and filing dates plus one sentence saying the later filing wins bring that to <strong>0% on three models</strong>.</p>
+              <span class="meta tools">LangChain · LangGraph · Chroma · BM25 · FastAPI · MCP · Google ADK</span>
               <ul class="project-links">
-                <li><a href="https://github.com/Nikelroid/linguistic-agnostic-ser">Code <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-                <li><a href="https://kelidari.com/linguistic-agnostic-ser/">Project site <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-                <li><a href="https://kelidari.com/linguistic-agnostic-ser/explorer.html">Interactive explorer <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+                <li><a href="https://github.com/Nikelroid/footnote-rag">Code &amp; results <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
               </ul>
             </div>
           </article>
@@ -429,14 +403,8 @@
             </figure>
             <div>
               <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12h5"/><circle cx="9" cy="12" r="1.5"/><path d="M10.5 11.2 16 6.5h5.5M10.5 12h11M10.5 12.8 16 17.5h5.5"/></svg></span>Low-Rank Steering for Mixture-of-Experts LLMs <span class="meta year">2026</span></h3>
-              <p class="prose">
-                A 197K-parameter learned steering head that redirects expert routing at inference
-                time — no changes to model weights. Trained on 9,027 contrastive pairs from SQuAD,
-                HotpotQA, and FEVER, it improves mean faithfulness by +0.101 across six benchmarks,
-                beating the published SteerMoE baseline on five of six tasks — 4&times; its gain
-                overall. Sole-authored manuscript in preparation.
-              </p>
-              <span class="meta tools">PyTorch · Hugging Face · vLLM</span>
+              <p class="prose">A 197K-parameter learned head ranks which experts react to context, and the top ones are switched on or off at inference with no change to the model's weights. Trained on contrastive pairs from SQuAD, HotpotQA and FEVER, it improves mean faithfulness on OLMoE by <strong>+0.101</strong> across six benchmarks, about 4&times; the gain of the published SteerMoE baseline, and transfers across six MoE families from 1.3B to 30.5B parameters. First author with Mahdi Salmani; full paper in preparation.</p>
+              <span class="meta tools">PyTorch · Hugging Face · vLLM · SLURM</span>
               <ul class="project-links">
                 <li><a href="https://kelidari.com/moe-steering-3d-delta/">Project site <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
                 <li><span class="meta">Code available on request</span></li>
@@ -449,22 +417,15 @@
               <a href="https://github.com/Nikelroid/adversarial-coevolution" aria-label="Adversarial co-evolution project on GitHub">
                 <img src="/assets/adversarial-coevolution.webp" alt="System diagram of RL learner, LLM opponent, curriculum manager, and evaluators in a Gym environment" width="1400" height="923" loading="lazy">
               </a>
-              <figcaption><span>Fig. 03</span><span>Three-phase curriculum vs. strategy collapse</span></figcaption>
+              <figcaption><span>Fig. 03</span><span>Curriculum, opponents, and a fixed yardstick</span></figcaption>
             </figure>
             <div>
-              <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12a7.5 7.5 0 0 1 13-5.1"/><path d="M17.5 3.4v3.8h-3.8"/><path d="M19.5 12a7.5 7.5 0 0 1-13 5.1"/><path d="M6.5 20.6v-3.8h3.8"/></svg></span>Adversarial Co-Evolution of RL &amp; LLM Agents <span class="meta year">2025</span></h3>
-              <p class="prose">
-                A distributed PPO pipeline for Gin Rummy that distills
-                strategic knowledge from Llama-3, Gemma, and GPT-OSS into compact RL policies. A
-                three-phase curriculum prevents strategy collapse and reaches a 99.12% win rate
-                against baselines, with a live Flask dashboard for human-vs-agent play. The paper
-                behind it is <strong>accepted to AIIDE 2026</strong> (AAAI).
-              </p>
-              <span class="meta tools">PyTorch · Stable-Baselines3 · Ollama · Flask</span>
+              <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12a7.5 7.5 0 0 1 13-5.1"/><path d="M17.5 3.4v3.8h-3.8"/><path d="M19.5 12a7.5 7.5 0 0 1-13 5.1"/><path d="M6.5 20.6v-3.8h3.8"/></svg></span>Adversarial Co-Evolution of RL &amp; LLM Agents <span class="meta year">2026</span></h3>
+              <p class="prose">Gin Rummy agents trained with distributed PPO and TRPO, measured against a fixed rule-based expert used only as a yardstick. Across 100+ controlled runs, five training choices lift the agent from about 30% to <strong>34.2 &plusmn; 2.1%</strong> against the expert, and four that looked promising, including imitating an LLM guide and training against a live LLM opponent, do not help. The paper is <strong>accepted at AIIDE 2026</strong> (AAAI).</p>
+              <span class="meta tools">PyTorch · Stable-Baselines3 · PettingZoo · Ollama · Flask</span>
               <ul class="project-links">
                 <li><a href="https://arxiv.org/abs/2607.06854">Paper · AIIDE 2026 <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
                 <li><a href="https://github.com/Nikelroid/adversarial-coevolution">Code <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-                <li><a href="https://kelidari.com/adversarial-coevolution/">Project site <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
                 <li><a href="https://kelidari.com/adversarial-coevolution/explorer.html">Interactive explorer <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
               </ul>
             </div>
@@ -472,20 +433,33 @@
 
           <article class="project flip reveal">
             <figure class="plate">
+              <a href="https://github.com/Nikelroid/linguistic-agnostic-ser" aria-label="Speech emotion recognition probing framework on GitHub">
+                <img src="/assets/ser-probing.webp" alt="Layer-wise emotion-probing architecture and accuracy curves for wav2vec 2.0, HuBERT, and Whisper" width="1200" height="900" loading="lazy">
+              </a>
+              <figcaption><span>Fig. 04</span><span>Layer-wise probing, 3 model families</span></figcaption>
+            </figure>
+            <div>
+              <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 10v4M6.5 7.5v9M10 4.5v15M13.5 7.5v9M17 10v4M20.5 11v2"/></svg></span>Language-Agnostic Speech Emotion Recognition <span class="meta year">2026</span></h3>
+              <p class="prose">A probing framework that asks where emotion lives inside speech transformers, layer by layer across 24 hidden layers: six frozen encoders and eight datasets in five languages, run unattended on SLURM and read through a FastAPI dashboard of layer-wise results.</p>
+              <span class="meta tools">PyTorch · Hugging Face · FastAPI · SLURM</span>
+              <ul class="project-links">
+                <li><a href="https://github.com/Nikelroid/linguistic-agnostic-ser">Code <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+                <li><a href="https://kelidari.com/linguistic-agnostic-ser/">Project site <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+                <li><a href="https://kelidari.com/linguistic-agnostic-ser/explorer.html">Interactive explorer <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <figure class="plate">
               <a href="https://github.com/Nikelroid/multimodal-sentiment-classification" aria-label="Multimodal sentiment classification project on GitHub">
                 <img src="/assets/multimodal-sentiment.webp" alt="Dialogue frames from a TV scene annotated with negative and neutral sentiment labels" width="1300" height="813" loading="lazy">
               </a>
-              <figcaption><span>Fig. 04</span><span>Text &#183; face &#183; voice, fused and deployed</span></figcaption>
+              <figcaption><span>Fig. 05</span><span>Text &#183; face &#183; voice, fused and deployed</span></figcaption>
             </figure>
             <div>
               <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="9.5" r="4.6"/><circle cx="15" cy="9.5" r="4.6"/><circle cx="12" cy="14.8" r="4.6"/></svg></span>Tri-Modal Sentiment Analysis, Benchmarked and Deployed <span class="meta year">2026</span></h3>
-              <p class="prose">
-                Text, face, and voice fused into one model at <strong>74.5% accuracy / 0.743
-                weighted-F1 on MELD</strong> (2,607 utterances). It began as a 2022 course project
-                stuck at 63%: modern backbones barely moved it, but changing the <em>data</em>
-                gained <strong>11.5 points</strong>. It now runs live on scale-to-zero Cloud Run,
-                with browser labs that personalize it to a user in five minutes.
-              </p>
+              <p class="prose">Text, face and voice fused into one model at <strong>74.5% accuracy / 0.743 weighted-F1 on MELD</strong> (2,607 test utterances). It began as a 2022 course project stuck at 63% on its original corpus, where newer backbones moved it only half a point, so I rebuilt it on MELD. It runs live on scale-to-zero Cloud Run, with browser labs that personalize it to one user in five minutes.</p>
               <span class="meta tools">RoBERTa &#183; ModernBERT &#183; DINOv2 &#183; Whisper &#183; MTCNN &#183; FastAPI &#183; Cloud Run &#183; GitHub Actions</span>
               <ul class="project-links">
                 <li><a href="https://kelidari.com/multimodal-sentiment-classification/">Live playground <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
@@ -494,45 +468,20 @@
             </div>
           </article>
 
-          <article class="project reveal">
+          <article class="project flip reveal">
             <figure class="plate">
               <a href="https://github.com/Nikelroid/qa-vision-server" aria-label="Real-time AI vision assistant server on GitHub">
                 <img src="/assets/vision-assistant.webp" alt="iOS app interface answering natural-language questions about a live camera scene" width="1280" height="1174" loading="lazy">
               </a>
-              <figcaption><span>Fig. 05</span><span>Camera &#8594; WebSocket &#8594; Vertex AI, round trip</span></figcaption>
+              <figcaption><span>Fig. 06</span><span>Camera &#8594; WebSocket &#8594; Vertex AI, round trip</span></figcaption>
             </figure>
             <div>
               <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M2.5 12S6 5.8 12 5.8 21.5 12 21.5 12 18 18.2 12 18.2 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="2.6"/></svg></span>Real-Time AI Vision Assistant <span class="meta year">2025</span></h3>
-              <p class="prose">
-                Point a phone at something and ask about it. A Dockerized FastAPI backend on
-                Google Cloud Vision and Vertex AI talks to a native SwiftUI client over
-                WebSockets, answering natural-language questions about the live camera feed.
-              </p>
+              <p class="prose">Point a phone at something and ask about it. A Dockerized FastAPI backend on Google Cloud Vision and Vertex AI talks to a native SwiftUI client over WebSockets and answers natural-language questions about the live camera feed.</p>
               <span class="meta tools">Docker · FastAPI · GCP · Swift · WebSockets</span>
               <ul class="project-links">
                 <li><a href="https://github.com/Nikelroid/qa-vision-server">Server <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
                 <li><a href="https://github.com/Nikelroid/qa-vision-ios-client">iOS client <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="project flip reveal">
-            <figure class="plate">
-              <a href="https://github.com/Nikelroid/image-compression-svd-fft" aria-label="SVD and FFT image compression project on GitHub">
-                <img src="/assets/svd-compression.webp" alt="Compression study: original and reconstructed images with file-size versus singular-value-threshold plot" width="800" height="525" loading="lazy">
-              </a>
-              <figcaption><span>Fig. 06</span><span>Rank truncation vs. perceptual loss</span></figcaption>
-            </figure>
-            <div>
-              <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 4H4.5v16h4M15.5 4h4v16h-4"/><circle cx="10.4" cy="12" r="0.4" fill="currentColor"/><circle cx="13.6" cy="12" r="0.4" fill="currentColor"/></svg></span>Image Compression via SVD &amp; FFT <span class="meta year">2024</span></h3>
-              <p class="prose">
-                A lossy compression method pairing singular value decomposition with matrix
-                Fourier transforms, cutting file size dramatically at minimal perceptual cost —
-                with a written analysis of the rank-truncation trade-off.
-              </p>
-              <span class="meta tools">Python · OpenCV · MATLAB · LaTeX</span>
-              <ul class="project-links">
-                <li><a href="https://github.com/Nikelroid/image-compression-svd-fft">Code <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
               </ul>
             </div>
           </article>
@@ -546,14 +495,7 @@
             </figure>
             <div>
               <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 19V5M4 19h16M8 16v-5M12 16V8M16 16v-3M20 16v-7"/></svg></span>Machine Learning from Scratch <span class="meta year">2025</span></h3>
-              <p class="prose">
-                Ten algorithms written by hand in NumPy and PyTorch primitives &mdash; backpropagation
-                with dropout and momentum, AdaBoost, K-Means++, HMM Viterbi decoding, a decoder-only
-                transformer, tabular Q-learning &mdash; each paired with a live browser module that
-                trains in front of you. Measured along the way: SGD reaches a usable model 170&times;
-                faster per run than full-batch gradient descent, and dropout alone is worth
-                +4.5 points of validation accuracy.
-              </p>
+              <p class="prose">Ten algorithms written by hand in NumPy and PyTorch primitives, from backpropagation with dropout and momentum to AdaBoost, K-Means++, HMM Viterbi decoding, a decoder-only transformer and tabular Q-learning, each paired with a browser module that trains in front of you.</p>
               <span class="meta tools">NumPy &middot; PyTorch &middot; JavaScript &middot; Canvas</span>
               <ul class="project-links">
                 <li><a href="https://kelidari.com/machine-learning-implementations/">Interactive lab <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
@@ -562,13 +504,7 @@
             </div>
           </article>
 
-          <p class="work-outro reveal">
-            Off the clock: <a class="fun" href="https://kelidari.com/dastan-gesture-guitar/">Dastan</a>,
-            a guitar you strum with hand gestures through your webcam — Karplus-Strong string synthesis,
-            Persian 6/8 rhythms, one HTML file. There's also a
-            <a href="/projects/">full index of sixty-odd projects</a>, from SDN controllers to Persian
-            poem generators.
-          </p>
+          <p class="work-outro reveal">Off the clock: <a class="fun" href="https://kelidari.com/dastan-gesture-guitar/">Dastan</a>, a guitar you strum with hand gestures through your webcam, written as one HTML file. The <a href="/projects/">full index</a> has sixty-odd more projects, from SDN controllers to Persian poem generators.</p>
         </div>
       </section>
 
@@ -576,13 +512,10 @@
       <!-- ============ Playgrounds ============ -->
       <section id="playgrounds" class="block">
         <div class="rail reveal">
-          <h2 class="kicker"><span class="no" aria-hidden="true">05</span>Playgrounds</h2>
+          <h2 class="kicker"><span class="no" aria-hidden="true">06</span>Playgrounds</h2>
         </div>
         <div class="reveal">
-          <p class="prose lede">
-            Eight things you can open and use right now &mdash; no install, no signup, nothing to
-            read first. Every claim on this site closes its own loop in about a minute.
-          </p>
+          <p class="prose lede">Seven things you can open and use right now, with no install and no sign-up.</p>
           <ul class="playground-grid">
             <li class="pg-card pg-feature">
               <a href="https://kelidari.com/multimodal-sentiment-classification/">
@@ -612,7 +545,7 @@
               <a href="https://kelidari.com/machine-learning-implementations/">
                 <span class="pg-head"><svg class="pg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 19.5V9M9.5 19.5V4.5M14.5 19.5v-7M19.5 19.5v-11"/></svg><span class="pg-tag">10 modules</span></span>
                 <h3>Machine Learning from Scratch</h3>
-                <p>Backpropagation, AdaBoost, K-means++, HMM Viterbi, attention, Q-learning &mdash; hand-written in NumPy, each training live in front of you.</p>
+                <p>Backpropagation, AdaBoost, K-means++, HMM Viterbi, attention and Q-learning, hand-written in NumPy and training live in front of you.</p>
                 <span class="pg-stat">Runs in-browser</span>
               </a>
             </li>
@@ -620,7 +553,7 @@
               <a href="https://kelidari.com/adversarial-coevolution/explorer.html">
                 <span class="pg-head"><svg class="pg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12a7.5 7.5 0 0 1 13-5.1"/><path d="M17.5 3.4v3.8h-3.8"/><path d="M19.5 12a7.5 7.5 0 0 1-13 5.1"/><path d="M6.5 20.6v-3.8h3.8"/></svg><span class="pg-tag">AIIDE 2026</span></span>
                 <h3>Co-Evolution Explorer</h3>
-                <p>Every training run behind the paper &mdash; including the 99.12% win rate that turned out to be 34% once measured honestly.</p>
+                <p>Every training run behind the paper, each agent measured against the same fixed expert.</p>
                 <span class="pg-stat">76 runs &#183; 412 GPU-hours</span>
               </a>
             </li>
@@ -628,7 +561,7 @@
               <a href="https://kelidari.com/linguistic-agnostic-ser/explorer.html">
                 <span class="pg-head"><svg class="pg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10v4M6.5 7v10M10 4.2v15.6M13.5 7v10M17 10v4M20.5 11.2v1.6"/></svg><span class="pg-tag">Probing study</span></span>
                 <h3>Speech Emotion Explorer</h3>
-                <p>Where emotion actually lives inside speech transformers, layer by layer, plus the noise battery down to 0&nbsp;dB.</p>
+                <p>Where emotion lives inside speech transformers, layer by layer, plus the noise battery down to 0&nbsp;dB.</p>
                 <span class="pg-stat">6 encoders &#183; 8 corpora</span>
               </a>
             </li>
@@ -640,14 +573,6 @@
                 <span class="pg-stat">Zero dependencies</span>
               </a>
             </li>
-            <li class="pg-card">
-              <a href="https://kelidari.com/FWC26-Schedule/">
-                <span class="pg-head"><svg class="pg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.4"/><path d="M12 3.6 9.2 8.4l1.1 4.4h3.4l1.1-4.4z"/><path d="M20.4 12 15.8 12.8M3.6 12l4.6.8M9.6 20.2l1.6-4M14.4 20.2l-1.6-4"/></svg><span class="pg-tag">Utility</span></span>
-                <h3>World Cup 2026 Schedule</h3>
-                <p>Built because I wanted it to exist. All 104 matches, filterable, in one page.</p>
-                <span class="pg-stat">Static</span>
-              </a>
-            </li>
           </ul>
         </div>
       </section>
@@ -655,24 +580,20 @@
       <!-- ============ Contact ============ -->
       <section id="contact" class="block">
         <div class="rail reveal">
-          <span class="kicker"><span class="no">06</span>Contact</span>
+          <span class="kicker"><span class="no">07</span>Contact</span>
         </div>
         <div class="reveal">
           <h2>Get in touch.</h2>
           <div class="prose">
-            <p>
-              I'm looking for machine-learning research and engineering roles for 2026 —
-              large language models, applied ML, and numerical optimization. If you're hiring,
-              or you just want to compare notes on any of the work above, my inbox is open.
-            </p>
+            <p>I'm looking for full-time roles in machine-learning research and engineering from January 2027, across LLMs, applied ML and numerical optimization. I'm authorized to work in the U.S., based in Los Angeles and open to relocating. If you're hiring, or want to compare notes on any of this work, write to me.</p>
           </div>
           <a class="email-line" href="mailto:Kelidari.Nima@gmail.com">Kelidari.Nima@gmail.com</a>
           <ul class="contact-links">
-            <li><a href="https://github.com/Nikelroid">GitHub <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+            <li><a href="/NimaKelidari_CV.pdf">R&eacute;sum&eacute; (PDF) <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
             <li><a href="https://www.linkedin.com/in/nima-kelidari/">LinkedIn <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+            <li><a href="https://github.com/Nikelroid">GitHub <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
             <li><a href="https://scholar.google.com/citations?user=4bTONqMAAAAJ">Google Scholar <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
             <li><a href="https://twitter.com/Adivide2">X / Twitter <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-            <li><a href="/NimaKelidari_CV.pdf">R&eacute;sum&eacute; (PDF) <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
           </ul>
         </div>
       </section>
@@ -680,11 +601,8 @@
 
     <footer class="colophon">
       <p class="meta">&copy; 2026 Nima Kelidari · Los Angeles</p>
-      <p class="meta">
-        Hand-coded in plain HTML &amp; CSS — no framework, no build step, no trackers.
-        Set in Fraunces, Newsreader &amp; IBM Plex Mono.
-      </p>
-      <p class="meta">Last updated July 2026 · <a href="#main">Back to top &#8593;</a></p>
+      <p class="meta">Hand-coded in plain HTML &amp; CSS, with no framework, no build step and no trackers. Set in Fraunces, Newsreader &amp; IBM Plex Mono.</p>
+      <p class="meta">Last updated November 2026 · <a href="#main">Back to top &#8593;</a></p>
     </footer>
   </div>
 
