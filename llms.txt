@@ -21,7 +21,7 @@ Tools: Python, PyTorch, JAX, TensorFlow, Hugging Face, vLLM, LangGraph, CUDA, Cu
 
 ## Publications
 
-- A Gold-Standard Study of What Makes a Lightweight Game-Playing Agent Strong. First author, accepted at AIIDE 2026 (AAAI). [arXiv:2607.06854](https://arxiv.org/abs/2607.06854)
+- A Gold-Standard Study of What Makes a Lightweight Game-Playing Agent Strong. First author, equal contribution with Mohammadsaeed Haghi and Mahdi Salmani; accepted at AIIDE 2026 (AAAI). [arXiv:2607.06854](https://arxiv.org/abs/2607.06854)
 - Differentiating Through Dual Prices: End-to-End Policy Learning Under Capacity Constraints. Co-first author, accepted at the NeurIPS 2026 Workshop on ML×OR. [arXiv:2608.04669](https://arxiv.org/abs/2608.04669)
 - Interpreting Speech-Based Parkinson's Disease Detection with Sparse Autoencoders. First author, under review at ICASSP 2027.
 - The Representation Utility Gap in Audio LLMs for Clinical Speech. Co-author, under review at ICASSP 2027.
