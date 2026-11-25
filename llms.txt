@@ -1,0 +1,41 @@
+# Nima Kelidari
+
+> Machine learning researcher and engineer in Los Angeles and Seattle. Graduate research assistant at Memorial Sloan Kettering Cancer Center (Department of Medical Physics), finishing an M.S. in computer science (artificial intelligence) at the University of Southern California in December 2026. Open to full-time ML research and engineering roles from January 2027.
+
+He builds machine-learning systems end to end and tests whether they hold up: on HPC clusters, behind APIs, and under tests built to find where they fail. Recent work makes the solvers behind radiotherapy planning faster, finds which features speech models actually use to detect Parkinson's disease, steers mixture-of-experts LLMs at inference time without touching their weights, measures game-playing agents against a fixed expert, and tests what a RAG assistant answers after a filing is amended. He holds a B.S. in computer science from Sharif University of Technology, is authorized to work in the U.S., and is open to relocating.
+
+Tools: Python, PyTorch, JAX, TensorFlow, Hugging Face, vLLM, LangGraph, CUDA, CuPy, SLURM, Docker, Kubernetes, FastAPI, MLflow, GCP, AWS.
+
+## Pages
+
+- [Home](https://kelidari.com/): about, experience, publications, education, selected work, playgrounds and contact
+- [Project index](https://kelidari.com/projects/): sixty-odd projects grouped by area
+- [Résumé (PDF)](https://kelidari.com/NimaKelidari_CV.pdf)
+
+## Profiles and contact
+
+- [GitHub](https://github.com/Nikelroid)
+- [LinkedIn](https://www.linkedin.com/in/nima-kelidari/)
+- [Google Scholar](https://scholar.google.com/citations?user=4bTONqMAAAAJ)
+- Email: Kelidari.Nima@gmail.com
+
+## Publications
+
+- A Gold-Standard Study of What Makes a Lightweight Game-Playing Agent Strong. First author, accepted at AIIDE 2026 (AAAI). [arXiv:2607.06854](https://arxiv.org/abs/2607.06854)
+- Differentiating Through Dual Prices: End-to-End Policy Learning Under Capacity Constraints. Co-first author, accepted at the NeurIPS 2026 Workshop on ML×OR. [arXiv:2608.04669](https://arxiv.org/abs/2608.04669)
+- Interpreting Speech-Based Parkinson's Disease Detection with Sparse Autoencoders. First author, under review at ICASSP 2027.
+- The Representation Utility Gap in Audio LLMs for Clinical Speech. Co-author, under review at ICASSP 2027.
+- 3D-DELTA: A Learned Low-Rank Expert-Steering Head for Frozen Mixture-of-Experts LLMs. First author, in preparation.
+- Tuned and Accelerated Quadratic Programming Solvers: Bayesian Configuration and a Safeguarded Anderson-Accelerated ADMM Warm Start. First author, in preparation (radiotherapy plan optimization at Memorial Sloan Kettering).
+- Diagnosing Paraphrase-Induced Failures in Vision-Language-Action Models. First author, in preparation.
+
+## Project pages
+
+- [Footnote: RAG for SEC filings](https://github.com/Nikelroid/footnote-rag): its LangGraph agent is right 85.8% of the time on all 150 FinanceBench questions
+- [Low-rank steering for mixture-of-experts LLMs](https://kelidari.com/moe-steering-3d-delta/)
+- [Adversarial co-evolution of RL and LLM agents](https://kelidari.com/adversarial-coevolution/) and its [interactive explorer](https://kelidari.com/adversarial-coevolution/explorer.html)
+- [Language-agnostic speech emotion recognition](https://kelidari.com/linguistic-agnostic-ser/) and its [interactive explorer](https://kelidari.com/linguistic-agnostic-ser/explorer.html)
+- [Tri-modal sentiment playground](https://kelidari.com/multimodal-sentiment-classification/), with a [voice lab](https://kelidari.com/multimodal-sentiment-classification/lab.html) and a [face lab](https://kelidari.com/multimodal-sentiment-classification/face-lab.html)
+- [Machine learning from scratch, an interactive lab](https://kelidari.com/machine-learning-implementations/)
+- [Dastan, a guitar you strum with hand gestures through your webcam](https://kelidari.com/dastan-gesture-guitar/)
+- [World Cup 2026 schedule](https://kelidari.com/FWC26-Schedule/)

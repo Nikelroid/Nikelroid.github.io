@@ -5,24 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page not found — Nima Kelidari</title>
   <meta name="robots" content="noindex">
-  <meta name="theme-color" content="#F7F3EB" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#17130E" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#F7F8F8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0B0E11" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <script>(function(r){var t='dark';try{var s=localStorage.getItem('theme');if(s==='light'||s==='dark')t=s}catch(e){}r.setAttribute('data-theme',t);r.classList.add('js')})(document.documentElement)</script>
+  <link rel="preload" href="/fonts/ibm-plex-mono-500.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <div class="wrap">
-    <header class="masthead">
+  <header class="site-head">
+    <div class="wrap head-row">
       <a class="brand" href="/">Nima Kelidari<span class="dot">.</span></a>
-    </header>
-    <main class="index-head">
-      <p class="kicker">404</p>
-      <h1>No such page.</h1>
-      <p class="prose">
-        Whatever was here has moved, or never existed. Try the
-        <a href="/">home page</a> or the <a href="/projects/">project index</a>.
-      </p>
-    </main>
-  </div>
+      <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme (t)"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.25" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 3.75a8.25 8.25 0 0 1 0 16.5z" fill="currentColor"/></svg></button>
+    </div>
+  </header>
+  <main class="wrap nf">
+    <p class="code">404</p>
+    <h1>No such page.</h1>
+    <p class="prose">Whatever was here has moved, or never existed. Try the <a href="/">home page</a> or the <a href="/projects/">project index</a>.</p>
+  </main>
+  <script>
+  (function () {
+    var d = document, root = d.documentElement, metas = d.querySelectorAll('meta[name="theme-color"]'), btn = d.querySelector('.theme-toggle');
+    function paint(t) {
+      for (var i = 0; i < metas.length; i++) metas[i].setAttribute('content', t === 'light' ? '#F7F8F8' : '#0B0E11');
+      if (btn) btn.setAttribute('aria-label', t === 'light' ? 'Switch to dark theme' : 'Switch to light theme');
+    }
+    function toggle() {
+      var t = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      root.setAttribute('data-theme', t);
+      try { localStorage.setItem('theme', t); } catch (e) {}
+      paint(t);
+    }
+    paint(root.getAttribute('data-theme'));
+    if (btn) btn.addEventListener('click', toggle);
+    d.addEventListener('keydown', function (e) { if (e.key === 't' && !e.metaKey && !e.ctrlKey && !e.altKey) toggle(); });
+  })();
+  </script>
 </body>
 </html>
