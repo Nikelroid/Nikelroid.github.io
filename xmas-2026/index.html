@@ -516,12 +516,25 @@ function scheduler(){
   }
 }
 const mBtn = $('#music'), mLabel = $('#mlabel');
+let musicWanted = true;
+try { if (localStorage.getItem('xmas26-music') === 'off') musicWanted = false; } catch (e) {}
+const GESTURES = ['pointerdown', 'touchend', 'click', 'keydown'];
+function setBtn(on){ mBtn.classList.toggle('on', on); mBtn.setAttribute('aria-pressed', on ? 'true' : 'false'); mLabel.textContent = on ? 'بی‌صدا 🔇' : (musicWanted ? 'یه جا بزن، آهنگ میاد 🎵' : 'آهنگ 🎵'); }
+function startMusic(){
+  if (sched) return true;
+  if (!ensureAC()) return false;
+  const go = () => { if (sched || !musicWanted || ac.state !== 'running') return; loopStart = ac.currentTime + .12; evIdx = 0; sched = setInterval(scheduler, 25); setBtn(true); GESTURES.forEach(t => removeEventListener(t, firstTouch, true)); };
+  if (ac.state === 'running') go(); else ac.resume().then(go).catch(() => {});
+  return true;
+}
+function firstTouch(e){ if (mBtn.contains(e.target)) return; if (musicWanted && !sched) startMusic(); }
 mBtn.addEventListener('click', () => {
-  if (sched) { clearInterval(sched); sched = null; mBtn.classList.remove('on'); mBtn.setAttribute('aria-pressed', 'false'); mLabel.textContent = 'آهنگ 🎵'; return; }
-  if (!ensureAC()) { toast('مرورگر شما آهنگ پخش نمی‌کنه 😕'); return; }
-  loopStart = ac.currentTime + .12; evIdx = 0; sched = setInterval(scheduler, 25);
-  mBtn.classList.add('on'); mBtn.setAttribute('aria-pressed', 'true'); mLabel.textContent = 'بی‌صدا 🔇';
+  if (sched) { clearInterval(sched); sched = null; musicWanted = false; try { localStorage.setItem('xmas26-music', 'off'); } catch (e) {} setBtn(false); return; }
+  musicWanted = true; try { localStorage.removeItem('xmas26-music'); } catch (e) {}
+  if (!startMusic()) toast('مرورگر شما آهنگ پخش نمی‌کنه 😕');
 });
+setBtn(false);
+if (musicWanted && AC) { GESTURES.forEach(t => addEventListener(t, firstTouch, true)); startMusic(); }
 
 /* car honk */
 const car = $('#car'), honkEl = $('#honk');
