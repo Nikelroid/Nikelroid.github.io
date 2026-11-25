@@ -9,8 +9,8 @@
   <meta name="author" content="Nima Kelidari">
   <link rel="canonical" href="https://kelidari.com/projects/">
 
-  <meta name="theme-color" content="#F7F3EB" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#17130E" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#F7F8F8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0B0E11" media="(prefers-color-scheme: dark)">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kelidari.com/projects/">
@@ -29,12 +29,9 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 
-  <link rel="preload" href="/fonts/fraunces-100-900.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/newsreader-200-800.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/ibm-plex-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+  <script>(function(r){var t='dark';try{var s=localStorage.getItem('theme');if(s==='light'||s==='dark')t=s}catch(e){}r.setAttribute('data-theme',t);r.classList.add('js')})(document.documentElement)</script>
+  <link rel="preload" href="/fonts/ibm-plex-mono-500.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/styles.css">
-
-  <script>document.documentElement.classList.add('js');</script>
 
   <script type="application/ld+json">
   {
@@ -50,10 +47,10 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <div class="wrap">
-    <header class="masthead">
+  <header class="site-head">
+    <div class="wrap head-row">
       <a class="brand" href="/">Nima Kelidari<span class="dot">.</span></a>
-      <nav aria-label="Site">
+      <nav class="site-nav" aria-label="Site">
         <ul>
           <li><a href="/#about">About</a></li>
           <li><a href="/#experience">Experience</a></li>
@@ -62,23 +59,32 @@
           <li><a href="/#contact">Contact</a></li>
         </ul>
       </nav>
-    </header>
+      <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme (t)"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.25" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 3.75a8.25 8.25 0 0 1 0 16.5z" fill="currentColor"/></svg></button>
+    </div>
+  </header>
 
-    <main id="main">
+    <main id="main" class="wrap">
       <header class="index-head">
         <p class="kicker">Catalogue · 2021 — present</p>
         <h1>Project Index</h1>
-        <p class="prose">
-          Everything, or close to it: coursework that got out of hand, research prototypes,
-          weekend builds, and a few things made purely for the fun of it. The projects I'd
-          show first are <a href="/#work">on the home page</a>; the rest live here, grouped by
-          area. Nearly all of it is public on <a href="https://github.com/Nikelroid">GitHub</a>.
-        </p>
+        <p class="prose">Everything, or close to it: coursework that got out of hand, research prototypes, weekend builds, and a few things made purely for the fun of it. The projects I'd show first are <a href="/#work">on the home page</a>; the rest live here, grouped by area. Nearly all of it is public on <a href="https://github.com/Nikelroid">GitHub</a>.</p>
+        <nav aria-label="Categories">
+          <ul class="toc">
+            <li><a href="#cat-ml"><span class="no">I</span>ML &amp; MLOps</a></li>
+            <li><a href="#cat-nlp"><span class="no">II</span>NLP &amp; Deep Learning</a></li>
+            <li><a href="#cat-cv"><span class="no">III</span>Computer Vision</a></li>
+            <li><a href="#cat-apps"><span class="no">IV</span>Full-Stack</a></li>
+            <li><a href="#cat-sys"><span class="no">V</span>Systems &amp; Algorithms</a></li>
+            <li><a href="#cat-games"><span class="no">VI</span>Games</a></li>
+            <li><a href="#cat-nwitter"><span class="no">VII</span>Nwitter</a></li>
+            <li><a href="#cat-stats"><span class="no">VIII</span>Statistics</a></li>
+          </ul>
+        </nav>
       </header>
 
       <!-- I. Machine Learning & MLOps -->
       <section class="cat" aria-labelledby="cat-ml">
-        <h2 id="cat-ml"><span class="no">I</span>Machine Learning &amp; MLOps</h2>
+        <h2 id="cat-ml"><span class="no" aria-hidden="true">I</span><span class="cat-name">Machine Learning &amp; MLOps</span></h2>
         <p class="cat-desc">End-to-end ML systems with production pipelines, deployment, and experiment tracking.</p>
 
         <article class="entry">
@@ -202,7 +208,7 @@
 
         <article class="entry">
           <h3>Paraphrase Failures in Vision-Language-Action Models</h3>
-          <span class="meta">2026 · in progress</span>
+          <span class="meta">2026 · <span class="spin" aria-hidden="true"></span>in progress</span>
           <p class="desc">How public VLA checkpoints such as OpenVLA-OFT handle reworded LIBERO-Goal instructions: 4,092 paraphrases, per-step goal checks and gripper contacts, and empty and counterfactual prompt controls. Report in December 2026.</p>
           <span class="meta tools">PyTorch · LIBERO · SLURM</span>
         </article>
@@ -210,12 +216,12 @@
 
       <!-- II. NLP & Deep Learning -->
       <section class="cat" aria-labelledby="cat-nlp">
-        <h2 id="cat-nlp"><span class="no">II</span>NLP &amp; Deep Learning</h2>
+        <h2 id="cat-nlp"><span class="no" aria-hidden="true">II</span><span class="cat-name">NLP &amp; Deep Learning</span></h2>
         <p class="cat-desc">Sequence modeling from Persian-language tasks to image captioning.</p>
 
         <article class="entry">
           <h3><a href="https://kelidari.com/moe-steering-3d-delta/">Mixture-of-Experts Steering, and a Gate for It <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
-          <span class="meta">2026 · gate in progress</span>
+          <span class="meta">2026 · <span class="spin" aria-hidden="true"></span>gate in progress</span>
           <p class="desc">A 197K-parameter learned head ranks which experts react to context, and switching the top ones on or off at inference improves mean faithfulness on OLMoE by +0.101 across six benchmarks with no weight edits. Now a three-person USC course project is building a gate that decides, per input, whether to steer at all, since following a document helps when it is right and hurts when it is wrong or planted. Results in December 2026.</p>
           <span class="meta tools">PyTorch · Hugging Face · vLLM · SLURM</span>
         </article>
@@ -251,7 +257,7 @@
 
       <!-- III. Computer Vision & Image Processing -->
       <section class="cat" aria-labelledby="cat-cv">
-        <h2 id="cat-cv"><span class="no">III</span>Computer Vision &amp; Image Processing</h2>
+        <h2 id="cat-cv"><span class="no" aria-hidden="true">III</span><span class="cat-name">Computer Vision &amp; Image Processing</span></h2>
         <p class="cat-desc">Classical and deep approaches: detection, segmentation, stitching, reconstruction.</p>
 
         <article class="entry">
@@ -369,7 +375,7 @@
 
       <!-- IV. Full-Stack & Applications -->
       <section class="cat" aria-labelledby="cat-apps">
-        <h2 id="cat-apps"><span class="no">IV</span>Full-Stack &amp; Applications</h2>
+        <h2 id="cat-apps"><span class="no" aria-hidden="true">IV</span><span class="cat-name">Full-Stack &amp; Applications</span></h2>
         <p class="cat-desc">Web and mobile applications, backend to frontend to database.</p>
 
         <article class="entry">
@@ -403,7 +409,7 @@
 
       <!-- V. Systems, Networking & Algorithms -->
       <section class="cat" aria-labelledby="cat-sys">
-        <h2 id="cat-sys"><span class="no">V</span>Systems, Networking &amp; Algorithms</h2>
+        <h2 id="cat-sys"><span class="no" aria-hidden="true">V</span><span class="cat-name">Systems, Networking &amp; Algorithms</span></h2>
         <p class="cat-desc">Low-level systems, distributed networking, and classical algorithms.</p>
 
         <article class="entry">
@@ -465,7 +471,7 @@
 
       <!-- VI. Games & Interactive -->
       <section class="cat" aria-labelledby="cat-games">
-        <h2 id="cat-games"><span class="no">VI</span>Games &amp; Interactive</h2>
+        <h2 id="cat-games"><span class="no" aria-hidden="true">VI</span><span class="cat-name">Games &amp; Interactive</span></h2>
         <p class="cat-desc">Games and toys exploring AI, multiplayer architecture, and engine fundamentals.</p>
 
         <article class="entry">
@@ -513,7 +519,7 @@
 
       <!-- VII. Nwitter -->
       <section class="cat" aria-labelledby="cat-nwitter">
-        <h2 id="cat-nwitter"><span class="no">VII</span>Nwitter — Social Network Suite</h2>
+        <h2 id="cat-nwitter"><span class="no" aria-hidden="true">VII</span><span class="cat-name">Nwitter — Social Network Suite</span></h2>
         <p class="cat-desc">A multi-component social platform: backend, desktop clients, CLI, and chatbot extensions.</p>
 
         <article class="entry">
@@ -568,7 +574,7 @@
 
       <!-- VIII. Statistics & Data Analysis -->
       <section class="cat" aria-labelledby="cat-stats">
-        <h2 id="cat-stats"><span class="no">VIII</span>Statistics &amp; Data Analysis</h2>
+        <h2 id="cat-stats"><span class="no" aria-hidden="true">VIII</span><span class="cat-name">Statistics &amp; Data Analysis</span></h2>
         <p class="cat-desc">Statistical modeling and exploratory analysis in R.</p>
 
         <article class="entry">
@@ -586,17 +592,99 @@
         </article>
       </section>
 
-      <p class="work-outro" style="margin-top: 0; border-top: 1px solid var(--line); padding-block: 2rem 3rem;">
-        Older odds and ends live in the
-        <a href="https://github.com/Nikelroid?tab=repositories">full repository list</a> on GitHub.
-      </p>
+      <p class="work-outro index-outro">Older odds and ends live in the <a href="https://github.com/Nikelroid?tab=repositories">full repository list</a> on GitHub.</p>
     </main>
 
-    <footer class="colophon">
-      <p class="meta">&copy; 2026 Nima Kelidari · Los Angeles</p>
-      <p class="meta">Hand-coded in plain HTML &amp; CSS, with no framework, no build step and no trackers. Set in Fraunces, Newsreader &amp; IBM Plex Mono.</p>
+  <footer class="site-foot">
+    <div class="wrap foot-row">
+      <p class="meta">&copy; 2026 Nima Kelidari · Los Angeles · Seattle</p>
       <p class="meta">Last updated November 2026 · <a href="/">Back home</a></p>
-    </footer>
-  </div>
+      <p class="meta">Hand-coded in plain HTML &amp; CSS, with no framework, no build step and no trackers. Set in IBM Plex Mono and your system's sans-serif.</p>
+      <p class="meta kbd-hint">Press <kbd>?</kbd> for keyboard shortcuts</p>
+    </div>
+  </footer>
+
+  <script>
+  /* Theme toggle, keyboard shortcuts, heading decrypt. No libraries.
+     Effects never change the text in the page: they draw over it and then step aside. */
+  (function () {
+    var d = document, root = d.documentElement;
+    var reduce = !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+    var metas = d.querySelectorAll('meta[name="theme-color"]'), btn = d.querySelector('.theme-toggle');
+    function rnd(a, b) { return a + Math.random() * (b - a); }
+
+    function paint(t) {
+      for (var i = 0; i < metas.length; i++) metas[i].setAttribute('content', t === 'light' ? '#F7F8F8' : '#0B0E11');
+      if (btn) btn.setAttribute('aria-label', t === 'light' ? 'Switch to dark theme' : 'Switch to light theme');
+    }
+    function toggle() {
+      var t = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      root.setAttribute('data-theme', t);
+      try { localStorage.setItem('theme', t); } catch (e) {}
+      paint(t);
+    }
+    paint(root.getAttribute('data-theme'));
+    if (btn) btn.addEventListener('click', toggle);
+
+    var panel;
+    function help(show) {
+      if (!panel) {
+        panel = d.createElement('div');
+        panel.className = 'kbd-panel';
+        panel.setAttribute('role', 'dialog');
+        panel.setAttribute('aria-label', 'Keyboard shortcuts');
+        panel.hidden = true;
+        panel.innerHTML = '<p class="kbd-title">keyboard shortcuts</p><dl><dt><kbd>t</kbd></dt><dd>switch theme</dd><dt><kbd>j</kbd> <kbd>k</kbd></dt><dd>next or previous section</dd><dt><kbd>?</kbd></dt><dd>show or hide this list</dd><dt><kbd>esc</kbd></dt><dd>close</dd></dl>';
+        d.body.appendChild(panel);
+      }
+      panel.hidden = show === undefined ? !panel.hidden : !show;
+    }
+    function jump(dir) {
+      var s = d.querySelectorAll('main > section, main > header'), cur = -1;
+      for (var i = 0; i < s.length; i++) if (s[i].getBoundingClientRect().top <= 90) cur = i;
+      var n = Math.max(0, Math.min(s.length - 1, cur + dir));
+      if (s[n]) s[n].scrollIntoView({ block: 'start', behavior: reduce ? 'auto' : 'smooth' });
+    }
+    d.addEventListener('keydown', function (e) {
+      if (e.defaultPrevented || e.metaKey || e.ctrlKey || e.altKey) return;
+      var el = e.target, tag = el && el.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || (el && el.isContentEditable)) return;
+      if (e.key === 't') toggle();
+      else if (e.key === '?') help();
+      else if (e.key === 'Escape') { if (panel && !panel.hidden) help(false); }
+      else if (e.key === 'j' || e.key === 'k') jump(e.key === 'j' ? 1 : -1);
+    });
+
+    if (reduce) return;
+
+    /* Decrypt category headings once, when they first come into view. */
+    var GLYPHS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789#%&*+=<>/\\|';
+    function scramble(el) {
+      var txt = el.textContent, n = txt.length, at = [], end = 0, t0 = 0, last = 0, out = txt;
+      for (var i = 0; i < n; i++) { at.push(120 + i * 36 + Math.random() * 220); end = Math.max(end, at[i]); }
+      el.classList.add('scr');
+      (function frame(now) {
+        t0 = t0 || now;
+        var t = now - t0;
+        if (now - last > 45) {
+          last = now; out = '';
+          for (var i = 0; i < n; i++) { var c = txt.charAt(i); out += (c === ' ' || t >= at[i]) ? c : GLYPHS.charAt(Math.floor(Math.random() * GLYPHS.length)); }
+          el.setAttribute('data-scr', out);
+        }
+        if (t < end) requestAnimationFrame(frame); else { el.classList.remove('scr'); el.removeAttribute('data-scr'); }
+      })(performance.now());
+    }
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (x) {
+          if (!x.isIntersecting) return;
+          io.unobserve(x.target);
+          scramble(x.target);
+        });
+      }, { threshold: 0.6 });
+      d.querySelectorAll('.cat-name').forEach(function (el) { io.observe(el); });
+    }
+  })();
+  </script>
 </body>
 </html>

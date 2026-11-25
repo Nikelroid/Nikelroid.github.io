@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Nima Kelidari — Machine Learning Researcher &amp; Engineer</title>
-  <meta name="description" content="ML researcher and engineer in Los Angeles: M.S. in AI at USC (December 2026), graduate research assistant at Memorial Sloan Kettering, first-author paper at AIIDE 2026.">
+  <meta name="description" content="ML researcher and engineer in Los Angeles and Seattle: M.S. in AI at USC (December 2026), graduate research assistant at Memorial Sloan Kettering, first-author paper at AIIDE 2026.">
   <meta name="author" content="Nima Kelidari">
   <link rel="canonical" href="https://kelidari.com/">
 
-  <meta name="theme-color" content="#F7F3EB" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#17130E" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#F7F8F8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0B0E11" media="(prefers-color-scheme: dark)">
 
   <!-- Open Graph -->
   <meta property="og:type" content="profile">
@@ -34,12 +34,9 @@
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 
-  <link rel="preload" href="/fonts/fraunces-100-900.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/newsreader-200-800.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/ibm-plex-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+  <script>(function(r){var t='dark';try{var s=localStorage.getItem('theme');if(s==='light'||s==='dark')t=s}catch(e){}r.setAttribute('data-theme',t);r.classList.add('js')})(document.documentElement)</script>
+  <link rel="preload" href="/fonts/ibm-plex-mono-500.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/styles.css">
-
-  <script>document.documentElement.classList.add('js');</script>
 
   <script type="application/ld+json">
   {
@@ -76,12 +73,20 @@
         "url": "https://en.sharif.ir/"
       }
     ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Los Angeles",
-      "addressRegion": "CA",
-      "addressCountry": "US"
-    },
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA",
+        "addressCountry": "US"
+      },
+      {
+        "@type": "PostalAddress",
+        "addressLocality": "Seattle",
+        "addressRegion": "WA",
+        "addressCountry": "US"
+      }
+    ],
     "sameAs": [
       "https://github.com/Nikelroid",
       "https://www.linkedin.com/in/nima-kelidari/",
@@ -114,10 +119,10 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <div class="wrap">
-    <header class="masthead">
+  <header class="site-head">
+    <div class="wrap head-row">
       <a class="brand" href="/">Nima Kelidari<span class="dot">.</span></a>
-      <nav aria-label="Site">
+      <nav class="site-nav" aria-label="Site">
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -128,59 +133,77 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-    </header>
+      <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme (t)"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.25" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 3.75a8.25 8.25 0 0 1 0 16.5z" fill="currentColor"/></svg></button>
+    </div>
+  </header>
 
-    <main id="main">
+  <main id="main">
 
-      <!-- ============ Hero ============ -->
-      <section class="hero" aria-label="Introduction">
-        <div>
+    <!-- ============ Hero ============ -->
+    <section class="hero" aria-label="Introduction">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
           <p class="kicker">Machine learning · Research &amp; engineering</p>
           <h1>Nima Kelidari</h1>
           <p class="deck">I build machine-learning systems end to end and test whether they hold up. I'm a graduate research assistant at <a href="https://www.mskcc.org/">Memorial Sloan Kettering Cancer Center</a>, making the solvers behind radiotherapy planning faster, and I finish my M.S. in AI at USC in December 2026.</p>
-          <p class="status"><span class="status-dot" aria-hidden="true"></span>Open to full-time ML research and engineering roles from January 2027</p>
+          <p class="status"><span class="status-dot" aria-hidden="true"></span><span>Open to full-time ML research and engineering roles <span class="avail-when">from January 2027</span></span></p>
           <ul class="hero-links">
-            <li><a class="primary" href="/NimaKelidari_CV.pdf">R&eacute;sum&eacute; <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-            <li><a href="mailto:Kelidari.Nima@gmail.com">Email <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-            <li><a href="https://www.linkedin.com/in/nima-kelidari/">LinkedIn <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-            <li><a href="https://github.com/Nikelroid">GitHub <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-            <li><a href="https://scholar.google.com/citations?user=4bTONqMAAAAJ">Scholar <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+            <li><a class="btn primary" href="/NimaKelidari_CV.pdf">R&eacute;sum&eacute; <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+            <li><a class="btn" href="mailto:Kelidari.Nima@gmail.com">Email <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+            <li><a class="btn" href="https://www.linkedin.com/in/nima-kelidari/">LinkedIn <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+            <li><a class="btn" href="https://github.com/Nikelroid">GitHub <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+            <li><a class="btn" href="https://scholar.google.com/citations?user=4bTONqMAAAAJ">Scholar <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
           </ul>
         </div>
-        <div class="portrait">
-          <div class="mount">
-            <img src="/assets/portrait.webp" alt="Nima Kelidari, outdoors on a tree-lined street in autumn" width="640" height="640" fetchpriority="high">
-          </div>
-          <p class="meta"><span>Los Angeles, CA</span> <span>34.02&deg; N, 118.285&deg; W</span></p>
-        </div>
-      </section>
 
-      <!-- ============ About ============ -->
-      <section id="about" class="block">
-        <div class="rail reveal">
-          <span class="kicker"><span class="no">01</span>About</span>
+        <div class="term" aria-hidden="true">
+          <div class="term-bar"><span class="dots"><i></i><i></i><i></i></span><span class="term-title">nikelroid@kelidari: ~</span></div>
+          <div class="term-body">
+            <p class="t-line t-cmd"><span class="t-ps">~ $</span> <span class="t-type">whoami</span></p>
+            <p class="t-line t-out">nikelroid</p>
+            <p class="t-line t-cmd"><span class="t-ps">~ $</span> <span class="t-type">grep -i accepted papers.txt</span></p>
+            <p class="t-line t-out t-match"><span class="t-hl">accepted</span>  <span class="t-k">AIIDE 2026 (AAAI)</span>, first author</p>
+            <p class="t-line t-out t-match"><span class="t-hl">accepted</span>  <span class="t-k">NeurIPS 2026 ML×OR workshop</span>, co-first author</p>
+            <p class="t-line t-cmd"><span class="t-ps">~ $</span> <span class="t-type">cat stack.txt</span></p>
+            <p class="t-line t-out">Python  PyTorch  JAX  TensorFlow  Hugging Face  vLLM  LangGraph  CUDA  CuPy  SLURM  Docker  Kubernetes  FastAPI  MLflow  GCP  AWS</p>
+            <p class="t-line t-cmd t-last"><span class="t-ps">~ $</span> <span class="t-type"></span></p>
+          </div>
         </div>
-        <div class="reveal">
-          <h2>Models are easy to train and hard to trust.</h2>
+      </div>
+    </section>
+
+    <!-- ============ About ============ -->
+    <section id="about" class="sec wrap">
+      <p class="sec-head"><span class="sec-no">01</span><span class="sec-name">About</span></p>
+      <div class="about-grid">
+        <div>
+          <h2 class="statement">Models are easy to train and hard to trust.</h2>
           <div class="prose">
-            <p class="lede">I'm finishing an M.S. in computer science (artificial intelligence) at USC's Viterbi School of Engineering, after a B.S. in computer science at Sharif University of Technology. Most of my work is about taking models out of notebooks and making them hold up: on HPC clusters, behind APIs, and under tests built to find where they fail.</p>
+            <p>I'm finishing an M.S. in computer science (artificial intelligence) at USC's Viterbi School of Engineering, after a B.S. in computer science at Sharif University of Technology. Most of my work is about taking models out of notebooks and making them hold up: on HPC clusters, behind APIs, and under tests built to find where they fail.</p>
             <p>Recent work runs across the stack: finding which features speech models actually use to detect Parkinson's disease, steering mixture-of-experts LLMs at inference time without touching their weights, measuring game-playing agents against a fixed expert, and testing what a RAG assistant answers after a filing is amended. I also taught for four semesters at Sharif, six courses and 300+ students. Away from a keyboard I hike, swim, and lose evenings to strategy games.</p>
           </div>
-          <p class="stack-line" aria-label="Tools I use">Python <span class="sep">&middot;</span> PyTorch <span class="sep">&middot;</span> JAX <span class="sep">&middot;</span> TensorFlow <span class="sep">&middot;</span> Hugging&nbsp;Face <span class="sep">&middot;</span> vLLM <span class="sep">&middot;</span> LangGraph <span class="sep">&middot;</span> CUDA <span class="sep">&middot;</span> CuPy <span class="sep">&middot;</span> SLURM <span class="sep">&middot;</span> Docker <span class="sep">&middot;</span> Kubernetes <span class="sep">&middot;</span> FastAPI <span class="sep">&middot;</span> MLflow <span class="sep">&middot;</span> GCP <span class="sep">&middot;</span> AWS</p>
+          <p class="tools-label" id="tools-label">Tools I use</p>
+          <ul class="chips" aria-labelledby="tools-label">
+            <li>Python</li><li>PyTorch</li><li>JAX</li><li>TensorFlow</li><li>Hugging&nbsp;Face</li><li>vLLM</li><li>LangGraph</li><li>CUDA</li><li>CuPy</li><li>SLURM</li><li>Docker</li><li>Kubernetes</li><li>FastAPI</li><li>MLflow</li><li>GCP</li><li>AWS</li>
+          </ul>
         </div>
-      </section>
+        <figure class="portrait">
+          <img src="/assets/portrait.webp" alt="Nima Kelidari, outdoors on a tree-lined street in autumn" width="640" height="640" loading="lazy" decoding="async">
+          <figcaption><span>Los Angeles, CA</span> <span>34.02&deg; N, 118.285&deg; W</span></figcaption>
+        </figure>
+      </div>
+    </section>
 
-      <!-- ============ Experience ============ -->
-      <section id="experience" class="block">
-        <div class="rail reveal">
-          <h2 class="kicker"><span class="no" aria-hidden="true">02</span>Experience</h2>
-        </div>
-        <div>
-          <article class="role reveal">
-            <span class="org-mark" aria-hidden="true"><img src="/assets/logos/mskcc.png" alt=""></span>
+    <!-- ============ Experience ============ -->
+    <section id="experience" class="sec wrap">
+      <h2 class="sec-head"><span class="sec-no" aria-hidden="true">02</span><span class="sec-name">Experience</span></h2>
+      <div class="roles">
+        <article class="role">
+          <p class="when"><time datetime="2026-09">Sep 2026</time> — <span class="now">Present</span> <span class="loc">Remote</span></p>
+          <div class="role-main">
             <div class="role-head">
+              <span class="org-mark" aria-hidden="true"><img src="/assets/logos/mskcc.png" alt="" width="68" height="62" loading="lazy" decoding="async"></span>
               <h3>Graduate Research Assistant</h3>
-              <span class="meta when"><time datetime="2026-09">Sep 2026</time> — Present · Remote</span>
             </div>
             <p class="where"><a href="https://www.mskcc.org/">Memorial Sloan Kettering Cancer Center</a>, Department of Medical Physics</p>
             <ul class="points">
@@ -188,13 +211,15 @@
               <li>Wrote <strong>warm-start patches for PIQP (C++) and Clarabel (Rust)</strong>, whose releases cannot take a starting point, and kept every extension off by default behind an equivalence test against the upstream code.</li>
               <li>Diagnosed <strong>thread contention</strong> between OpenBLAS and MKL that made vector operations <strong>~150&times; slower</strong>, fixed it in one line, reran every affected study and reported the smaller gain. Campaigns run up to <strong>~2,100 task-hours</strong> on SLURM with train/test splits and paired bootstrap intervals; the paper is in preparation for IEEE CEC 2027.</li>
             </ul>
-          </article>
+          </div>
+        </article>
 
-          <article class="role reveal">
-            <span class="org-mark" aria-hidden="true"><img src="/assets/logos/mskcc.png" alt=""></span>
+        <article class="role">
+          <p class="when"><time datetime="2026-05">May 2026</time> — <time datetime="2026-09">Sep 2026</time> <span class="loc">Remote</span></p>
+          <div class="role-main">
             <div class="role-head">
+              <span class="org-mark" aria-hidden="true"><img src="/assets/logos/mskcc.png" alt="" width="68" height="62" loading="lazy" decoding="async"></span>
               <h3>Computational Optimization Intern</h3>
-              <span class="meta when"><time datetime="2026-05">May 2026</time> — <time datetime="2026-09">Sep 2026</time> · Remote</span>
             </div>
             <p class="where"><a href="https://www.mskcc.org/">Memorial Sloan Kettering Cancer Center</a>, Department of Medical Physics</p>
             <ul class="points">
@@ -202,13 +227,15 @@
               <li>Derived a <strong>predictive bound</strong> showing the capped penalty schedule, not the solver, was the bottleneck (69 of the old method's 78 iterations), confirmed in 10 of 10 ablations. The rebuilt rule needs 6 to 21 iterations across four orders of magnitude of starting penalty, against 8 to 78 before.</li>
               <li>Built the platform behind <strong>~2,700 solver runs</strong>, with a matrix-free conjugate-gradient GPU engine, an NFS-safe SLURM search and an early exit that cut trial cost 1.8&#8211;4.4&times;, and shipped <strong>admm_tuner</strong>, the two-function tune/solve tool the planning team asked for.</li>
             </ul>
-          </article>
+          </div>
+        </article>
 
-          <article class="role reveal">
-            <span class="org-mark" aria-hidden="true"><img src="/assets/logos/usc.png" alt=""></span>
+        <article class="role">
+          <p class="when"><time datetime="2025-08">Aug 2025</time> — <span class="now">Present</span> <span class="loc">Los Angeles</span></p>
+          <div class="role-main">
             <div class="role-head">
+              <span class="org-mark" aria-hidden="true"><img src="/assets/logos/usc-112.png" alt="" width="109" height="112" loading="lazy" decoding="async"></span>
               <h3>Graduate Student Researcher</h3>
-              <span class="meta when"><time datetime="2025-08">Aug 2025</time> — Present · Los Angeles</span>
             </div>
             <p class="where"><a href="https://www.usc.edu/">University of Southern California</a></p>
             <ul class="points">
@@ -218,427 +245,552 @@
               <li><strong>Decision-focused learning</strong>: co-first author of a paper <strong>accepted at the NeurIPS 2026 ML&times;OR workshop</strong> that trains outcome models through Lagrangian dual prices. In a queueing simulation it stayed within capacity on all 6 datasets while the standard pipeline overloaded 4; I was the largest code contributor (41 of 73 commits).</li>
               <li><strong>Infrastructure</strong>: a fault-tolerant master&#8211;worker stack serving three LLM families across 14 GPU workers at ~32 req/s, and a worker cold start traced to an 11 MB/s NFS mount and cut <strong>62&times;</strong>, from ~28 minutes to ~27 seconds.</li>
             </ul>
-          </article>
+          </div>
+        </article>
 
-          <article class="role reveal">
-            <span class="org-mark" aria-hidden="true"><img src="/assets/logos/sharif.png" alt=""></span>
+        <article class="role">
+          <p class="when"><time datetime="2022-09">Sep 2022</time> — <time datetime="2023-08">Aug 2023</time> <span class="loc">Tehran</span></p>
+          <div class="role-main">
             <div class="role-head">
+              <span class="org-mark" aria-hidden="true"><img src="/assets/logos/sharif-112.png" alt="" width="112" height="112" loading="lazy" decoding="async"></span>
               <h3>Research Assistant, Computer Vision</h3>
-              <span class="meta when"><time datetime="2022-09">Sep 2022</time> — <time datetime="2023-08">Aug 2023</time> · Tehran</span>
             </div>
             <p class="where"><a href="https://en.sharif.ir/">Sharif University of Technology</a></p>
             <ul class="points">
               <li>Ten months in Dr. Tefagh's group on a four-person team, prototyping generative computer-vision pipelines with vision transformers and 3D CNNs on university GPU servers.</li>
             </ul>
-          </article>
+          </div>
+        </article>
 
-          <article class="role reveal">
-            <span class="org-mark" aria-hidden="true"><img src="/assets/logos/sharif.png" alt=""></span>
+        <article class="role">
+          <p class="when"><time datetime="2021-09">Sep 2021</time> — <time datetime="2023-07">Jul 2023</time> <span class="loc">Tehran</span></p>
+          <div class="role-main">
             <div class="role-head">
+              <span class="org-mark" aria-hidden="true"><img src="/assets/logos/sharif-112.png" alt="" width="112" height="112" loading="lazy" decoding="async"></span>
               <h3>Teaching Assistant &amp; Tutor</h3>
-              <span class="meta when"><time datetime="2021-09">Sep 2021</time> — <time datetime="2023-07">Jul 2023</time> · Tehran</span>
             </div>
             <p class="where"><a href="https://en.sharif.ir/">Sharif University of Technology</a></p>
             <ul class="points">
               <li>Four semesters, six courses, 300+ students: lectures, assignment design and grading for programming and machine-learning courses, plus a TensorFlow workshop series for 60 students that I designed and ran.</li>
             </ul>
-          </article>
+          </div>
+        </article>
 
-          <article class="role aside-role reveal">
-            <span class="org-mark" aria-hidden="true"><img src="/assets/logos/bestbuy.png" alt=""></span>
+        <article class="role aside-role">
+          <p class="when"><time datetime="2024-05">May 2024</time> — <time datetime="2025-01">Jan 2025</time> <span class="loc">Issaquah, WA</span></p>
+          <div class="role-main">
             <div class="role-head">
+              <span class="org-mark" aria-hidden="true"><img src="/assets/logos/bestbuy-112.png" alt="" width="112" height="81" loading="lazy" decoding="async"></span>
               <h3>Technical Sales Advisor — Best Buy</h3>
-              <span class="meta when"><time datetime="2024-05">May 2024</time> — <time datetime="2025-01">Jan 2025</time> · Issaquah, WA</span>
             </div>
             <p class="note">Part-time technical PC advisor: hardware recommendations, debugging and device tuning, and practice explaining technical trade-offs to non-experts.</p>
-          </article>
-        </div>
-      </section>
+          </div>
+        </article>
+      </div>
+    </section>
 
-      <!-- ============ Publications ============ -->
-      <section id="publications" class="block">
-        <div class="rail reveal">
-          <h2 class="kicker"><span class="no" aria-hidden="true">03</span>Publications</h2>
-        </div>
-        <div class="reveal">
-          <ol class="pubs">
-            <li class="pub">
-              <span class="meta venue accepted">Accepted · AIIDE 2026 (AAAI)</span>
-              <h3>A Gold-Standard Study of What Makes a Lightweight Game-Playing Agent Strong</h3>
-              <p class="authors"><b>Nima Kelidari</b>, Mohammadsaeed Haghi, Mahdi Salmani</p>
-              <ul class="pub-links">
-                <li><a href="https://arxiv.org/abs/2607.06854">arXiv:2607.06854</a></li>
-                <li><a href="https://github.com/Nikelroid/adversarial-coevolution">Code</a></li>
-                <li><a href="https://kelidari.com/adversarial-coevolution/">Project</a></li>
-              </ul>
-            </li>
-            <li class="pub">
-              <span class="meta venue accepted">Accepted · NeurIPS 2026 Workshop on ML&times;OR</span>
-              <h3>Differentiating Through Dual Prices: End-to-End Policy Learning Under Capacity Constraints</h3>
-              <p class="authors">Mohammadsaeed Haghi*, Mahdi Salmani*, <b>Nima Kelidari*</b>, Vishal Gupta, Phebe Vayanos <span class="note">(*equal contribution)</span></p>
-              <ul class="pub-links">
-                <li><a href="https://arxiv.org/abs/2608.04669">arXiv:2608.04669</a></li>
-                <li><a href="https://github.com/mahdisalmani/end2end-capacity-constrained-policy-learning">Code</a></li>
-              </ul>
-            </li>
-            <li class="pub">
-              <span class="meta venue">Under review · ICASSP 2027</span>
-              <h3>Interpreting Speech-Based Parkinson's Disease Detection with Sparse Autoencoders</h3>
-              <p class="authors"><b>Nima Kelidari</b>, Minoo Ahmadi, Chaitanya Parwatkar, Ashutosh Chaubey, Mohammad Soleymani</p>
-            </li>
-            <li class="pub">
-              <span class="meta venue">Under review · ICASSP 2027</span>
-              <h3>The Representation Utility Gap in Audio LLMs for Clinical Speech</h3>
-              <p class="authors">Chaitanya Parwatkar, <b>Nima Kelidari</b>, Minoo Ahmadi, Ashutosh Chaubey, Mohammad Soleymani</p>
-              <ul class="pub-links">
-                <li><a href="https://github.com/cparw/audio-llm-utility-gap">Code</a></li>
-              </ul>
-            </li>
-            <li class="pub">
-              <span class="meta venue">In preparation</span>
-              <h3>3D-DELTA: A Learned Low-Rank Expert-Steering Head for Frozen Mixture-of-Experts LLMs</h3>
-              <p class="authors"><b>Nima Kelidari</b>, Mahdi Salmani</p>
-              <ul class="pub-links">
-                <li><a href="https://kelidari.com/moe-steering-3d-delta/">Project</a></li>
-              </ul>
-            </li>
-          </ol>
-        </div>
-      </section>
+    <!-- ============ Publications ============ -->
+    <section id="publications" class="sec wrap">
+      <h2 class="sec-head"><span class="sec-no" aria-hidden="true">03</span><span class="sec-name">Publications</span></h2>
+      <ol class="pubs">
+        <li class="pub">
+          <p class="pub-status"><span class="badge ok">Accepted</span></p>
+          <div class="pub-main">
+            <p class="venue">AIIDE 2026 (AAAI)</p>
+            <h3>A Gold-Standard Study of What Makes a Lightweight Game-Playing Agent Strong</h3>
+            <p class="authors"><b>Nima Kelidari</b>, Mohammadsaeed Haghi, Mahdi Salmani</p>
+            <ul class="pub-links">
+              <li><a href="https://arxiv.org/abs/2607.06854">arXiv:2607.06854</a></li>
+              <li><a href="https://github.com/Nikelroid/adversarial-coevolution">Code</a></li>
+              <li><a href="https://kelidari.com/adversarial-coevolution/">Project</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="pub">
+          <p class="pub-status"><span class="badge ok">Accepted</span></p>
+          <div class="pub-main">
+            <p class="venue">NeurIPS 2026 Workshop on ML&times;OR</p>
+            <h3>Differentiating Through Dual Prices: End-to-End Policy Learning Under Capacity Constraints</h3>
+            <p class="authors">Mohammadsaeed Haghi*, Mahdi Salmani*, <b>Nima Kelidari*</b>, Vishal Gupta, Phebe Vayanos <span class="note">(*equal contribution)</span></p>
+            <ul class="pub-links">
+              <li><a href="https://arxiv.org/abs/2608.04669">arXiv:2608.04669</a></li>
+              <li><a href="https://github.com/mahdisalmani/end2end-capacity-constrained-policy-learning">Code</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="pub">
+          <p class="pub-status"><span class="badge wait">Under review</span></p>
+          <div class="pub-main">
+            <p class="venue">ICASSP 2027</p>
+            <h3>Interpreting Speech-Based Parkinson's Disease Detection with Sparse Autoencoders</h3>
+            <p class="authors"><b>Nima Kelidari</b>, Minoo Ahmadi, Chaitanya Parwatkar, Ashutosh Chaubey, Mohammad Soleymani</p>
+          </div>
+        </li>
+        <li class="pub">
+          <p class="pub-status"><span class="badge wait">Under review</span></p>
+          <div class="pub-main">
+            <p class="venue">ICASSP 2027</p>
+            <h3>The Representation Utility Gap in Audio LLMs for Clinical Speech</h3>
+            <p class="authors">Chaitanya Parwatkar, <b>Nima Kelidari</b>, Minoo Ahmadi, Ashutosh Chaubey, Mohammad Soleymani</p>
+            <ul class="pub-links">
+              <li><a href="https://github.com/cparw/audio-llm-utility-gap">Code</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="pub">
+          <p class="pub-status"><span class="badge prep"><span class="spin" aria-hidden="true"></span>In preparation</span></p>
+          <div class="pub-main">
+            <h3>3D-DELTA: A Learned Low-Rank Expert-Steering Head for Frozen Mixture-of-Experts LLMs</h3>
+            <p class="authors"><b>Nima Kelidari</b>, Mahdi Salmani, Mohammadsaeed Haghi</p>
+            <ul class="pub-links">
+              <li><a href="https://kelidari.com/moe-steering-3d-delta/">Project</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="pub">
+          <p class="pub-status"><span class="badge prep"><span class="spin" aria-hidden="true"></span>In preparation</span></p>
+          <div class="pub-main">
+            <h3>Tuned and Accelerated Quadratic Programming Solvers: Bayesian Configuration and a Safeguarded Anderson-Accelerated ADMM Warm Start</h3>
+            <p class="authors"><b>Nima Kelidari</b>, Mohammadsaeed Haghi</p>
+          </div>
+        </li>
+        <li class="pub">
+          <p class="pub-status"><span class="badge prep"><span class="spin" aria-hidden="true"></span>In preparation</span></p>
+          <div class="pub-main">
+            <h3>Diagnosing Paraphrase-Induced Failures in Vision-Language-Action Models</h3>
+            <p class="authors"><b>Nima Kelidari</b></p>
+          </div>
+        </li>
+      </ol>
+    </section>
 
-      <!-- ============ Education ============ -->
-      <section id="education" class="block">
-        <div class="rail reveal">
-          <h2 class="kicker"><span class="no" aria-hidden="true">04</span>Education</h2>
-        </div>
-        <div>
-          <article class="role reveal">
-            <span class="org-mark" aria-hidden="true"><img src="/assets/logos/usc.png" alt=""></span>
+    <!-- ============ Education ============ -->
+    <section id="education" class="sec wrap">
+      <h2 class="sec-head"><span class="sec-no" aria-hidden="true">04</span><span class="sec-name">Education</span></h2>
+      <div class="roles">
+        <article class="role">
+          <p class="when"><time datetime="2024-12">Dec 2024</time> — <time datetime="2026-12">Dec 2026</time></p>
+          <div class="role-main">
             <div class="role-head">
+              <span class="org-mark" aria-hidden="true"><img src="/assets/logos/usc-112.png" alt="" width="109" height="112" loading="lazy" decoding="async"></span>
               <h3>M.S. Computer Science — Artificial Intelligence</h3>
-              <span class="meta when"><time datetime="2024-12">Dec 2024</time> — <time datetime="2026-12">Dec 2026</time></span>
             </div>
             <p class="where"><a href="https://www.usc.edu/">University of Southern California</a>, Viterbi School of Engineering · Los Angeles</p>
             <ul class="points">
               <li><span class="gpa">GPA 3.55&thinsp;/&thinsp;4.0, and 3.8 in AI/ML courses.</span> Machine learning, deep learning, applied NLP, multimodal probabilistic learning, analysis of algorithms, robot manipulation. Merit scholarship, USC Viterbi.</li>
             </ul>
-          </article>
+          </div>
+        </article>
 
-          <article class="role reveal">
-            <span class="org-mark" aria-hidden="true"><img src="/assets/logos/sharif.png" alt=""></span>
+        <article class="role">
+          <p class="when"><time datetime="2019-09">Sep 2019</time> — <time datetime="2024-02">Feb 2024</time></p>
+          <div class="role-main">
             <div class="role-head">
+              <span class="org-mark" aria-hidden="true"><img src="/assets/logos/sharif-112.png" alt="" width="112" height="112" loading="lazy" decoding="async"></span>
               <h3>B.S. Computer Science</h3>
-              <span class="meta when"><time datetime="2019-09">Sep 2019</time> — <time datetime="2024-02">Feb 2024</time></span>
             </div>
             <p class="where">Sharif University of Technology · Tehran</p>
             <ul class="points">
               <li><span class="gpa">GPA 3.37&thinsp;/&thinsp;4.0,</span> and 3.5 across fifteen-plus CS and AI courses: computer vision, deep learning, statistical learning, algorithm design, data structures, image processing, numerical analysis, databases.</li>
               <li>Thesis graded 20/20: segmenting medical images in 3D by lifting 2D MedSAM masks through a pretrained NeRF on CT volumes, advised by Dr. Tefagh.</li>
             </ul>
-          </article>
-
-          <div class="certs reveal">
-            <p class="kicker certs-label">Honors</p>
-            <ul class="certs-list">
-              <li>Finalist, Anthropic Fellows Program (AI Safety) <span class="meta">November 2026 cohort</span></li>
-              <li>85th nationally (top 0.05%), National University Entrance Exam, math and physics</li>
-              <li>11th of 1,200 teams, Pardis Code programming contest</li>
-              <li>Top 10 groups, Mustafa Prize innovation competition</li>
-              <li><a href="https://github.com/Farama-Foundation/PettingZoo/pulls?q=is%3Apr+is%3Amerged+author%3ANikelroid">Three merged pull requests to PettingZoo <span class="arrow" aria-hidden="true">&#8599;</span></a> <span class="meta">Farama Foundation · 2026</span></li>
-            </ul>
           </div>
+        </article>
+      </div>
 
-          <div class="certs reveal">
-            <p class="kicker certs-label">Certificates</p>
-            <ul class="certs-list">
-              <li>
-                <a href="https://www.udemy.com/certificate/UC-21b187c8-14ff-44a5-abb9-a75725fd6acb/">MLOps on Google Cloud: CI/CD, Kubernetes &amp; Jenkins <span class="arrow" aria-hidden="true">&#8599;</span></a>
-                <span class="meta">Udemy · 2026</span>
-              </li>
-              <li>
-                <a href="https://www.coursera.org/account/accomplishments/verify/G3R9RD5T6VQ6">Getting Started with Git &amp; GitHub <span class="arrow" aria-hidden="true">&#8599;</span></a>
-                <span class="meta">IBM · 2024</span>
-              </li>
-              <li>
-                Human-subjects research ethics:
-                <a href="https://www.citiprogram.org/verify/?w0ea43745-893b-4e9f-84f2-dd2b7fa74f3a-75349782">Social-Behavioral <span class="arrow" aria-hidden="true">&#8599;</span></a> ·
-                <a href="https://www.citiprogram.org/verify/?w4fa21c92-ee11-4b07-9575-986250b1dc1f-75349783">Good Clinical Practice <span class="arrow" aria-hidden="true">&#8599;</span></a> ·
-                <a href="https://www.citiprogram.org/verify/?we35385bb-60c2-419d-868c-5c287940ee47-75358926">Institutional Official <span class="arrow" aria-hidden="true">&#8599;</span></a>
-                <span class="meta">CITI Program · 2026</span>
-              </li>
-            </ul>
-          </div>
+      <div class="lists">
+        <div class="certs">
+          <p class="certs-label">Honors</p>
+          <ul class="certs-list">
+            <li>Finalist, Anthropic Fellows Program (AI Safety) <span class="meta">November 2026 cohort</span></li>
+            <li>85th nationally (top 0.05%), National University Entrance Exam, math and physics</li>
+            <li>11th of 1,200 teams, Pardis Code programming contest</li>
+            <li>Top 10 groups, Mustafa Prize innovation competition</li>
+            <li><a href="https://github.com/Farama-Foundation/PettingZoo/pulls?q=is%3Apr+is%3Amerged+author%3ANikelroid">Three merged pull requests to PettingZoo <span class="arrow" aria-hidden="true">&#8599;</span></a> <span class="meta">Farama Foundation · 2026</span></li>
+          </ul>
         </div>
-      </section>
 
-      <!-- ============ Selected work ============ -->
-      <section id="work" class="block">
-        <div class="rail reveal">
-          <h2 class="kicker"><span class="no" aria-hidden="true">05</span>Selected work</h2>
-        </div>
-        <div>
-          <article class="project reveal">
-            <figure class="plate">
-              <a href="https://github.com/Nikelroid/footnote-rag" aria-label="Footnote RAG assistant on GitHub">
-                <img src="/assets/footnote-rag.webp" alt="Diagram of how Footnote answers a question: route to the filing, keyword and vector search with reranking, statements pinned first, one optional retry, then an answer from eight whole pages that names its pages" width="1400" height="694" loading="lazy">
-              </a>
-              <figcaption><span>Fig. 01</span><span>Route, search, retry once, cite the page</span></figcaption>
-            </figure>
-            <div>
-              <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 3.5h9l4 4v13h-13z"/><path d="M14.5 3.5v4h4"/><path d="M8.5 11h7M8.5 14h7M8.5 17.5h3"/><circle cx="14.6" cy="17.5" r="0.5" fill="currentColor"/></svg></span>Footnote: RAG for SEC Filings <span class="meta year">2026</span></h3>
-              <p class="prose">A question-answering assistant for company filings that names the page behind every answer. On all 150 FinanceBench questions its LangGraph agent is right <strong>85.8%</strong> of the time (87.2% on the 99 held-back questions), against 33.6% with no documents. I then tested amended copies of real statement pages: with both versions in front of the model, answers lead with the old amount up to 100% of the time, and filing dates plus one sentence saying the later filing wins bring that to <strong>0% on three models</strong>.</p>
-              <span class="meta tools">LangChain · LangGraph · Chroma · BM25 · FastAPI · MCP · Google ADK</span>
-              <ul class="project-links">
-                <li><a href="https://github.com/Nikelroid/footnote-rag">Code &amp; results <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="project flip reveal">
-            <figure class="plate">
-              <a href="https://kelidari.com/moe-steering-3d-delta/" aria-label="Mixture-of-experts steering project page">
-                <img src="/assets/moe-steering.webp" alt="Three-step diagram of expert-routing analysis and test-time steering in a mixture-of-experts LLM" width="1600" height="660" loading="lazy">
-              </a>
-              <figcaption><span>Fig. 02</span><span>Routing-level steering, zero weight edits</span></figcaption>
-            </figure>
-            <div>
-              <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12h5"/><circle cx="9" cy="12" r="1.5"/><path d="M10.5 11.2 16 6.5h5.5M10.5 12h11M10.5 12.8 16 17.5h5.5"/></svg></span>Low-Rank Steering for Mixture-of-Experts LLMs <span class="meta year">2026</span></h3>
-              <p class="prose">A 197K-parameter learned head ranks which experts react to context, and the top ones are switched on or off at inference with no change to the model's weights. Trained on contrastive pairs from SQuAD, HotpotQA and FEVER, it improves mean faithfulness on OLMoE by <strong>+0.101</strong> across six benchmarks, about 4&times; the gain of the published SteerMoE baseline, and transfers across six MoE families from 1.3B to 30.5B parameters. First author with Mahdi Salmani; full paper in preparation. Next, a three-person USC course project is building a gate that decides, per input, whether to apply this steering, because following a document helps when the document is right and hurts when it is wrong or planted; results in December 2026.</p>
-              <span class="meta tools">PyTorch · Hugging Face · vLLM · SLURM</span>
-              <ul class="project-links">
-                <li><a href="https://kelidari.com/moe-steering-3d-delta/">Project site <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-                <li><span class="meta">Code available on request</span></li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="project reveal">
-            <figure class="plate">
-              <a href="/assets/robot-learning-wide.webp" aria-label="Robot learning figure, wide version">
-                <img src="/assets/robot-learning.webp" alt="Three panels: four frames of a simulated Franka arm picking a cube under a Diffusion Policy, spin of a simulated LEAP hand by test condition for three training setups, and a LIBERO instruction shown with two reworded versions" width="1000" height="1799" loading="lazy">
-              </a>
-              <figcaption><span>Fig. 03</span><span>Demonstrations, reward, then language</span></figcaption>
-            </figure>
-            <div>
-              <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20.5h9"/><path d="M8.5 20.5v-5l4.6-4.6"/><circle cx="13.6" cy="10.4" r="1.4"/><path d="M14.6 9.4 18 6"/><path d="M18 6l2.4 1.2M18 6l.9-2.5"/></svg></span>Robot Learning in Simulation <span class="meta year">2026</span></h3>
-              <p class="prose">Three USC robotics projects, all in simulation. A <strong>PPO</strong> policy turns a cube in a LEAP hand from proprioception alone, across 16 runs and 145.5 GPU-hours; randomizing friction and mass was the one significant gain on slippery cubes, <strong>0.378 vs 0.280 rad/s</strong>. A state-based <strong>Diffusion Policy</strong> learns a Franka pick from 100 demonstrations of a PPO teacher: noisy demonstrations cut open-loop success from 33% to 3%, yet beat clean data, <strong>71% vs 47%</strong>, once the policy replans every step. In progress for December: how public vision-language-action checkpoints such as OpenVLA-OFT hold up when LIBERO-Goal instructions are reworded, across 4,092 paraphrases with per-step goal checks.</p>
-              <span class="meta tools">PyTorch · JAX · MuJoCo Warp · MuJoCo Playground · RSL-RL · LIBERO · SLURM</span>
-              <ul class="project-links">
-                <li><a href="https://github.com/Nikelroid/csci645-in-hand-rotation/tree/mjlab-1.6">In-hand rotation code <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-                <li><span class="meta">Diffusion Policy and VLA work are course projects; code on request</span></li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="project flip reveal">
-            <figure class="plate">
-              <a href="https://github.com/Nikelroid/adversarial-coevolution" aria-label="Adversarial co-evolution project on GitHub">
-                <img src="/assets/adversarial-coevolution.webp" alt="System diagram of RL learner, LLM opponent, curriculum manager, and evaluators in a Gym environment" width="1400" height="923" loading="lazy">
-              </a>
-              <figcaption><span>Fig. 04</span><span>Curriculum, opponents, and a fixed yardstick</span></figcaption>
-            </figure>
-            <div>
-              <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12a7.5 7.5 0 0 1 13-5.1"/><path d="M17.5 3.4v3.8h-3.8"/><path d="M19.5 12a7.5 7.5 0 0 1-13 5.1"/><path d="M6.5 20.6v-3.8h3.8"/></svg></span>Adversarial Co-Evolution of RL &amp; LLM Agents <span class="meta year">2026</span></h3>
-              <p class="prose">Gin Rummy agents trained with distributed PPO and TRPO, measured against a fixed rule-based expert used only as a yardstick. Across 100+ controlled runs, five training choices lift the agent from about 30% to <strong>34.2 &plusmn; 2.1%</strong> against the expert, and four that looked promising, including imitating an LLM guide and training against a live LLM opponent, do not help. The paper is <strong>accepted at AIIDE 2026</strong> (AAAI).</p>
-              <span class="meta tools">PyTorch · Stable-Baselines3 · PettingZoo · Ollama · Flask</span>
-              <ul class="project-links">
-                <li><a href="https://arxiv.org/abs/2607.06854">Paper · AIIDE 2026 <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-                <li><a href="https://github.com/Nikelroid/adversarial-coevolution">Code <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-                <li><a href="https://kelidari.com/adversarial-coevolution/explorer.html">Interactive explorer <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="project reveal">
-            <figure class="plate">
-              <a href="https://github.com/Nikelroid/linguistic-agnostic-ser" aria-label="Speech emotion recognition probing framework on GitHub">
-                <img src="/assets/ser-probing.webp" alt="Layer-wise emotion-probing architecture and accuracy curves for wav2vec 2.0, HuBERT, and Whisper" width="1200" height="900" loading="lazy">
-              </a>
-              <figcaption><span>Fig. 05</span><span>Layer-wise probing, 3 model families</span></figcaption>
-            </figure>
-            <div>
-              <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 10v4M6.5 7.5v9M10 4.5v15M13.5 7.5v9M17 10v4M20.5 11v2"/></svg></span>Language-Agnostic Speech Emotion Recognition <span class="meta year">2026</span></h3>
-              <p class="prose">A probing framework that asks where emotion lives inside speech transformers, layer by layer across 24 hidden layers: six frozen encoders and eight datasets in five languages, run unattended on SLURM and read through a FastAPI dashboard of layer-wise results.</p>
-              <span class="meta tools">PyTorch · Hugging Face · FastAPI · SLURM</span>
-              <ul class="project-links">
-                <li><a href="https://github.com/Nikelroid/linguistic-agnostic-ser">Code <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-                <li><a href="https://kelidari.com/linguistic-agnostic-ser/">Project site <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-                <li><a href="https://kelidari.com/linguistic-agnostic-ser/explorer.html">Interactive explorer <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="project flip reveal">
-            <figure class="plate">
-              <a href="https://github.com/Nikelroid/multimodal-sentiment-classification" aria-label="Multimodal sentiment classification project on GitHub">
-                <img src="/assets/multimodal-sentiment.webp" alt="Dialogue frames from a TV scene annotated with negative and neutral sentiment labels" width="1300" height="813" loading="lazy">
-              </a>
-              <figcaption><span>Fig. 06</span><span>Text &#183; face &#183; voice, fused and deployed</span></figcaption>
-            </figure>
-            <div>
-              <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="9.5" r="4.6"/><circle cx="15" cy="9.5" r="4.6"/><circle cx="12" cy="14.8" r="4.6"/></svg></span>Tri-Modal Sentiment Analysis, Benchmarked and Deployed <span class="meta year">2026</span></h3>
-              <p class="prose">Text, face and voice fused into one model at <strong>74.5% accuracy / 0.743 weighted-F1 on MELD</strong> (2,607 test utterances). It began as a 2022 course project stuck at 63% on its original corpus, where newer backbones moved it only half a point, so I rebuilt it on MELD. It runs live on scale-to-zero Cloud Run, with browser labs that personalize it to one user in five minutes.</p>
-              <span class="meta tools">RoBERTa &#183; ModernBERT &#183; DINOv2 &#183; Whisper &#183; MTCNN &#183; FastAPI &#183; Cloud Run &#183; GitHub Actions</span>
-              <ul class="project-links">
-                <li><a href="https://kelidari.com/multimodal-sentiment-classification/">Live playground <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-                <li><a href="https://github.com/Nikelroid/multimodal-sentiment-classification">Code <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="project reveal">
-            <figure class="plate">
-              <a href="https://github.com/Nikelroid/qa-vision-server" aria-label="Real-time AI vision assistant server on GitHub">
-                <img src="/assets/vision-assistant.webp" alt="iOS app interface answering natural-language questions about a live camera scene" width="1280" height="1174" loading="lazy">
-              </a>
-              <figcaption><span>Fig. 07</span><span>Camera &#8594; WebSocket &#8594; Vertex AI, round trip</span></figcaption>
-            </figure>
-            <div>
-              <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M2.5 12S6 5.8 12 5.8 21.5 12 21.5 12 18 18.2 12 18.2 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="2.6"/></svg></span>Real-Time AI Vision Assistant <span class="meta year">2025</span></h3>
-              <p class="prose">Point a phone at something and ask about it. A Dockerized FastAPI backend on Google Cloud Vision and Vertex AI talks to a native SwiftUI client over WebSockets and answers natural-language questions about the live camera feed.</p>
-              <span class="meta tools">Docker · FastAPI · GCP · Swift · WebSockets</span>
-              <ul class="project-links">
-                <li><a href="https://github.com/Nikelroid/qa-vision-server">Server <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-                <li><a href="https://github.com/Nikelroid/qa-vision-ios-client">iOS client <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="project flip reveal">
-            <figure class="plate">
-              <a href="https://kelidari.com/machine-learning-implementations/" aria-label="Machine learning from scratch interactive lab">
-                <img src="/assets/ml-from-scratch-lab.webp" alt="Interactive lab showing a multilayer perceptron trained by hand-written backpropagation solving XOR, with live loss curve and hyperparameter controls" width="1400" height="923" loading="lazy">
-              </a>
-              <figcaption><span>Fig. 08</span><span>Ten algorithms, trained live in the browser</span></figcaption>
-            </figure>
-            <div>
-              <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 19V5M4 19h16M8 16v-5M12 16V8M16 16v-3M20 16v-7"/></svg></span>Machine Learning from Scratch <span class="meta year">2025</span></h3>
-              <p class="prose">Ten algorithms written by hand in NumPy and PyTorch primitives, from backpropagation with dropout and momentum to AdaBoost, K-Means++, HMM Viterbi decoding, a decoder-only transformer and tabular Q-learning, each paired with a browser module that trains in front of you.</p>
-              <span class="meta tools">NumPy &middot; PyTorch &middot; JavaScript &middot; Canvas</span>
-              <ul class="project-links">
-                <li><a href="https://kelidari.com/machine-learning-implementations/">Interactive lab <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-                <li><a href="https://github.com/Nikelroid/machine-learning-implementations">Code <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-              </ul>
-            </div>
-          </article>
-
-          <p class="work-outro reveal">Off the clock: <a class="fun" href="https://kelidari.com/dastan-gesture-guitar/">Dastan</a>, a guitar you strum with hand gestures through your webcam, written as one HTML file. The <a href="/projects/">full index</a> has sixty-odd more projects, from SDN controllers to Persian poem generators.</p>
-        </div>
-      </section>
-
-
-      <!-- ============ Playgrounds ============ -->
-      <section id="playgrounds" class="block">
-        <div class="rail reveal">
-          <h2 class="kicker"><span class="no" aria-hidden="true">06</span>Playgrounds</h2>
-        </div>
-        <div class="reveal">
-          <p class="prose lede">Seven things you can open and use right now, with no install and no sign-up.</p>
-          <ul class="playground-grid">
-            <li class="pg-card pg-feature">
-              <a href="https://kelidari.com/multimodal-sentiment-classification/">
-                <span class="pg-head"><svg class="pg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8.5" cy="9" r="4.2"/><circle cx="15.5" cy="9" r="4.2"/><circle cx="12" cy="14.5" r="4.2"/></svg><span class="pg-tag"><span class="pg-live" aria-hidden="true"></span>Live model</span></span>
-                <h3>Tri-Modal Sentiment Playground</h3>
-                <p>Type a sentence, show your face, or record your voice. Three models read you independently and a confidence-weighted fusion arbitrates when they disagree. Local mode keeps everything on your machine.</p>
-                <span class="pg-stat">74.5% on MELD</span>
-              </a>
+        <div class="certs">
+          <p class="certs-label">Certificates</p>
+          <ul class="certs-list">
+            <li>
+              <a href="https://www.udemy.com/certificate/UC-21b187c8-14ff-44a5-abb9-a75725fd6acb/">MLOps on Google Cloud: CI/CD, Kubernetes &amp; Jenkins <span class="arrow" aria-hidden="true">&#8599;</span></a>
+              <span class="meta">Udemy · 2026</span>
             </li>
-            <li class="pg-card">
-              <a href="https://kelidari.com/multimodal-sentiment-classification/lab.html">
-                <span class="pg-head"><svg class="pg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5a2.6 2.6 0 0 1 2.6 2.6v5.2a2.6 2.6 0 0 1-5.2 0V6.1A2.6 2.6 0 0 1 12 3.5Z"/><path d="M6 11.3a6 6 0 0 0 12 0M12 17.3v3.2"/></svg><span class="pg-tag">Calibration lab</span></span>
-                <h3>Voice Lab</h3>
-                <p>Record fixed sentences across moods and the model learns your prosody instead of the average speaker's.</p>
-                <span class="pg-stat">88.3% &rarr; 96.7% LOO</span>
-              </a>
+            <li>
+              <a href="https://www.coursera.org/account/accomplishments/verify/G3R9RD5T6VQ6">Getting Started with Git &amp; GitHub <span class="arrow" aria-hidden="true">&#8599;</span></a>
+              <span class="meta">IBM · 2024</span>
             </li>
-            <li class="pg-card">
-              <a href="https://kelidari.com/multimodal-sentiment-classification/face-lab.html">
-                <span class="pg-head"><svg class="pg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.4"/><path d="M9 10.2h.01M15 10.2h.01M8.6 14.6a4.6 4.6 0 0 0 6.8 0"/></svg><span class="pg-tag">Calibration lab</span></span>
-                <h3>Face Lab</h3>
-                <p>Auto-captures seven acted expressions and fits a transform that knows your particular surprise from your particular fear.</p>
-                <span class="pg-stat">81% &rarr; 90.5% LOO</span>
-              </a>
-            </li>
-            <li class="pg-card">
-              <a href="https://kelidari.com/machine-learning-implementations/">
-                <span class="pg-head"><svg class="pg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 19.5V9M9.5 19.5V4.5M14.5 19.5v-7M19.5 19.5v-11"/></svg><span class="pg-tag">10 modules</span></span>
-                <h3>Machine Learning from Scratch</h3>
-                <p>Backpropagation, AdaBoost, K-means++, HMM Viterbi, attention and Q-learning, hand-written in NumPy and training live in front of you.</p>
-                <span class="pg-stat">Runs in-browser</span>
-              </a>
-            </li>
-            <li class="pg-card">
-              <a href="https://kelidari.com/adversarial-coevolution/explorer.html">
-                <span class="pg-head"><svg class="pg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12a7.5 7.5 0 0 1 13-5.1"/><path d="M17.5 3.4v3.8h-3.8"/><path d="M19.5 12a7.5 7.5 0 0 1-13 5.1"/><path d="M6.5 20.6v-3.8h3.8"/></svg><span class="pg-tag">AIIDE 2026</span></span>
-                <h3>Co-Evolution Explorer</h3>
-                <p>Every training run behind the paper, each agent measured against the same fixed expert.</p>
-                <span class="pg-stat">76 runs &#183; 412 GPU-hours</span>
-              </a>
-            </li>
-            <li class="pg-card">
-              <a href="https://kelidari.com/linguistic-agnostic-ser/explorer.html">
-                <span class="pg-head"><svg class="pg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10v4M6.5 7v10M10 4.2v15.6M13.5 7v10M17 10v4M20.5 11.2v1.6"/></svg><span class="pg-tag">Probing study</span></span>
-                <h3>Speech Emotion Explorer</h3>
-                <p>Where emotion lives inside speech transformers, layer by layer, plus the noise battery down to 0&nbsp;dB.</p>
-                <span class="pg-stat">6 encoders &#183; 8 corpora</span>
-              </a>
-            </li>
-            <li class="pg-card">
-              <a href="https://kelidari.com/dastan-gesture-guitar/">
-                <span class="pg-head"><svg class="pg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8.6" cy="15.4" r="3.4"/><path d="M11 13 18.4 5.6M16.2 3.8l4 4-1.8 1.8-4-4z"/></svg><span class="pg-tag">Webcam</span></span>
-                <h3>Dastan &mdash; Gesture Guitar</h3>
-                <p>Play chords with your hands. One dependency-free HTML file, 25&nbsp;ms audio lookahead decoupled from the render loop.</p>
-                <span class="pg-stat">Zero dependencies</span>
-              </a>
+            <li>
+              Human-subjects research ethics:
+              <a href="https://www.citiprogram.org/verify/?w0ea43745-893b-4e9f-84f2-dd2b7fa74f3a-75349782">Social-Behavioral <span class="arrow" aria-hidden="true">&#8599;</span></a> ·
+              <a href="https://www.citiprogram.org/verify/?w4fa21c92-ee11-4b07-9575-986250b1dc1f-75349783">Good Clinical Practice <span class="arrow" aria-hidden="true">&#8599;</span></a> ·
+              <a href="https://www.citiprogram.org/verify/?we35385bb-60c2-419d-868c-5c287940ee47-75358926">Institutional Official <span class="arrow" aria-hidden="true">&#8599;</span></a>
+              <span class="meta">CITI Program · 2026</span>
             </li>
           </ul>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- ============ Contact ============ -->
-      <section id="contact" class="block">
-        <div class="rail reveal">
-          <span class="kicker"><span class="no">07</span>Contact</span>
-        </div>
-        <div class="reveal">
-          <h2>Get in touch.</h2>
-          <div class="prose">
-            <p>I'm looking for full-time roles in machine-learning research and engineering from January 2027, across LLMs, applied ML and numerical optimization. I'm authorized to work in the U.S., based in Los Angeles and open to relocating. If you're hiring, or want to compare notes on any of this work, write to me.</p>
-          </div>
-          <a class="email-line" href="mailto:Kelidari.Nima@gmail.com">Kelidari.Nima@gmail.com</a>
-          <ul class="contact-links">
-            <li><a href="/NimaKelidari_CV.pdf">R&eacute;sum&eacute; (PDF) <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-            <li><a href="https://www.linkedin.com/in/nima-kelidari/">LinkedIn <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-            <li><a href="https://github.com/Nikelroid">GitHub <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-            <li><a href="https://scholar.google.com/citations?user=4bTONqMAAAAJ">Google Scholar <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
-            <li><a href="https://twitter.com/Adivide2">X / Twitter <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+    <!-- ============ Selected work ============ -->
+    <section id="work" class="sec wrap">
+      <h2 class="sec-head"><span class="sec-no" aria-hidden="true">05</span><span class="sec-name">Selected work</span></h2>
+
+      <article class="project">
+        <div class="win-bar" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span><span class="path">~/work/footnote-rag</span></div>
+        <h3 class="p-title"><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 3.5h9l4 4v13h-13z"/><path d="M14.5 3.5v4h4"/><path d="M8.5 11h7M8.5 14h7M8.5 17.5h3"/><circle cx="14.6" cy="17.5" r="0.5" fill="currentColor"/></svg></span>Footnote: RAG for SEC Filings <span class="meta year">2026</span></h3>
+        <figure class="plate">
+          <a href="https://github.com/Nikelroid/footnote-rag" aria-label="Footnote RAG assistant on GitHub">
+            <img src="/assets/footnote-rag.webp" alt="Diagram of how Footnote answers a question: route to the filing, keyword and vector search with reranking, statements pinned first, one optional retry, then an answer from eight whole pages that names its pages" width="1400" height="694" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span>Fig. 01</span><span>Route, search, retry once, cite the page</span></figcaption>
+        </figure>
+        <div class="p-body">
+          <p class="prose">A question-answering assistant for company filings that names the page behind every answer. On all 150 FinanceBench questions its LangGraph agent is right <strong>85.8%</strong> of the time (87.2% on the 99 held-back questions), against 33.6% with no documents. I then tested amended copies of real statement pages: with both versions in front of the model, answers lead with the old amount up to 100% of the time, and filing dates plus one sentence saying the later filing wins bring that to <strong>0% on three models</strong>.</p>
+          <ul class="tags" aria-label="Tools"><li>LangChain</li><li>LangGraph</li><li>Chroma</li><li>BM25</li><li>FastAPI</li><li>MCP</li><li>Google ADK</li></ul>
+          <ul class="project-links">
+            <li><a href="https://github.com/Nikelroid/footnote-rag">Code &amp; results <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
           </ul>
         </div>
-      </section>
-    </main>
+      </article>
 
-    <footer class="colophon">
-      <p class="meta">&copy; 2026 Nima Kelidari · Los Angeles</p>
-      <p class="meta">Hand-coded in plain HTML &amp; CSS, with no framework, no build step and no trackers. Set in Fraunces, Newsreader &amp; IBM Plex Mono.</p>
+      <article class="project">
+        <div class="win-bar" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span><span class="path">~/work/moe-steering-3d-delta</span></div>
+        <h3 class="p-title"><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12h5"/><circle cx="9" cy="12" r="1.5"/><path d="M10.5 11.2 16 6.5h5.5M10.5 12h11M10.5 12.8 16 17.5h5.5"/></svg></span>Low-Rank Steering for Mixture-of-Experts LLMs <span class="meta year">2026</span></h3>
+        <figure class="plate">
+          <a href="https://kelidari.com/moe-steering-3d-delta/" aria-label="Mixture-of-experts steering project page">
+            <img src="/assets/moe-steering.webp" alt="Three-step diagram of expert-routing analysis and test-time steering in a mixture-of-experts LLM" width="1600" height="660" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span>Fig. 02</span><span>Routing-level steering, zero weight edits</span></figcaption>
+        </figure>
+        <div class="p-body">
+          <p class="prose">A 197K-parameter learned head ranks which experts react to context, and the top ones are switched on or off at inference with no change to the model's weights. Trained on contrastive pairs from SQuAD, HotpotQA and FEVER, it improves mean faithfulness on OLMoE by <strong>+0.101</strong> across six benchmarks, about 4&times; the gain of the published SteerMoE baseline, and transfers across six MoE families from 1.3B to 30.5B parameters. First author with Mahdi Salmani; full paper in preparation. Next, a three-person USC course project is building a gate that decides, per input, whether to apply this steering, because following a document helps when the document is right and hurts when it is wrong or planted; results in December 2026.</p>
+          <ul class="tags" aria-label="Tools"><li>PyTorch</li><li>Hugging Face</li><li>vLLM</li><li>SLURM</li></ul>
+          <ul class="project-links">
+            <li><a href="https://kelidari.com/moe-steering-3d-delta/">Project site <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+            <li><span class="meta">Code available on request</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="win-bar" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span><span class="path">~/work/robot-learning</span></div>
+        <h3 class="p-title"><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20.5h9"/><path d="M8.5 20.5v-5l4.6-4.6"/><circle cx="13.6" cy="10.4" r="1.4"/><path d="M14.6 9.4 18 6"/><path d="M18 6l2.4 1.2M18 6l.9-2.5"/></svg></span>Robot Learning in Simulation <span class="meta year">2026</span></h3>
+        <figure class="plate tall">
+          <a href="/assets/robot-learning-wide.webp" aria-label="Robot learning figure, wide version">
+            <img src="/assets/robot-learning.webp" alt="Three panels: four frames of a simulated Franka arm picking a cube under a Diffusion Policy, spin of a simulated LEAP hand by test condition for three training setups, and a LIBERO instruction shown with two reworded versions" width="1000" height="1799" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span>Fig. 03</span><span>Demonstrations, reward, then language</span></figcaption>
+        </figure>
+        <div class="p-body">
+          <p class="prose">Three USC robotics projects, all in simulation. A <strong>PPO</strong> policy turns a cube in a LEAP hand from proprioception alone, across 16 runs and 145.5 GPU-hours; randomizing friction and mass was the one significant gain on slippery cubes, <strong>0.378 vs 0.280 rad/s</strong>. A state-based <strong>Diffusion Policy</strong> learns a Franka pick from 100 demonstrations of a PPO teacher: noisy demonstrations cut open-loop success from 33% to 3%, yet beat clean data, <strong>71% vs 47%</strong>, once the policy replans every step. <span class="spin" aria-hidden="true"></span>In progress for December: how public vision-language-action checkpoints such as OpenVLA-OFT hold up when LIBERO-Goal instructions are reworded, across 4,092 paraphrases with per-step goal checks.</p>
+          <ul class="tags" aria-label="Tools"><li>PyTorch</li><li>JAX</li><li>MuJoCo Warp</li><li>MuJoCo Playground</li><li>RSL-RL</li><li>LIBERO</li><li>SLURM</li></ul>
+          <ul class="project-links">
+            <li><a href="https://github.com/Nikelroid/csci645-in-hand-rotation/tree/mjlab-1.6">In-hand rotation code <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+            <li><span class="meta">Diffusion Policy and VLA work are course projects; code on request</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="win-bar" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span><span class="path">~/work/adversarial-coevolution</span></div>
+        <h3 class="p-title"><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12a7.5 7.5 0 0 1 13-5.1"/><path d="M17.5 3.4v3.8h-3.8"/><path d="M19.5 12a7.5 7.5 0 0 1-13 5.1"/><path d="M6.5 20.6v-3.8h3.8"/></svg></span>Adversarial Co-Evolution of RL &amp; LLM Agents <span class="meta year">2026</span></h3>
+        <figure class="plate">
+          <a href="https://github.com/Nikelroid/adversarial-coevolution" aria-label="Adversarial co-evolution project on GitHub">
+            <img src="/assets/adversarial-coevolution.webp" alt="System diagram of RL learner, LLM opponent, curriculum manager, and evaluators in a Gym environment" width="1400" height="923" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span>Fig. 04</span><span>Curriculum, opponents, and a fixed yardstick</span></figcaption>
+        </figure>
+        <div class="p-body">
+          <p class="prose">Gin Rummy agents trained with distributed PPO and TRPO, measured against a fixed rule-based expert used only as a yardstick. Across 100+ controlled runs, five training choices lift the agent from about 30% to <strong>34.2 &plusmn; 2.1%</strong> against the expert, and four that looked promising, including imitating an LLM guide and training against a live LLM opponent, do not help. The paper is <strong>accepted at AIIDE 2026</strong> (AAAI).</p>
+          <ul class="tags" aria-label="Tools"><li>PyTorch</li><li>Stable-Baselines3</li><li>PettingZoo</li><li>Ollama</li><li>Flask</li></ul>
+          <ul class="project-links">
+            <li><a href="https://arxiv.org/abs/2607.06854">Paper · AIIDE 2026 <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+            <li><a href="https://github.com/Nikelroid/adversarial-coevolution">Code <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+            <li><a href="https://kelidari.com/adversarial-coevolution/explorer.html">Interactive explorer <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="win-bar" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span><span class="path">~/work/linguistic-agnostic-ser</span></div>
+        <h3 class="p-title"><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 10v4M6.5 7.5v9M10 4.5v15M13.5 7.5v9M17 10v4M20.5 11v2"/></svg></span>Language-Agnostic Speech Emotion Recognition <span class="meta year">2026</span></h3>
+        <figure class="plate">
+          <a href="https://github.com/Nikelroid/linguistic-agnostic-ser" aria-label="Speech emotion recognition probing framework on GitHub">
+            <img src="/assets/ser-probing.webp" alt="Layer-wise emotion-probing architecture and accuracy curves for wav2vec 2.0, HuBERT, and Whisper" width="1200" height="900" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span>Fig. 05</span><span>Layer-wise probing, 3 model families</span></figcaption>
+        </figure>
+        <div class="p-body">
+          <p class="prose">A probing framework that asks where emotion lives inside speech transformers, layer by layer across 24 hidden layers: six frozen encoders and eight datasets in five languages, run unattended on SLURM and read through a FastAPI dashboard of layer-wise results.</p>
+          <ul class="tags" aria-label="Tools"><li>PyTorch</li><li>Hugging Face</li><li>FastAPI</li><li>SLURM</li></ul>
+          <ul class="project-links">
+            <li><a href="https://github.com/Nikelroid/linguistic-agnostic-ser">Code <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+            <li><a href="https://kelidari.com/linguistic-agnostic-ser/">Project site <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+            <li><a href="https://kelidari.com/linguistic-agnostic-ser/explorer.html">Interactive explorer <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="win-bar" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span><span class="path">~/work/multimodal-sentiment-classification</span></div>
+        <h3 class="p-title"><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="9.5" r="4.6"/><circle cx="15" cy="9.5" r="4.6"/><circle cx="12" cy="14.8" r="4.6"/></svg></span>Tri-Modal Sentiment Analysis, Benchmarked and Deployed <span class="meta year">2026</span></h3>
+        <figure class="plate">
+          <a href="https://github.com/Nikelroid/multimodal-sentiment-classification" aria-label="Multimodal sentiment classification project on GitHub">
+            <img src="/assets/multimodal-sentiment.webp" alt="Dialogue frames from a TV scene annotated with negative and neutral sentiment labels" width="1300" height="813" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span>Fig. 06</span><span>Text &#183; face &#183; voice, fused and deployed</span></figcaption>
+        </figure>
+        <div class="p-body">
+          <p class="prose">Text, face and voice fused into one model at <strong>74.5% accuracy / 0.743 weighted-F1 on MELD</strong> (2,607 test utterances). It began as a 2022 course project stuck at 63% on its original corpus, where newer backbones moved it only half a point, so I rebuilt it on MELD. It runs live on scale-to-zero Cloud Run, with browser labs that personalize it to one user in five minutes.</p>
+          <ul class="tags" aria-label="Tools"><li>RoBERTa</li><li>ModernBERT</li><li>DINOv2</li><li>Whisper</li><li>MTCNN</li><li>FastAPI</li><li>Cloud Run</li><li>GitHub Actions</li></ul>
+          <ul class="project-links">
+            <li><a href="https://kelidari.com/multimodal-sentiment-classification/">Live playground <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+            <li><a href="https://github.com/Nikelroid/multimodal-sentiment-classification">Code <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="win-bar" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span><span class="path">~/work/qa-vision-server</span></div>
+        <h3 class="p-title"><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M2.5 12S6 5.8 12 5.8 21.5 12 21.5 12 18 18.2 12 18.2 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="2.6"/></svg></span>Real-Time AI Vision Assistant <span class="meta year">2025</span></h3>
+        <figure class="plate">
+          <a href="https://github.com/Nikelroid/qa-vision-server" aria-label="Real-time AI vision assistant server on GitHub">
+            <img src="/assets/vision-assistant.webp" alt="iOS app interface answering natural-language questions about a live camera scene" width="1280" height="1174" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span>Fig. 07</span><span>Camera &#8594; WebSocket &#8594; Vertex AI, round trip</span></figcaption>
+        </figure>
+        <div class="p-body">
+          <p class="prose">Point a phone at something and ask about it. A Dockerized FastAPI backend on Google Cloud Vision and Vertex AI talks to a native SwiftUI client over WebSockets and answers natural-language questions about the live camera feed.</p>
+          <ul class="tags" aria-label="Tools"><li>Docker</li><li>FastAPI</li><li>GCP</li><li>Swift</li><li>WebSockets</li></ul>
+          <ul class="project-links">
+            <li><a href="https://github.com/Nikelroid/qa-vision-server">Server <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+            <li><a href="https://github.com/Nikelroid/qa-vision-ios-client">iOS client <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="win-bar" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span><span class="path">~/work/machine-learning-implementations</span></div>
+        <h3 class="p-title"><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 19V5M4 19h16M8 16v-5M12 16V8M16 16v-3M20 16v-7"/></svg></span>Machine Learning from Scratch <span class="meta year">2025</span></h3>
+        <figure class="plate">
+          <a href="https://kelidari.com/machine-learning-implementations/" aria-label="Machine learning from scratch interactive lab">
+            <img src="/assets/ml-from-scratch-lab.webp" alt="Interactive lab showing a multilayer perceptron trained by hand-written backpropagation solving XOR, with live loss curve and hyperparameter controls" width="1400" height="923" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span>Fig. 08</span><span>Ten algorithms, trained live in the browser</span></figcaption>
+        </figure>
+        <div class="p-body">
+          <p class="prose">Ten algorithms written by hand in NumPy and PyTorch primitives, from backpropagation with dropout and momentum to AdaBoost, K-Means++, HMM Viterbi decoding, a decoder-only transformer and tabular Q-learning, each paired with a browser module that trains in front of you.</p>
+          <ul class="tags" aria-label="Tools"><li>NumPy</li><li>PyTorch</li><li>JavaScript</li><li>Canvas</li></ul>
+          <ul class="project-links">
+            <li><a href="https://kelidari.com/machine-learning-implementations/">Interactive lab <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+            <li><a href="https://github.com/Nikelroid/machine-learning-implementations">Code <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+          </ul>
+        </div>
+      </article>
+
+      <p class="work-outro">Off the clock: <a href="https://kelidari.com/dastan-gesture-guitar/">Dastan</a>, a guitar you strum with hand gestures through your webcam, written as one HTML file. The <a href="/projects/">full index</a> has sixty-odd more projects, from SDN controllers to Persian poem generators.</p>
+    </section>
+
+    <!-- ============ Playgrounds ============ -->
+    <section id="playgrounds" class="sec wrap">
+      <h2 class="sec-head"><span class="sec-no" aria-hidden="true">06</span><span class="sec-name">Playgrounds</span></h2>
+      <p class="prose pg-lede">Seven things you can open and use right now, with no install and no sign-up.</p>
+      <ul class="playground-grid">
+        <li class="pg-card pg-feature">
+          <a href="https://kelidari.com/multimodal-sentiment-classification/">
+            <span class="pg-head"><svg class="pg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8.5" cy="9" r="4.2"/><circle cx="15.5" cy="9" r="4.2"/><circle cx="12" cy="14.5" r="4.2"/></svg><span class="pg-tag"><span class="pg-live" aria-hidden="true"></span>Live model</span></span>
+            <h3>Tri-Modal Sentiment Playground</h3>
+            <p>Type a sentence, show your face, or record your voice. Three models read you independently and a confidence-weighted fusion arbitrates when they disagree. Local mode keeps everything on your machine.</p>
+            <span class="pg-stat">74.5% on MELD</span>
+          </a>
+        </li>
+        <li class="pg-card">
+          <a href="https://kelidari.com/multimodal-sentiment-classification/lab.html">
+            <span class="pg-head"><svg class="pg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5a2.6 2.6 0 0 1 2.6 2.6v5.2a2.6 2.6 0 0 1-5.2 0V6.1A2.6 2.6 0 0 1 12 3.5Z"/><path d="M6 11.3a6 6 0 0 0 12 0M12 17.3v3.2"/></svg><span class="pg-tag">Calibration lab</span></span>
+            <h3>Voice Lab</h3>
+            <p>Record fixed sentences across moods and the model learns your prosody instead of the average speaker's.</p>
+            <span class="pg-stat">88.3% &rarr; 96.7% LOO</span>
+          </a>
+        </li>
+        <li class="pg-card">
+          <a href="https://kelidari.com/multimodal-sentiment-classification/face-lab.html">
+            <span class="pg-head"><svg class="pg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.4"/><path d="M9 10.2h.01M15 10.2h.01M8.6 14.6a4.6 4.6 0 0 0 6.8 0"/></svg><span class="pg-tag">Calibration lab</span></span>
+            <h3>Face Lab</h3>
+            <p>Auto-captures seven acted expressions and fits a transform that knows your particular surprise from your particular fear.</p>
+            <span class="pg-stat">81% &rarr; 90.5% LOO</span>
+          </a>
+        </li>
+        <li class="pg-card">
+          <a href="https://kelidari.com/machine-learning-implementations/">
+            <span class="pg-head"><svg class="pg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 19.5V9M9.5 19.5V4.5M14.5 19.5v-7M19.5 19.5v-11"/></svg><span class="pg-tag">10 modules</span></span>
+            <h3>Machine Learning from Scratch</h3>
+            <p>Backpropagation, AdaBoost, K-means++, HMM Viterbi, attention and Q-learning, hand-written in NumPy and training live in front of you.</p>
+            <span class="pg-stat">Runs in-browser</span>
+          </a>
+        </li>
+        <li class="pg-card">
+          <a href="https://kelidari.com/adversarial-coevolution/explorer.html">
+            <span class="pg-head"><svg class="pg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12a7.5 7.5 0 0 1 13-5.1"/><path d="M17.5 3.4v3.8h-3.8"/><path d="M19.5 12a7.5 7.5 0 0 1-13 5.1"/><path d="M6.5 20.6v-3.8h3.8"/></svg><span class="pg-tag">AIIDE 2026</span></span>
+            <h3>Co-Evolution Explorer</h3>
+            <p>Every training run behind the paper, each agent measured against the same fixed expert.</p>
+            <span class="pg-stat">76 runs &#183; 412 GPU-hours</span>
+          </a>
+        </li>
+        <li class="pg-card">
+          <a href="https://kelidari.com/linguistic-agnostic-ser/explorer.html">
+            <span class="pg-head"><svg class="pg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10v4M6.5 7v10M10 4.2v15.6M13.5 7v10M17 10v4M20.5 11.2v1.6"/></svg><span class="pg-tag">Probing study</span></span>
+            <h3>Speech Emotion Explorer</h3>
+            <p>Where emotion lives inside speech transformers, layer by layer, plus the noise battery down to 0&nbsp;dB.</p>
+            <span class="pg-stat">6 encoders &#183; 8 corpora</span>
+          </a>
+        </li>
+        <li class="pg-card">
+          <a href="https://kelidari.com/dastan-gesture-guitar/">
+            <span class="pg-head"><svg class="pg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8.6" cy="15.4" r="3.4"/><path d="M11 13 18.4 5.6M16.2 3.8l4 4-1.8 1.8-4-4z"/></svg><span class="pg-tag">Webcam</span></span>
+            <h3>Dastan &mdash; Gesture Guitar</h3>
+            <p>Play chords with your hands. One dependency-free HTML file, 25&nbsp;ms audio lookahead decoupled from the render loop.</p>
+            <span class="pg-stat">Zero dependencies</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section id="contact" class="sec wrap contact">
+      <p class="sec-head"><span class="sec-no">07</span><span class="sec-name">Contact</span></p>
+      <h2 class="statement">Get in touch.</h2>
+      <div class="prose">
+        <p>I'm looking for full-time roles in machine-learning research and engineering from January 2027, across LLMs, applied ML and numerical optimization. I'm authorized to work in the U.S., based in Los Angeles and Seattle, and open to relocating. If you're hiring, or want to compare notes on any of this work, write to me.</p>
+      </div>
+      <a class="email-line" href="mailto:Kelidari.Nima@gmail.com">Kelidari.Nima@gmail.com</a>
+      <ul class="contact-links">
+        <li><a class="btn" href="/NimaKelidari_CV.pdf">R&eacute;sum&eacute; (PDF) <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+        <li><a class="btn" href="https://www.linkedin.com/in/nima-kelidari/">LinkedIn <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+        <li><a class="btn" href="https://github.com/Nikelroid">GitHub <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+        <li><a class="btn" href="https://scholar.google.com/citations?user=4bTONqMAAAAJ">Google Scholar <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+        <li><a class="btn" href="https://twitter.com/Adivide2">X / Twitter <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap foot-row">
+      <p class="meta">&copy; 2026 Nima Kelidari · Los Angeles · Seattle</p>
       <p class="meta">Last updated November 2026 · <a href="#main">Back to top &#8593;</a></p>
-    </footer>
-  </div>
+      <p class="meta">Hand-coded in plain HTML &amp; CSS, with no framework, no build step and no trackers. Set in IBM Plex Mono and your system's sans-serif.</p>
+      <p class="meta kbd-hint">Press <kbd>?</kbd> for keyboard shortcuts</p>
+    </div>
+  </footer>
 
   <script>
-    (function () {
-      var els = document.querySelectorAll('.reveal');
-      if (!('IntersectionObserver' in window) ||
-          window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        els.forEach(function (e) { e.classList.add('on'); });
-        return;
+  /* Theme toggle, keyboard shortcuts, terminal typing, heading decrypt. No libraries.
+     Effects never change the text in the page: they draw over it and then step aside. */
+  (function () {
+    var d = document, root = d.documentElement;
+    var reduce = !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+    var metas = d.querySelectorAll('meta[name="theme-color"]'), btn = d.querySelector('.theme-toggle');
+    function rnd(a, b) { return a + Math.random() * (b - a); }
+
+    function paint(t) {
+      for (var i = 0; i < metas.length; i++) metas[i].setAttribute('content', t === 'light' ? '#F7F8F8' : '#0B0E11');
+      if (btn) btn.setAttribute('aria-label', t === 'light' ? 'Switch to dark theme' : 'Switch to light theme');
+    }
+    function toggle() {
+      var t = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      root.setAttribute('data-theme', t);
+      try { localStorage.setItem('theme', t); } catch (e) {}
+      paint(t);
+    }
+    paint(root.getAttribute('data-theme'));
+    if (btn) btn.addEventListener('click', toggle);
+
+    var panel;
+    function help(show) {
+      if (!panel) {
+        panel = d.createElement('div');
+        panel.className = 'kbd-panel';
+        panel.setAttribute('role', 'dialog');
+        panel.setAttribute('aria-label', 'Keyboard shortcuts');
+        panel.hidden = true;
+        panel.innerHTML = '<p class="kbd-title">keyboard shortcuts</p><dl><dt><kbd>t</kbd></dt><dd>switch theme</dd><dt><kbd>j</kbd> <kbd>k</kbd></dt><dd>next or previous section</dd><dt><kbd>?</kbd></dt><dd>show or hide this list</dd><dt><kbd>esc</kbd></dt><dd>close</dd></dl>';
+        d.body.appendChild(panel);
       }
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (x) {
-          if (x.isIntersecting) { x.target.classList.add('on'); io.unobserve(x.target); }
+      panel.hidden = show === undefined ? !panel.hidden : !show;
+    }
+    function jump(dir) {
+      var s = d.querySelectorAll('main > section, main > header'), cur = -1;
+      for (var i = 0; i < s.length; i++) if (s[i].getBoundingClientRect().top <= 90) cur = i;
+      var n = Math.max(0, Math.min(s.length - 1, cur + dir));
+      if (s[n]) s[n].scrollIntoView({ block: 'start', behavior: reduce ? 'auto' : 'smooth' });
+    }
+    d.addEventListener('keydown', function (e) {
+      if (e.defaultPrevented || e.metaKey || e.ctrlKey || e.altKey) return;
+      var el = e.target, tag = el && el.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || (el && el.isContentEditable)) return;
+      if (e.key === 't') toggle();
+      else if (e.key === '?') help();
+      else if (e.key === 'Escape') { if (panel && !panel.hidden) help(false); }
+      else if (e.key === 'j' || e.key === 'k') jump(e.key === 'j' ? 1 : -1);
+    });
+
+    if (reduce) return;
+
+    /* Terminal: type each command with uneven, human timing, then print its output line by line. */
+    var term = d.querySelector('.term');
+    if (term) {
+      var lines = term.querySelectorAll('.t-line'), li = 0;
+      var all = function () { for (var i = 0; i < lines.length; i++) { lines[i].classList.add('on'); lines[i].classList.remove('cur'); } };
+      term.classList.add('run');
+      setTimeout(all, 15000);
+      var next = function () {
+        if (li >= lines.length) return;
+        var ln = lines[li++];
+        ln.classList.add('on');
+        if (ln.classList.contains('t-last')) return;
+        if (!ln.classList.contains('t-cmd')) { setTimeout(next, rnd(45, 120)); return; }
+        var t = ln.querySelector('.t-type'), len = t.textContent.length, k = 0;
+        ln.classList.add('cur');
+        t.style.setProperty('--n', 0);
+        var key = function () {
+          t.style.setProperty('--n', ++k);
+          if (k < len) setTimeout(key, rnd(38, 105) + (Math.random() < 0.1 ? rnd(110, 260) : 0));
+          else setTimeout(function () { ln.classList.remove('cur'); next(); }, rnd(260, 420));
+        };
+        setTimeout(key, rnd(420, 700));
+      };
+      setTimeout(next, 300);
+    }
+
+    /* Decrypt headings and count up numbers once, when they first come into view. */
+    var GLYPHS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789#%&*+=<>/\\|';
+    function scramble(el) {
+      var txt = el.textContent, n = txt.length, at = [], end = 0, t0 = 0, last = 0, out = txt;
+      for (var i = 0; i < n; i++) { at.push(120 + i * 36 + Math.random() * 220); end = Math.max(end, at[i]); }
+      el.classList.add('scr');
+      (function frame(now) {
+        t0 = t0 || now;
+        var t = now - t0;
+        if (now - last > 45) {
+          last = now; out = '';
+          for (var i = 0; i < n; i++) { var c = txt.charAt(i); out += (c === ' ' || t >= at[i]) ? c : GLYPHS.charAt(Math.floor(Math.random() * GLYPHS.length)); }
+          el.setAttribute('data-scr', out);
+        }
+        if (t < end) requestAnimationFrame(frame); else { el.classList.remove('scr'); el.removeAttribute('data-scr'); }
+      })(performance.now());
+    }
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (x) {
+          if (!x.isIntersecting) return;
+          io.unobserve(x.target);
+          scramble(x.target);
         });
-      }, { threshold: 0.08 });
-      els.forEach(function (e) { io.observe(e); });
-    })();
+      }, { threshold: 0.6 });
+      d.querySelectorAll('.sec-name, .cat-name').forEach(function (el) { io.observe(el); });
+    }
+  })();
   </script>
 </body>
 </html>
