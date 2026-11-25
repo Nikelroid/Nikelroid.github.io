@@ -403,7 +403,7 @@
             </figure>
             <div>
               <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12h5"/><circle cx="9" cy="12" r="1.5"/><path d="M10.5 11.2 16 6.5h5.5M10.5 12h11M10.5 12.8 16 17.5h5.5"/></svg></span>Low-Rank Steering for Mixture-of-Experts LLMs <span class="meta year">2026</span></h3>
-              <p class="prose">A 197K-parameter learned head ranks which experts react to context, and the top ones are switched on or off at inference with no change to the model's weights. Trained on contrastive pairs from SQuAD, HotpotQA and FEVER, it improves mean faithfulness on OLMoE by <strong>+0.101</strong> across six benchmarks, about 4&times; the gain of the published SteerMoE baseline, and transfers across six MoE families from 1.3B to 30.5B parameters. First author with Mahdi Salmani; full paper in preparation.</p>
+              <p class="prose">A 197K-parameter learned head ranks which experts react to context, and the top ones are switched on or off at inference with no change to the model's weights. Trained on contrastive pairs from SQuAD, HotpotQA and FEVER, it improves mean faithfulness on OLMoE by <strong>+0.101</strong> across six benchmarks, about 4&times; the gain of the published SteerMoE baseline, and transfers across six MoE families from 1.3B to 30.5B parameters. First author with Mahdi Salmani; full paper in preparation. Next, a three-person USC course project is building a gate that decides, per input, whether to apply this steering, because following a document helps when the document is right and hurts when it is wrong or planted; results in December 2026.</p>
               <span class="meta tools">PyTorch · Hugging Face · vLLM · SLURM</span>
               <ul class="project-links">
                 <li><a href="https://kelidari.com/moe-steering-3d-delta/">Project site <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
@@ -414,10 +414,28 @@
 
           <article class="project reveal">
             <figure class="plate">
+              <a href="/assets/robot-learning-wide.webp" aria-label="Robot learning figure, wide version">
+                <img src="/assets/robot-learning.webp" alt="Three panels: four frames of a simulated Franka arm picking a cube under a Diffusion Policy, spin of a simulated LEAP hand by test condition for three training setups, and a LIBERO instruction shown with two reworded versions" width="1000" height="1799" loading="lazy">
+              </a>
+              <figcaption><span>Fig. 03</span><span>Demonstrations, reward, then language</span></figcaption>
+            </figure>
+            <div>
+              <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20.5h9"/><path d="M8.5 20.5v-5l4.6-4.6"/><circle cx="13.6" cy="10.4" r="1.4"/><path d="M14.6 9.4 18 6"/><path d="M18 6l2.4 1.2M18 6l.9-2.5"/></svg></span>Robot Learning in Simulation <span class="meta year">2026</span></h3>
+              <p class="prose">Three USC robotics projects, all in simulation. A <strong>PPO</strong> policy turns a cube in a LEAP hand from proprioception alone, across 16 runs and 145.5 GPU-hours; randomizing friction and mass was the one significant gain on slippery cubes, <strong>0.378 vs 0.280 rad/s</strong>. A state-based <strong>Diffusion Policy</strong> learns a Franka pick from 100 demonstrations of a PPO teacher: noisy demonstrations cut open-loop success from 33% to 3%, yet beat clean data, <strong>71% vs 47%</strong>, once the policy replans every step. In progress for December: how public vision-language-action checkpoints such as OpenVLA-OFT hold up when LIBERO-Goal instructions are reworded, across 4,092 paraphrases with per-step goal checks.</p>
+              <span class="meta tools">PyTorch · JAX · MuJoCo Warp · MuJoCo Playground · RSL-RL · LIBERO · SLURM</span>
+              <ul class="project-links">
+                <li><a href="https://github.com/Nikelroid/csci645-in-hand-rotation/tree/mjlab-1.6">In-hand rotation code <span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+                <li><span class="meta">Diffusion Policy and VLA work are course projects; code on request</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project flip reveal">
+            <figure class="plate">
               <a href="https://github.com/Nikelroid/adversarial-coevolution" aria-label="Adversarial co-evolution project on GitHub">
                 <img src="/assets/adversarial-coevolution.webp" alt="System diagram of RL learner, LLM opponent, curriculum manager, and evaluators in a Gym environment" width="1400" height="923" loading="lazy">
               </a>
-              <figcaption><span>Fig. 03</span><span>Curriculum, opponents, and a fixed yardstick</span></figcaption>
+              <figcaption><span>Fig. 04</span><span>Curriculum, opponents, and a fixed yardstick</span></figcaption>
             </figure>
             <div>
               <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12a7.5 7.5 0 0 1 13-5.1"/><path d="M17.5 3.4v3.8h-3.8"/><path d="M19.5 12a7.5 7.5 0 0 1-13 5.1"/><path d="M6.5 20.6v-3.8h3.8"/></svg></span>Adversarial Co-Evolution of RL &amp; LLM Agents <span class="meta year">2026</span></h3>
@@ -431,12 +449,12 @@
             </div>
           </article>
 
-          <article class="project flip reveal">
+          <article class="project reveal">
             <figure class="plate">
               <a href="https://github.com/Nikelroid/linguistic-agnostic-ser" aria-label="Speech emotion recognition probing framework on GitHub">
                 <img src="/assets/ser-probing.webp" alt="Layer-wise emotion-probing architecture and accuracy curves for wav2vec 2.0, HuBERT, and Whisper" width="1200" height="900" loading="lazy">
               </a>
-              <figcaption><span>Fig. 04</span><span>Layer-wise probing, 3 model families</span></figcaption>
+              <figcaption><span>Fig. 05</span><span>Layer-wise probing, 3 model families</span></figcaption>
             </figure>
             <div>
               <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 10v4M6.5 7.5v9M10 4.5v15M13.5 7.5v9M17 10v4M20.5 11v2"/></svg></span>Language-Agnostic Speech Emotion Recognition <span class="meta year">2026</span></h3>
@@ -450,12 +468,12 @@
             </div>
           </article>
 
-          <article class="project reveal">
+          <article class="project flip reveal">
             <figure class="plate">
               <a href="https://github.com/Nikelroid/multimodal-sentiment-classification" aria-label="Multimodal sentiment classification project on GitHub">
                 <img src="/assets/multimodal-sentiment.webp" alt="Dialogue frames from a TV scene annotated with negative and neutral sentiment labels" width="1300" height="813" loading="lazy">
               </a>
-              <figcaption><span>Fig. 05</span><span>Text &#183; face &#183; voice, fused and deployed</span></figcaption>
+              <figcaption><span>Fig. 06</span><span>Text &#183; face &#183; voice, fused and deployed</span></figcaption>
             </figure>
             <div>
               <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="9.5" r="4.6"/><circle cx="15" cy="9.5" r="4.6"/><circle cx="12" cy="14.8" r="4.6"/></svg></span>Tri-Modal Sentiment Analysis, Benchmarked and Deployed <span class="meta year">2026</span></h3>
@@ -468,12 +486,12 @@
             </div>
           </article>
 
-          <article class="project flip reveal">
+          <article class="project reveal">
             <figure class="plate">
               <a href="https://github.com/Nikelroid/qa-vision-server" aria-label="Real-time AI vision assistant server on GitHub">
                 <img src="/assets/vision-assistant.webp" alt="iOS app interface answering natural-language questions about a live camera scene" width="1280" height="1174" loading="lazy">
               </a>
-              <figcaption><span>Fig. 06</span><span>Camera &#8594; WebSocket &#8594; Vertex AI, round trip</span></figcaption>
+              <figcaption><span>Fig. 07</span><span>Camera &#8594; WebSocket &#8594; Vertex AI, round trip</span></figcaption>
             </figure>
             <div>
               <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M2.5 12S6 5.8 12 5.8 21.5 12 21.5 12 18 18.2 12 18.2 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="2.6"/></svg></span>Real-Time AI Vision Assistant <span class="meta year">2025</span></h3>
@@ -486,12 +504,12 @@
             </div>
           </article>
 
-          <article class="project reveal">
+          <article class="project flip reveal">
             <figure class="plate">
               <a href="https://kelidari.com/machine-learning-implementations/" aria-label="Machine learning from scratch interactive lab">
                 <img src="/assets/ml-from-scratch-lab.webp" alt="Interactive lab showing a multilayer perceptron trained by hand-written backpropagation solving XOR, with live loss curve and hyperparameter controls" width="1400" height="923" loading="lazy">
               </a>
-              <figcaption><span>Fig. 07</span><span>Ten algorithms, trained live in the browser</span></figcaption>
+              <figcaption><span>Fig. 08</span><span>Ten algorithms, trained live in the browser</span></figcaption>
             </figure>
             <div>
               <h3><span class="device" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 19V5M4 19h16M8 16v-5M12 16V8M16 16v-3M20 16v-7"/></svg></span>Machine Learning from Scratch <span class="meta year">2025</span></h3>
