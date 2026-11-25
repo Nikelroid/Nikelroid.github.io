@@ -385,6 +385,7 @@ footer{text-align:center;color:#cfe0ff;font-size:14px;margin-top:26px}
 
 <footer>ساخته شده با ❤️ برای خانواده · کریسمس ۲۰۲۶ 🎄<br><span style="opacity:.75">🎵 آهنگ: Jingle Bells، نسخهٔ ۸ بیتی</span></footer>
 </main>
+<audio id="bgm" src="jingle.m4a" preload="auto" loop playsinline></audio>
 <button class="music" id="music" aria-pressed="false"><span class="eq"><i></i><i></i><i></i></span><span id="mlabel">آهنگ 🎵</span></button>
 <div class="toast" id="toast"></div>
 <script>
@@ -462,17 +463,12 @@ if ('IntersectionObserver' in window) {
   revs.forEach(r => io.observe(r));
 } else revs.forEach(r => r.classList.add('in'));
 
-/* audio */
-const AC = window.AudioContext || window.webkitAudioContext; let ac = null, master = null, noise = null;
-const NOTE = {C3: 130.81, D3: 146.83, F3: 174.61, G3: 196, C5: 523.25, D5: 587.33, E5: 659.25, F5: 698.46, G5: 783.99, A4: 440, Cs5: 554.37};
+/* audio: the music is a real audio file, so phones play it like a song (the iPhone silent switch included) */
+const AC = window.AudioContext || window.webkitAudioContext; let ac = null, master = null;
+const NOTE = {A4: 440, Cs5: 554.37};
 function ensureAC(){
   if (!AC) return false;
-  if (!ac) {
-    ac = new AC(); master = ac.createGain(); master.gain.value = .55;
-    const comp = ac.createDynamicsCompressor(); master.connect(comp); comp.connect(ac.destination);
-    const len = Math.floor(ac.sampleRate * .2); noise = ac.createBuffer(1, len, ac.sampleRate);
-    const ch = noise.getChannelData(0); for (let i = 0; i < len; i++) ch[i] = Math.random() * 2 - 1;
-  }
+  if (!ac) { ac = new AC(); master = ac.createGain(); master.gain.value = .55; master.connect(ac.destination); }
   if (ac.state === 'suspended') ac.resume();
   return true;
 }
@@ -481,60 +477,27 @@ function tone(f, t, d, type, v){
   g.gain.setValueAtTime(.0001, t); g.gain.exponentialRampToValueAtTime(v, t + .012); g.gain.exponentialRampToValueAtTime(.0001, t + d);
   o.connect(g); g.connect(master); o.start(t); o.stop(t + d + .03);
 }
-function shaker(t){
-  const s = ac.createBufferSource(); s.buffer = noise; const hp = ac.createBiquadFilter(); hp.type = 'highpass'; hp.frequency.value = 6500;
-  const g = ac.createGain(); g.gain.setValueAtTime(.05, t); g.gain.exponentialRampToValueAtTime(.0001, t + .07);
-  s.connect(hp); hp.connect(g); g.connect(master); s.start(t); s.stop(t + .08);
-}
-function kick(t){
-  const o = ac.createOscillator(), g = ac.createGain(); o.type = 'sine';
-  o.frequency.setValueAtTime(150, t); o.frequency.exponentialRampToValueAtTime(45, t + .12);
-  g.gain.setValueAtTime(.4, t); g.gain.exponentialRampToValueAtTime(.0001, t + .16);
-  o.connect(g); g.connect(master); o.start(t); o.stop(t + .18);
-}
-const Q = 60 / 152;
-const MEL = [['E5',1],['E5',1],['E5',2],['E5',1],['E5',1],['E5',2],['E5',1],['G5',1],['C5',1.5],['D5',.5],['E5',4],['F5',1],['F5',1],['F5',1.5],['F5',.5],['F5',1],['E5',1],['E5',1],['E5',.5],['E5',.5],['E5',1],['D5',1],['D5',1],['E5',1],['D5',2],['G5',2],['E5',1],['E5',1],['E5',2],['E5',1],['E5',1],['E5',2],['E5',1],['G5',1],['C5',1.5],['D5',.5],['E5',4],['F5',1],['F5',1],['F5',1.5],['F5',.5],['F5',1],['E5',1],['E5',1],['E5',.5],['E5',.5],['G5',1],['G5',1],['F5',1],['D5',1],['C5',4]];
-const BARS = ['C3','C3','C3','C3','F3','C3','D3','G3','C3','C3','C3','C3','F3','C3','G3','C3'];
-const EV = []; let beat = 0;
-for (const [n, d] of MEL) { EV.push({t: beat, k: 'm', f: NOTE[n], d}); beat += d; }
-BARS.forEach((r, i) => { EV.push({t: i * 4, k: 'b', f: NOTE[r], d: 2}); EV.push({t: i * 4 + 2, k: 'b', f: NOTE[r] * 1.5, d: 2}); });
-for (let i = 0; i < 128; i++) EV.push({t: i * .5, k: 's'});
-for (let i = 0; i < 32; i++) EV.push({t: i * 2, k: 'k'});
-EV.sort((a, b) => a.t - b.t);
-const LOOP = 64; let evIdx = 0, loopStart = 0, sched = null;
-function playEv(e, t){
-  if (e.k === 'm') { tone(e.f, t, e.d * Q * .92, 'square', .085); tone(e.f * 2, t, e.d * Q * .5, 'triangle', .03); }
-  else if (e.k === 'b') tone(e.f, t, e.d * Q * .9, 'triangle', .22);
-  else if (e.k === 's') shaker(t); else kick(t);
-}
-function scheduler(){
-  for (let guard = 0; guard < 400; guard++) {
-    const e = EV[evIdx], t = loopStart + e.t * Q;
-    if (t > ac.currentTime + .15) break;
-    if (t >= ac.currentTime - .05) playEv(e, t);
-    evIdx++; if (evIdx >= EV.length) { evIdx = 0; loopStart += LOOP * Q; }
-  }
-}
+const bgm = $('#bgm'); bgm.volume = .7;
 const mBtn = $('#music'), mLabel = $('#mlabel');
 let musicWanted = true;
 try { if (localStorage.getItem('xmas26-music') === 'off') musicWanted = false; } catch (e) {}
-const GESTURES = ['pointerdown', 'touchend', 'click', 'keydown'];
+const GESTURES = ['pointerup', 'touchend', 'click', 'keydown'];
 function setBtn(on){ mBtn.classList.toggle('on', on); mBtn.setAttribute('aria-pressed', on ? 'true' : 'false'); mLabel.textContent = on ? 'بی‌صدا 🔇' : (musicWanted ? 'یه جا بزن، آهنگ میاد 🎵' : 'آهنگ 🎵'); }
 function startMusic(){
-  if (sched) return true;
-  if (!ensureAC()) return false;
-  const go = () => { if (sched || !musicWanted || ac.state !== 'running') return; loopStart = ac.currentTime + .12; evIdx = 0; sched = setInterval(scheduler, 25); setBtn(true); GESTURES.forEach(t => removeEventListener(t, firstTouch, true)); };
-  if (ac.state === 'running') go(); else ac.resume().then(go).catch(() => {});
-  return true;
+  if (!bgm.paused) return;
+  try { if (navigator.audioSession) navigator.audioSession.type = 'playback'; } catch (e) {}
+  const p = bgm.play(); if (p && p.catch) p.catch(() => {});
 }
-function firstTouch(e){ if (mBtn.contains(e.target)) return; if (musicWanted && !sched) startMusic(); }
+function firstTouch(e){ if (mBtn.contains(e.target)) return; if (musicWanted && bgm.paused) startMusic(); }
+bgm.addEventListener('playing', () => { setBtn(true); GESTURES.forEach(t => removeEventListener(t, firstTouch, true)); });
+bgm.addEventListener('pause', () => setBtn(false));
 mBtn.addEventListener('click', () => {
-  if (sched) { clearInterval(sched); sched = null; musicWanted = false; try { localStorage.setItem('xmas26-music', 'off'); } catch (e) {} setBtn(false); return; }
+  if (!bgm.paused) { musicWanted = false; try { localStorage.setItem('xmas26-music', 'off'); } catch (e) {} bgm.pause(); return; }
   musicWanted = true; try { localStorage.removeItem('xmas26-music'); } catch (e) {}
-  if (!startMusic()) toast('مرورگر شما آهنگ پخش نمی‌کنه 😕');
+  startMusic();
 });
 setBtn(false);
-if (musicWanted && AC) { GESTURES.forEach(t => addEventListener(t, firstTouch, true)); startMusic(); }
+if (musicWanted) { GESTURES.forEach(t => addEventListener(t, firstTouch, true)); startMusic(); }
 
 /* car honk */
 const car = $('#car'), honkEl = $('#honk');
