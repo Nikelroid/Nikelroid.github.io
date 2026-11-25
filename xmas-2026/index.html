@@ -79,6 +79,18 @@ h1{font-family:'Lalezar',cursive;font-weight:400;font-size:clamp(46px,11.5vw,86p
 html.js .reveal{opacity:0;transform:translateY(36px) scale(.97);transition:opacity .7s ease,transform .8s cubic-bezier(.2,.9,.25,1)}
 html.js .reveal.in{opacity:1;transform:none}
 
+/* ticket */
+.ticket{background:linear-gradient(90deg,#fff6e6,#fffaf0);border:2px dashed #e7b96a}
+.tk-row{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center;text-align:center}
+.tk-l{font-family:'Lalezar',cursive;font-size:15px;letter-spacing:.12em;color:var(--red2);direction:ltr}
+.tk-v{font-weight:800;font-size:15px}
+.tk-t{font-family:'Lalezar',cursive;font-size:clamp(24px,6.5vw,34px);line-height:1.2;color:var(--ink)}
+.tk-mid{display:flex;flex-direction:column;align-items:center;gap:2px;padding:0 10px;border-inline:2px dashed #e7b96a}
+.tk-house{font-size:34px;animation:bob2 2.4s ease-in-out infinite}
+.tk-place{font-weight:800;font-size:13px;direction:ltr}
+.tk-nights{background:var(--ink);color:#fff;border-radius:999px;padding:0 10px;font-size:12px;font-weight:800}
+.tk-note{margin:12px 0 0;text-align:center;font-size:14px;color:var(--muted)}
+
 /* map */
 .tabs{display:flex;gap:8px;margin-bottom:12px}
 .tab{flex:1 1 0;border:0;border-radius:16px;padding:9px 6px;background:#eef3f9;color:var(--ink);font:inherit;font-weight:800;font-size:15px;cursor:pointer;transition:transform .2s,background .2s;line-height:1.35}
@@ -208,6 +220,15 @@ footer{text-align:center;color:#cfe0ff;font-size:14px;margin-top:26px}
 <div class="stats"><span>🚗 رفت با ماشین، حدود ۲ ساعت</span><span>⛴️ برگشت با کشتی</span><span>😌 دو روز فقط استراحت</span><span>🌲 یه روز جنگل</span><span>🔥 شب‌های کباب</span></div>
 </header>
 
+<section class="card reveal ticket" style="--dot:#ffe0cc">
+<div class="tk-row">
+<div class="tk-side"><div class="tk-l">CHECK-IN</div><div class="tk-v">جمعه ۲۵ دسامبر</div><div class="tk-t">۳:۰۰ بعدازظهر</div></div>
+<div class="tk-mid"><span class="tk-house">🏡</span><span class="tk-place">Tahuya, WA</span><span class="tk-nights">۳ شب</span></div>
+<div class="tk-side"><div class="tk-l">CHECK-OUT</div><div class="tk-v">دوشنبه ۲۸ دسامبر</div><div class="tk-t">۱۱:۰۰ صبح</div></div>
+</div>
+<p class="tk-note">🔑 آدرس دقیق و کد در تو اپ Airbnb هست.</p>
+</section>
+
 <section class="card reveal" style="--dot:#d9f0ff">
 <h2>نقشهٔ ماجراجویی <span class="wig">🗺️</span></h2>
 <p class="sub">یه دکمه رو بزنید تا Outback راه بیفته!</p>
@@ -269,9 +290,9 @@ footer{text-align:center;color:#cfe0ff;font-size:14px;margin-top:26px}
 <article class="day">
 <div class="dayhead" style="--bg:linear-gradient(90deg,#d62f45,#ff6b6b)"><span class="dayemoji">🎄</span><div><div class="daydate">جمعه ۲۵ دسامبر</div><div class="daytitle">رفت و جاگیر شدن</div></div><span class="badge">آروم و بی‌عجله</span></div>
 <ul>
-<li><span class="t">۱۰:۰۰</span><span>صبحونه و بار زدن ماشین (یخدون غذا یادتون نره!)</span></li>
-<li><span class="t">۱۱:۰۰</span><span>حرکت از خونه، از راه Tacoma و پل Narrows، بدون کشتی 🌉</span></li>
-<li><span class="t">بعدازظهر</span><span>رسیدن به Tahuya بعد از ساعت check-in و ولو شدن رو مبل 🛋️</span></li>
+<li><span class="t">صبح</span><span>صبحونه و بار زدن ماشین (یخدون غذا یادتون نره!)</span></li>
+<li><span class="t">۱:۰۰</span><span>حرکت از خونه، از راه Tacoma و پل Narrows، بدون کشتی 🌉</span></li>
+<li><span class="t">۳:۰۰</span><span>check-in تو Tahuya و ولو شدن رو مبل 🛋️</span></li>
 <li><span class="t">۴:۳۰</span><span>تماشای غروب از ساحل جلوی کلبه 🌅</span></li>
 <li><span class="t">شب</span><span>شام کریسمس، بخاری هیزمی و کادوها 🎁</span></li>
 </ul>
@@ -301,9 +322,9 @@ footer{text-align:center;color:#cfe0ff;font-size:14px;margin-top:26px}
 <article class="day">
 <div class="dayhead" style="--bg:linear-gradient(90deg,#e09b16,#ffc93c)"><span class="dayemoji">🏠</span><div><div class="daydate">دوشنبه ۲۸ دسامبر</div><div class="daytitle">برگشت به خونه</div></div><span class="badge">صبح آروم</span></div>
 <ul>
-<li><span class="t">صبح</span><span>آخرین صبحونه با منظرهٔ آب ☕</span></li>
-<li><span class="t">بعدش</span><span>جمع کردن وسایل و مرتب کردن کلبه 🧹</span></li>
-<li><span class="t">ظهر</span><span>check-out و حرکت به سمت Bremerton 🚗</span></li>
+<li><span class="t">۸:۳۰</span><span>آخرین صبحونه با منظرهٔ آب ☕</span></li>
+<li><span class="t">۱۰:۰۰</span><span>جمع کردن وسایل و مرتب کردن کلبه 🧹</span></li>
+<li><span class="t">۱۱:۰۰</span><span>check-out و حرکت به سمت Bremerton 🚗</span></li>
 <li><span class="t">بعدازظهر</span><span>کشتی Bremerton به Seattle، حدود یه ساعت روی آب، ماشین هم میاد رو کشتی! ⛴️</span></li>
 <li><span class="t">عصر</span><span>رسیدن به خونه، خسته ولی خوشحال 😄</span></li>
 </ul>
@@ -322,7 +343,7 @@ footer{text-align:center;color:#cfe0ff;font-size:14px;margin-top:26px}
 <div class="progress"><i id="p-todo"></i></div>
 <div class="ptext" id="t-todo"></div>
 <ul class="list" data-list="todo">
-<li class="chk" data-id="t1"><span class="box"></span><span class="txt">ساعت check-in، check-out و کد در رو از Airbnb بگیرید 🔑</span></li>
+<li class="chk" data-id="t1"><span class="box"></span><span class="txt">کد در و توضیحات ورود رو تو اپ Airbnb ببینید 🔑</span></li>
 <li class="chk" data-id="t2"><span class="box"></span><span class="txt">از میزبان بپرسید گریل گازیه یا زغالی 🔥</span></li>
 <li class="chk" data-id="t3"><span class="box"></span><span class="txt">همهٔ خریدها قبل از ۲۵ دسامبر (روز کریسمس بیشتر فروشگاه‌ها بسته‌ن) 🛒</span></li>
 <li class="chk" data-id="t5"><span class="box"></span><span class="txt">صبح روز پارک وضعیت جاده رو تو سایت NPS چک کنید 🌨️</span></li>
