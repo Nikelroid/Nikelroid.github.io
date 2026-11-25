@@ -59,6 +59,15 @@
 
 [data-theme="light"] {
   --bg: #f7f8f8;
+  --term-bg: #ffffff;
+  --term-bar: #eef1f3;
+  --term-line: #e1e5e9;
+  --term-text: #0d1216;
+  --term-out: #38424c;
+  --term-muted: #56616c;
+  --term-accent: #087443;
+  --term-amber: #8a5300;
+  --term-dot: #c9d0d7;
   --bg-2: #ffffff;
   --bg-3: #eef1f3;
   --line: #e1e5e9;
@@ -421,7 +430,6 @@ kbd {
   border-radius: 12px;
   box-shadow: var(--shadow);
 }
-[data-theme="light"] .term { border-color: #1c232a; }
 
 .term-bar,
 .win-bar {
