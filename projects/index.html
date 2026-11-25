@@ -192,12 +192,33 @@
           <p class="desc">PPO policies for HORA-style in-hand rotation in mjlab (MuJoCo Warp), from proprioception only: 16 runs and 145.5 GPU-hours, each policy tested in 7 conditions at 1,024 episodes. Randomizing friction and cube mass in training was the one significant gain on slippery cubes (0.378 vs 0.280 rad/s at friction 0.3), a proportional drift gate cut tilt error 13%, and I found a reset-reference bug in mjlab 1.1.1, then ported the task to mjlab 1.6. Simulation only.</p>
           <span class="meta tools">PyTorch · MuJoCo Warp · RSL-RL · SLURM</span>
         </article>
+
+        <article class="entry">
+          <h3>Diffusion Policy from PPO Demonstrations</h3>
+          <span class="meta">2026</span>
+          <p class="desc">A state-based Diffusion Policy (16 predicted actions, 8 executed) learns a simulated Franka pick in MuJoCo Playground from 100 demonstrations of a PPO teacher that succeeds 96% of the time on held-out seeds. In a controlled test, noisy demonstrations cut open-loop success from 33% to 3%, yet beat clean data, 71% vs 47%, once the policy replans every step (100 held-out episodes each). Course project; code on request.</p>
+          <span class="meta tools">PyTorch · JAX · MuJoCo Playground · SLURM</span>
+        </article>
+
+        <article class="entry">
+          <h3>Paraphrase Failures in Vision-Language-Action Models</h3>
+          <span class="meta">2026 · in progress</span>
+          <p class="desc">How public VLA checkpoints such as OpenVLA-OFT handle reworded LIBERO-Goal instructions: 4,092 paraphrases, per-step goal checks and gripper contacts, and empty and counterfactual prompt controls. Report in December 2026.</p>
+          <span class="meta tools">PyTorch · LIBERO · SLURM</span>
+        </article>
       </section>
 
       <!-- II. NLP & Deep Learning -->
       <section class="cat" aria-labelledby="cat-nlp">
         <h2 id="cat-nlp"><span class="no">II</span>NLP &amp; Deep Learning</h2>
         <p class="cat-desc">Sequence modeling from Persian-language tasks to image captioning.</p>
+
+        <article class="entry">
+          <h3><a href="https://kelidari.com/moe-steering-3d-delta/">Mixture-of-Experts Steering, and a Gate for It <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
+          <span class="meta">2026 · gate in progress</span>
+          <p class="desc">A 197K-parameter learned head ranks which experts react to context, and switching the top ones on or off at inference improves mean faithfulness on OLMoE by +0.101 across six benchmarks with no weight edits. Now a three-person USC course project is building a gate that decides, per input, whether to steer at all, since following a document helps when it is right and hurts when it is wrong or planted. Results in December 2026.</p>
+          <span class="meta tools">PyTorch · Hugging Face · vLLM · SLURM</span>
+        </article>
 
         <article class="entry">
           <h3><a href="https://github.com/Nikelroid/deeplearning-nlp-vision-projects">Image Caption Generator <span class="arrow" aria-hidden="true">&#8599;</span></a></h3>
